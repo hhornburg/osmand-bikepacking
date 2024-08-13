@@ -23,15 +23,15 @@
 
     <renderingAttribute name="width_l1">
         <case maxzoom="12" strokeWidth="$width_l1_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l1_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l1_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l1_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l1_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l1_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l1_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l1_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l1_z20" />
-        <case minzoom="21" strokeWidth_0="$width_l1_z21" />
+        <case minzoom="13" maxzoom="13" strokeWidth="$width_l1_z13" strokeWidth_2="$width_l1_z13" strokeWidth_3="$width_l1_z13" strokeWidth_4="$width_l1_z13"/>
+        <case minzoom="14" maxzoom="14" strokeWidth="$width_l1_z14" strokeWidth_2="$width_l1_z14" strokeWidth_3="$width_l1_z14" strokeWidth_4="$width_l1_z14"/>
+        <case minzoom="15" maxzoom="15" strokeWidth="$width_l1_z15" strokeWidth_2="$width_l1_z15" strokeWidth_3="$width_l1_z15" strokeWidth_4="$width_l1_z15"/>
+        <case minzoom="16" maxzoom="16" strokeWidth="$width_l1_z16" strokeWidth_2="$width_l1_z16" strokeWidth_3="$width_l1_z16" strokeWidth_4="$width_l1_z16"/>
+        <case minzoom="17" maxzoom="17" strokeWidth="$width_l1_z17" strokeWidth_2="$width_l1_z17" strokeWidth_3="$width_l1_z17" strokeWidth_4="$width_l1_z17"/>
+        <case minzoom="18" maxzoom="18" strokeWidth="$width_l1_z18" strokeWidth_2="$width_l1_z18" strokeWidth_3="$width_l1_z18" strokeWidth_4="$width_l1_z18"/>
+        <case minzoom="19" maxzoom="19" strokeWidth="$width_l1_z19" strokeWidth_2="$width_l1_z19" strokeWidth_3="$width_l1_z19" strokeWidth_4="$width_l1_z19"/>
+        <case minzoom="20" maxzoom="20" strokeWidth="$width_l1_z20" strokeWidth_2="$width_l1_z20" strokeWidth_3="$width_l1_z20" strokeWidth_4="$width_l1_z20"/>
+        <case minzoom="21" strokeWidth="$width_l1_z21" strokeWidth_2="$width_l1_z21" strokeWidth_3="$width_l1_z21" strokeWidth_4="$width_l1_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l2">
@@ -191,8 +191,28 @@
         <case minzoom="21" pathEffect_0="$pathEffect_no_z21" pathEffect="$pathEffect_no_z21" />
     </renderingAttribute>
 
+    <renderingAttribute name="pathEffect_markup">
+        <case maxzoom="12" pathEffect_2="0.5_4.5"/>
+        <case minzoom="13" maxzoom="13" pathEffect_2="2.5_22.5" pathEffect_3="0_2.5_2.5_20" pathEffect_4="0_5_2.5_17.5"/>
+        <case minzoom="14" maxzoom="14" pathEffect_2="3_27" pathEffect_3="0_3_3_24" pathEffect_4="0_6_3_21"/>
+        <case minzoom="15" maxzoom="15" pathEffect_2="4_36" pathEffect_3="0_4_4_32" pathEffect_4="0_8_4_28"/>
+        <case minzoom="16" maxzoom="16" pathEffect_2="5_45" pathEffect_3="0_5_5_40" pathEffect_4="0_10_5_35"/>
+        <case minzoom="17" maxzoom="17" pathEffect_2="5.5_49.5" pathEffect_3="0_5.5_5.5_44" pathEffect_4="0_11_5.5_38.5"/>
+        <case minzoom="18" maxzoom="18" pathEffect_2="6_54" pathEffect_3="0_6_6_48" pathEffect_4="0_12_6_42"/>
+        <case minzoom="19" maxzoom="19" pathEffect_2="8_72" pathEffect_3="0_8_8_96" pathEffect_4="0_16_8_88"/>
+        <case minzoom="20" maxzoom="20" pathEffect_2="12_108" pathEffect_3="0_12_12_96" pathEffect_4="0_24_12_84"/>
+        <case minzoom="21" pathEffect_2="15_135" pathEffect_3="0_15_15_120" pathEffect_4="0_30_15_105" />
+    </renderingAttribute>
+
     <renderingConstant name="c_track_outer" value="#925D3A"/>
     <renderingConstant name="c_track_inner" value="#B3A18F"/>
+
+    <renderingConstant name="c_diff_0" value="#00A10F"/>
+    <renderingConstant name="c_diff_1" value="#2C5DF2"/>
+    <renderingConstant name="c_diff_2" value="#FF1111"/>
+    <renderingConstant name="c_diff_3" value="#000000"/>
+    <renderingConstant name="c_diff_4" value="#FF00FF"/>
+
     <order>
         <!-- 
         Backgrounds: 1-64: default 32
@@ -243,6 +263,38 @@
                     <case pathEffect="$pathEffect_unknown" />
                 </switch>
             </case>
+            <apply pathEffect_2="$pathEffect_markup">
+                <switch>
+                    <case additional="mtb:scale=0" color_2="$c_diff_0"/>
+                    <case additional="mtb:scale=1" color_2="$c_diff_1"/>
+                    <case additional="mtb:scale=2" color_2="$c_diff_2"/>
+                    <case additional="mtb:scale=3" color_2="$c_diff_3"/>
+                    <case additional="mtb:scale=4" color_2="$c_diff_4"/>
+                    <case additional="mtb:scale=5" color_2="$c_diff_4"/>
+                    <case additional="mtb:scale=6" color_2="$c_diff_4"/>
+                </switch>
+            </apply>
+            <apply pathEffect_3="$pathEffect_markup">
+                <switch>
+                    <case additional="mtb:scale:uphill=0" color_3="$c_diff_0"/>
+                    <case additional="mtb:scale:uphill=1" color_3="$c_diff_1"/>
+                    <case additional="mtb:scale:uphill=2" color_3="$c_diff_2"/>
+                    <case additional="mtb:scale:uphill=3" color_3="$c_diff_3"/>
+                    <case additional="mtb:scale:uphill=4" color_3="$c_diff_4"/>
+                    <case additional="mtb:scale:uphill=5" color_3="$c_diff_4"/>
+                </switch>
+            </apply>
+            <apply pathEffect_4="$pathEffect_markup">
+                <switch>
+                    <case additional="sac_scale=hiking" color_4="$c_diff_0"/>
+                    <case additional="sac_scale=mountain_hiking" color_4="$c_diff_1"/>
+                    <case additional="sac_scale=demanding_mountain_hiking" color_4="$c_diff_2"/>
+                    <case additional="sac_scale=alpine_hiking" color_4="$c_diff_3"/>
+                    <case additional="sac_scale=demanding_alpine_hiking" color_4="$c_diff_4"/>
+                    <case additional="sac_scale=difficult_alpine_hiking" color_4="$c_diff_4"/>
+                </switch>
+            </apply>
+            <!-- width_l1 also sets width for markups-->
             <apply strokeWidth="$width_l1" cap="ROUND"/>
         </switch>
     </line>
