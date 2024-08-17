@@ -1,37 +1,49 @@
 <renderingStyle name="Outdoor" depends="" defaultColor="#ffffff" version="1">
-    <renderingConstant name="width_l1_z12" value="0.3"/>
-    <renderingConstant name="width_l1_z13" value="1.5"/>
-    <renderingConstant name="width_l1_z14" value="2"/>
-    <renderingConstant name="width_l1_z15" value="2.5"/>
-    <renderingConstant name="width_l1_z16" value="3"/>
-    <renderingConstant name="width_l1_z17" value="3.5"/>
-    <renderingConstant name="width_l1_z18" value="4"/>
-    <renderingConstant name="width_l1_z19" value="5"/>
-    <renderingConstant name="width_l1_z20" value="9"/>
-    <renderingConstant name="width_l1_z21" value="13"/>
+    <!-- 
+    Concept of the paths:
+    (indices apply also to other attributes, not only color)
+    color__1: route background marking
+    color_0: path outline (i.e. track)
+    color: path fill
+    color_2: difficulty markup key (white box)
+    color_3: difficulty markup mtb scale
+    color_4: difficulty markup mtb uphill scale
+    color_5: difficulty markup sac scale
+    -->
 
-    <renderingConstant name="width_l2_z12" value="0.6"/>
-    <renderingConstant name="width_l2_z13" value="3"/>
-    <renderingConstant name="width_l2_z14" value="4"/>
-    <renderingConstant name="width_l2_z15" value="5"/>
-    <renderingConstant name="width_l2_z16" value="6"/>
-    <renderingConstant name="width_l2_z17" value="7"/>
-    <renderingConstant name="width_l2_z18" value="8"/>
-    <renderingConstant name="width_l2_z19" value="10"/>
-    <renderingConstant name="width_l2_z20" value="14"/>
-    <renderingConstant name="width_l2_z21" value="18"/>
+    <renderingConstant name="width_l1_z12" value="1"/>
+    <renderingConstant name="width_l1_z13" value="2"/>
+    <renderingConstant name="width_l1_z14" value="3"/>
+    <renderingConstant name="width_l1_z15" value="4"/>
+    <renderingConstant name="width_l1_z16" value="5"/>
+    <renderingConstant name="width_l1_z17" value="6"/>
+    <renderingConstant name="width_l1_z18" value="7"/>
+    <renderingConstant name="width_l1_z19" value="8"/>
+    <renderingConstant name="width_l1_z20" value="9"/>
+    <renderingConstant name="width_l1_z21" value="10"/>
+
+    <renderingConstant name="width_l2_z12" value="2"/>
+    <renderingConstant name="width_l2_z13" value="4"/>
+    <renderingConstant name="width_l2_z14" value="6"/>
+    <renderingConstant name="width_l2_z15" value="8"/>
+    <renderingConstant name="width_l2_z16" value="10"/>
+    <renderingConstant name="width_l2_z17" value="12"/>
+    <renderingConstant name="width_l2_z18" value="14"/>
+    <renderingConstant name="width_l2_z19" value="16"/>
+    <renderingConstant name="width_l2_z20" value="18"/>
+    <renderingConstant name="width_l2_z21" value="20"/>
 
     <renderingAttribute name="width_l1">
         <case maxzoom="12" strokeWidth="$width_l1_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l1_z13" strokeWidth_2="$width_l1_z13" strokeWidth_3="$width_l1_z13" strokeWidth_4="$width_l1_z13"/>
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l1_z14" strokeWidth_2="$width_l1_z14" strokeWidth_3="$width_l1_z14" strokeWidth_4="$width_l1_z14"/>
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l1_z15" strokeWidth_2="$width_l1_z15" strokeWidth_3="$width_l1_z15" strokeWidth_4="$width_l1_z15"/>
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l1_z16" strokeWidth_2="$width_l1_z16" strokeWidth_3="$width_l1_z16" strokeWidth_4="$width_l1_z16"/>
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l1_z17" strokeWidth_2="$width_l1_z17" strokeWidth_3="$width_l1_z17" strokeWidth_4="$width_l1_z17"/>
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l1_z18" strokeWidth_2="$width_l1_z18" strokeWidth_3="$width_l1_z18" strokeWidth_4="$width_l1_z18"/>
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l1_z19" strokeWidth_2="$width_l1_z19" strokeWidth_3="$width_l1_z19" strokeWidth_4="$width_l1_z19"/>
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l1_z20" strokeWidth_2="$width_l1_z20" strokeWidth_3="$width_l1_z20" strokeWidth_4="$width_l1_z20"/>
-        <case minzoom="21" strokeWidth="$width_l1_z21" strokeWidth_2="$width_l1_z21" strokeWidth_3="$width_l1_z21" strokeWidth_4="$width_l1_z21"/>
+        <case minzoom="13" maxzoom="13" strokeWidth="$width_l1_z13"/>
+        <case minzoom="14" maxzoom="14" strokeWidth="$width_l1_z14"/>
+        <case minzoom="15" maxzoom="15" strokeWidth="$width_l1_z15" strokeWidth_2="$width_l1_z15" strokeWidth_3="$width_l1_z15" strokeWidth_4="$width_l1_z15" strokeWidth_5="$width_l1_z15"/>
+        <case minzoom="16" maxzoom="16" strokeWidth="$width_l1_z16" strokeWidth_2="$width_l1_z16" strokeWidth_3="$width_l1_z16" strokeWidth_4="$width_l1_z16" strokeWidth_5="$width_l1_z16"/>
+        <case minzoom="17" maxzoom="17" strokeWidth="$width_l1_z17" strokeWidth_2="$width_l1_z17" strokeWidth_3="$width_l1_z17" strokeWidth_4="$width_l1_z17" strokeWidth_5="$width_l1_z17"/>
+        <case minzoom="18" maxzoom="18" strokeWidth="$width_l1_z18" strokeWidth_2="$width_l1_z18" strokeWidth_3="$width_l1_z18" strokeWidth_4="$width_l1_z18" strokeWidth_5="$width_l1_z18"/>
+        <case minzoom="19" maxzoom="19" strokeWidth="$width_l1_z19" strokeWidth_2="$width_l1_z19" strokeWidth_3="$width_l1_z19" strokeWidth_4="$width_l1_z19" strokeWidth_5="$width_l1_z19"/>
+        <case minzoom="20" maxzoom="20" strokeWidth="$width_l1_z20" strokeWidth_2="$width_l1_z20" strokeWidth_3="$width_l1_z20" strokeWidth_4="$width_l1_z20" strokeWidth_5="$width_l1_z20"/>
+        <case minzoom="21" strokeWidth="$width_l1_z21" strokeWidth_2="$width_l1_z21" strokeWidth_3="$width_l1_z21" strokeWidth_4="$width_l1_z21" strokeWidth_5="$width_l1_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l2">
@@ -47,71 +59,72 @@
         <case minzoom="21" strokeWidth_0="$width_l2_z21" />
     </renderingAttribute>
 
-    <renderingConstant name="pathEffect_unknown_z12" value="2.5_2.5_4_1"/>
-    <renderingConstant name="pathEffect_unknown_z13" value="12.5_12.5_20_5"/>
-    <renderingConstant name="pathEffect_unknown_z14" value="15_15_24_6"/>
-    <renderingConstant name="pathEffect_unknown_z15" value="20_20_32_8"/>
-    <renderingConstant name="pathEffect_unknown_z16" value="25_25_40_10"/>
-    <renderingConstant name="pathEffect_unknown_z17" value="27.5_17.5_44_11"/>
-    <renderingConstant name="pathEffect_unknown_z18" value="30_30_48_12"/>
-    <renderingConstant name="pathEffect_unknown_z19" value="40_40_64_16"/>
-    <renderingConstant name="pathEffect_unknown_z20" value="60_60_96_24"/>
-    <renderingConstant name="pathEffect_unknown_z21" value="75_75_120_30"/>
+    <!-- unknown=horrible+good-->
+    <renderingConstant name="pathEffect_unknown_z12" value="4_5_7_2"/>
+    <renderingConstant name="pathEffect_unknown_z13" value="8_10_14_4"/>
+    <renderingConstant name="pathEffect_unknown_z14" value="12_15_21_6"/>
+    <renderingConstant name="pathEffect_unknown_z15" value="16_20_28_8"/>
+    <renderingConstant name="pathEffect_unknown_z16" value="20_25_35_10"/>
+    <renderingConstant name="pathEffect_unknown_z17" value="24_30_42_12"/>
+    <renderingConstant name="pathEffect_unknown_z18" value="28_35_49_14"/>
+    <renderingConstant name="pathEffect_unknown_z19" value="32_40_56_16"/>
+    <renderingConstant name="pathEffect_unknown_z20" value="34_45_63_18"/>
+    <renderingConstant name="pathEffect_unknown_z21" value="38_50_70_20"/>
 
-    <renderingConstant name="pathEffect_good_z12" value="4_1"/>
-    <renderingConstant name="pathEffect_good_z13" value="20_5"/>
-    <renderingConstant name="pathEffect_good_z14" value="24_6"/>
-    <renderingConstant name="pathEffect_good_z15" value="32_8"/>
-    <renderingConstant name="pathEffect_good_z16" value="40_10"/>
-    <renderingConstant name="pathEffect_good_z17" value="44_11"/>
-    <renderingConstant name="pathEffect_good_z18" value="48_12"/>
-    <renderingConstant name="pathEffect_good_z19" value="64_16"/>
-    <renderingConstant name="pathEffect_good_z20" value="96_24"/>
-    <renderingConstant name="pathEffect_good_z21" value="120_30"/>
+    <renderingConstant name="pathEffect_good_z12" value="7_2"/>
+    <renderingConstant name="pathEffect_good_z13" value="14_4"/>
+    <renderingConstant name="pathEffect_good_z14" value="21_6"/>
+    <renderingConstant name="pathEffect_good_z15" value="28_8"/>
+    <renderingConstant name="pathEffect_good_z16" value="35_10"/>
+    <renderingConstant name="pathEffect_good_z17" value="42_12"/>
+    <renderingConstant name="pathEffect_good_z18" value="49_14"/>
+    <renderingConstant name="pathEffect_good_z19" value="56_16"/>
+    <renderingConstant name="pathEffect_good_z20" value="63_18"/>
+    <renderingConstant name="pathEffect_good_z21" value="70_20"/>
 
-    <renderingConstant name="pathEffect_intermediate_z12" value="3.5_1.5"/>
-    <renderingConstant name="pathEffect_intermediate_z13" value="17.5_7.5"/>
-    <renderingConstant name="pathEffect_intermediate_z14" value="21_9"/>
-    <renderingConstant name="pathEffect_intermediate_z15" value="28_12"/>
-    <renderingConstant name="pathEffect_intermediate_z16" value="35_15"/>
-    <renderingConstant name="pathEffect_intermediate_z17" value="38.5_16.5"/>
-    <renderingConstant name="pathEffect_intermediate_z18" value="42_18"/>
-    <renderingConstant name="pathEffect_intermediate_z19" value="56_24"/>
-    <renderingConstant name="pathEffect_intermediate_z20" value="84_36"/>
-    <renderingConstant name="pathEffect_intermediate_z21" value="105_45"/>
+    <renderingConstant name="pathEffect_intermediate_z12" value="6_3"/>
+    <renderingConstant name="pathEffect_intermediate_z13" value="12_6"/>
+    <renderingConstant name="pathEffect_intermediate_z14" value="18_9"/>
+    <renderingConstant name="pathEffect_intermediate_z15" value="24_12"/>
+    <renderingConstant name="pathEffect_intermediate_z16" value="30_15"/>
+    <renderingConstant name="pathEffect_intermediate_z17" value="36_18"/>
+    <renderingConstant name="pathEffect_intermediate_z18" value="42_21"/>
+    <renderingConstant name="pathEffect_intermediate_z19" value="48_24"/>
+    <renderingConstant name="pathEffect_intermediate_z20" value="54_27"/>
+    <renderingConstant name="pathEffect_intermediate_z21" value="60_30"/>
 
-    <renderingConstant name="pathEffect_bad_z12" value="3_2"/>
-    <renderingConstant name="pathEffect_bad_z13" value="15_10"/>
-    <renderingConstant name="pathEffect_bad_z14" value="18_12"/>
-    <renderingConstant name="pathEffect_bad_z15" value="24_16"/>
-    <renderingConstant name="pathEffect_bad_z16" value="30_20"/>
-    <renderingConstant name="pathEffect_bad_z17" value="33_22"/>
-    <renderingConstant name="pathEffect_bad_z18" value="36_24"/>
-    <renderingConstant name="pathEffect_bad_z19" value="48_32"/>
-    <renderingConstant name="pathEffect_bad_z20" value="72_48"/>
-    <renderingConstant name="pathEffect_bad_z21" value="90_60"/>
+    <renderingConstant name="pathEffect_bad_z12" value="5_4"/>
+    <renderingConstant name="pathEffect_bad_z13" value="10_8"/>
+    <renderingConstant name="pathEffect_bad_z14" value="15_12"/>
+    <renderingConstant name="pathEffect_bad_z15" value="20_16"/>
+    <renderingConstant name="pathEffect_bad_z16" value="25_20"/>
+    <renderingConstant name="pathEffect_bad_z17" value="30_24"/>
+    <renderingConstant name="pathEffect_bad_z18" value="35_28"/>
+    <renderingConstant name="pathEffect_bad_z19" value="40_32"/>
+    <renderingConstant name="pathEffect_bad_z20" value="45_36"/>
+    <renderingConstant name="pathEffect_bad_z21" value="50_40"/>
 
-    <renderingConstant name="pathEffect_horrible_z12" value="2.5_2.5"/>
-    <renderingConstant name="pathEffect_horrible_z13" value="12.5_12.5"/>
-    <renderingConstant name="pathEffect_horrible_z14" value="15_15"/>
-    <renderingConstant name="pathEffect_horrible_z15" value="20_20"/>
-    <renderingConstant name="pathEffect_horrible_z16" value="25_25"/>
-    <renderingConstant name="pathEffect_horrible_z17" value="27.5_17.5"/>
-    <renderingConstant name="pathEffect_horrible_z18" value="30_30"/>
-    <renderingConstant name="pathEffect_horrible_z19" value="40_40"/>
-    <renderingConstant name="pathEffect_horrible_z20" value="60_60"/>
-    <renderingConstant name="pathEffect_horrible_z21" value="75_75"/>
+    <renderingConstant name="pathEffect_horrible_z12" value="4_5"/>
+    <renderingConstant name="pathEffect_horrible_z13" value="8_10"/>
+    <renderingConstant name="pathEffect_horrible_z14" value="12_15"/>
+    <renderingConstant name="pathEffect_horrible_z15" value="16_20"/>
+    <renderingConstant name="pathEffect_horrible_z16" value="20_25"/>
+    <renderingConstant name="pathEffect_horrible_z17" value="24_30"/>
+    <renderingConstant name="pathEffect_horrible_z18" value="28_35"/>
+    <renderingConstant name="pathEffect_horrible_z19" value="32_40"/>
+    <renderingConstant name="pathEffect_horrible_z20" value="36_45"/>
+    <renderingConstant name="pathEffect_horrible_z21" value="40_50"/>
 
-    <renderingConstant name="pathEffect_no_z12" value="1.5_3.5"/>
-    <renderingConstant name="pathEffect_no_z13" value="7.5_17.5"/>
-    <renderingConstant name="pathEffect_no_z14" value="9_21"/>
-    <renderingConstant name="pathEffect_no_z15" value="12_28"/>
-    <renderingConstant name="pathEffect_no_z16" value="15_35"/>
-    <renderingConstant name="pathEffect_no_z17" value="16.5_38.5"/>
-    <renderingConstant name="pathEffect_no_z18" value="18_42"/>
-    <renderingConstant name="pathEffect_no_z19" value="24_56"/>
-    <renderingConstant name="pathEffect_no_z20" value="36_84"/>
-    <renderingConstant name="pathEffect_no_z21" value="45_105"/>
+    <renderingConstant name="pathEffect_no_z12" value="3_6"/>
+    <renderingConstant name="pathEffect_no_z13" value="6_12"/>
+    <renderingConstant name="pathEffect_no_z14" value="9_18"/>
+    <renderingConstant name="pathEffect_no_z15" value="12_24"/>
+    <renderingConstant name="pathEffect_no_z16" value="15_30"/>
+    <renderingConstant name="pathEffect_no_z17" value="18_36"/>
+    <renderingConstant name="pathEffect_no_z18" value="21_42"/>
+    <renderingConstant name="pathEffect_no_z19" value="24_48"/>
+    <renderingConstant name="pathEffect_no_z20" value="27_54"/>
+    <renderingConstant name="pathEffect_no_z21" value="30_60"/>
 
     <renderingAttribute name="pathEffect_unknown">
         <case maxzoom="12" pathEffect_0="$pathEffect_unknown_z12" pathEffect="$pathEffect_unknown_z12" />
@@ -192,16 +205,13 @@
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_markup">
-        <case maxzoom="12" pathEffect_2="0.5_4.5"/>
-        <case minzoom="13" maxzoom="13" pathEffect_2="2.5_22.5" pathEffect_3="0_2.5_2.5_20" pathEffect_4="0_5_2.5_17.5"/>
-        <case minzoom="14" maxzoom="14" pathEffect_2="3_27" pathEffect_3="0_3_3_24" pathEffect_4="0_6_3_21"/>
-        <case minzoom="15" maxzoom="15" pathEffect_2="4_36" pathEffect_3="0_4_4_32" pathEffect_4="0_8_4_28"/>
-        <case minzoom="16" maxzoom="16" pathEffect_2="5_45" pathEffect_3="0_5_5_40" pathEffect_4="0_10_5_35"/>
-        <case minzoom="17" maxzoom="17" pathEffect_2="5.5_49.5" pathEffect_3="0_5.5_5.5_44" pathEffect_4="0_11_5.5_38.5"/>
-        <case minzoom="18" maxzoom="18" pathEffect_2="6_54" pathEffect_3="0_6_6_48" pathEffect_4="0_12_6_42"/>
-        <case minzoom="19" maxzoom="19" pathEffect_2="8_72" pathEffect_3="0_8_8_96" pathEffect_4="0_16_8_88"/>
-        <case minzoom="20" maxzoom="20" pathEffect_2="12_108" pathEffect_3="0_12_12_96" pathEffect_4="0_24_12_84"/>
-        <case minzoom="21" pathEffect_2="15_135" pathEffect_3="0_15_15_120" pathEffect_4="0_30_15_105" />
+        <case minzoom="15" maxzoom="15" pathEffect_2="4_32" pathEffect_3="0_4_4_28" pathEffect_4="0_8_4_24" pathEffect_5="0_12_4_20"/>
+        <case minzoom="16" maxzoom="16" pathEffect_2="5_40" pathEffect_3="0_5_5_35" pathEffect_4="0_10_5_30" pathEffect_5="0_15_5_25"/>
+        <case minzoom="17" maxzoom="17" pathEffect_2="6_48" pathEffect_3="0_6_6_42" pathEffect_4="0_12_6_36" pathEffect_5="0_18_6_30"/>
+        <case minzoom="18" maxzoom="18" pathEffect_2="7_56" pathEffect_3="0_7_7_49" pathEffect_4="0_14_7_42" pathEffect_5="0_21_7_35"/>
+        <case minzoom="19" maxzoom="19" pathEffect_2="8_64" pathEffect_3="0_8_8_56" pathEffect_4="0_16_8_48" pathEffect_5="0_24_8_40"/>
+        <case minzoom="20" maxzoom="20" pathEffect_2="9_72" pathEffect_3="0_9_9_63" pathEffect_4="0_18_9_54" pathEffect_5="0_27_9_45"/>
+        <case minzoom="21" pathEffect_2="10_80" pathEffect_3="0_10_10_70" pathEffect_4="0_20_10_60" pathEffect_5="0_30_10_50"/>
     </renderingAttribute>
 
     <renderingConstant name="c_track_outer" value="#925D3A"/>
@@ -252,7 +262,7 @@
                 </switch>
                 <apply strokeWidth_0="$width_l2" />
             </case>
-            <case tag="highway" value="path" color="$c_track_outer">
+            <case tag="highway" value="path" color="$c_track_outer" cap="ROUND">
                 <switch>
                     <case additional="visibility=excellent"/>
                     <case additional="visibility=good" pathEffect="$pathEffect_good"/>
@@ -263,39 +273,44 @@
                     <case pathEffect="$pathEffect_unknown" />
                 </switch>
             </case>
-            <apply pathEffect_2="$pathEffect_markup">
-                <switch>
-                    <case additional="mtb:scale=0" color_2="$c_diff_0"/>
-                    <case additional="mtb:scale=1" color_2="$c_diff_1"/>
-                    <case additional="mtb:scale=2" color_2="$c_diff_2"/>
-                    <case additional="mtb:scale=3" color_2="$c_diff_3"/>
-                    <case additional="mtb:scale=4" color_2="$c_diff_4"/>
-                    <case additional="mtb:scale=5" color_2="$c_diff_4"/>
-                    <case additional="mtb:scale=6" color_2="$c_diff_4"/>
-                </switch>
-            </apply>
             <apply pathEffect_3="$pathEffect_markup">
                 <switch>
-                    <case additional="mtb:scale:uphill=0" color_3="$c_diff_0"/>
-                    <case additional="mtb:scale:uphill=1" color_3="$c_diff_1"/>
-                    <case additional="mtb:scale:uphill=2" color_3="$c_diff_2"/>
-                    <case additional="mtb:scale:uphill=3" color_3="$c_diff_3"/>
-                    <case additional="mtb:scale:uphill=4" color_3="$c_diff_4"/>
-                    <case additional="mtb:scale:uphill=5" color_3="$c_diff_4"/>
+                    <case additional="mtb:scale=0" color_3="$c_diff_0"/>
+                    <case additional="mtb:scale=1" color_3="$c_diff_1"/>
+                    <case additional="mtb:scale=2" color_3="$c_diff_2"/>
+                    <case additional="mtb:scale=3" color_3="$c_diff_3"/>
+                    <case additional="mtb:scale=4" color_3="$c_diff_4"/>
+                    <case additional="mtb:scale=5" color_3="$c_diff_4"/>
+                    <case additional="mtb:scale=6" color_3="$c_diff_4"/>
+                    <apply color_2="#FFFFFF"/>
                 </switch>
             </apply>
             <apply pathEffect_4="$pathEffect_markup">
                 <switch>
-                    <case additional="sac_scale=hiking" color_4="$c_diff_0"/>
-                    <case additional="sac_scale=mountain_hiking" color_4="$c_diff_1"/>
-                    <case additional="sac_scale=demanding_mountain_hiking" color_4="$c_diff_2"/>
-                    <case additional="sac_scale=alpine_hiking" color_4="$c_diff_3"/>
-                    <case additional="sac_scale=demanding_alpine_hiking" color_4="$c_diff_4"/>
-                    <case additional="sac_scale=difficult_alpine_hiking" color_4="$c_diff_4"/>
+                    <case additional="mtb:scale:uphill=0" color_4="$c_diff_0"/>
+                    <case additional="mtb:scale:uphill=1" color_4="$c_diff_1"/>
+                    <case additional="mtb:scale:uphill=2" color_4="$c_diff_2"/>
+                    <case additional="mtb:scale:uphill=3" color_4="$c_diff_3"/>
+                    <case additional="mtb:scale:uphill=4" color_4="$c_diff_4"/>
+                    <case additional="mtb:scale:uphill=5" color_4="$c_diff_4"/>
+                    <apply color_2="#FFFFFF"/>
+
+                </switch>
+            </apply>
+            <apply pathEffect_5="$pathEffect_markup">
+                <switch>
+                    <case additional="sac_scale=hiking" color_5="$c_diff_0"/>
+                    <case additional="sac_scale=mountain_hiking" color_5="$c_diff_1"/>
+                    <case additional="sac_scale=demanding_mountain_hiking" color_5="$c_diff_2"/>
+                    <case additional="sac_scale=alpine_hiking" color_5="$c_diff_3"/>
+                    <case additional="sac_scale=demanding_alpine_hiking" color_5="$c_diff_4"/>
+                    <case additional="sac_scale=difficult_alpine_hiking" color_5="$c_diff_4"/>
+                    <apply color_2="#FFFFFF"/>
+
                 </switch>
             </apply>
             <!-- width_l1 also sets width for markups-->
-            <apply strokeWidth="$width_l1" cap="ROUND"/>
+            <apply strokeWidth="$width_l1"/>
         </switch>
     </line>
 </renderingStyle>
