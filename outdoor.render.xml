@@ -372,6 +372,17 @@
     <renderingConstant name="c_rail_light" value="#FFFFFF"/>
 
     <renderingConstant name="c_water" value="#4C9DFF"/>
+    <renderingConstant name="c_wood" value="#A5DBAA"/>
+    <renderingConstant name="c_fresh_green" value="#CCFFCC"/>
+    <renderingConstant name="c_dry_green" value="#EEEC77"/>
+    <renderingConstant name="c_rock_dark" value="#AAAAAA"/>
+    <renderingConstant name="c_rock_light" value="#DDDDDD"/>
+    <renderingConstant name="c_sand" value="#FFFFAA"/>
+    <renderingConstant name="c_industrial" value="#FFCCFF"/>
+    <renderingConstant name="c_residential" value="#EEDDDD"/>
+    <renderingConstant name="c_building" value="#BBAAAA"/>
+
+
 
     <order>
         <!-- 
@@ -443,7 +454,27 @@
                 </switch>
             </switch>
             <switch cycle="true" point="false" objectType="3" addPoint="true">
+                <case tag="landuse" value="residential" order="20"/>
+                <case tag="landuse" value="commercial" order="20"/>
+                <case tag="landuse" value="industrial" order="20"/>
+                <case tag="landuse" value="retail" order="20"/>
+                <case tag="landuse" value="cemetery" order="25"/>
+                <case tag="natural" value="bare_rock" order="31"/>
+                <case tag="natural" value="scree" order="31"/>
+                <case tag="natural" value="shingle" order="31"/>
                 <case tag="natural" value="water" order="32"/>
+                <case tag="natural" value="wood" order="33"/>
+                <case tag="landuse" value="forest" order="33"/>
+                <case tag="natural" value="scrub" order="33"/>
+                <case tag="natural" value="heath" order="33"/>
+                <case tag="natural" value="grassland" order="33"/>
+                <case tag="landuse" value="meadow" order="33"/>
+                <case tag="landuse" value="grass" order="33"/>
+                <case tag="natural" value="fell" order="33"/>
+                <case tag="natural" value="beach" order="33"/>
+                <case tag="natural" value="sand" order="33"/>
+                <case tag="natural" value="wetland" order="33"/>
+                <case tag="building" value="" order="40" minzoom="15"/>
             </switch>
         </switch>
     </order>
@@ -578,7 +609,56 @@
     </line>
     <polygon>
         <switch>
+            <case tag="landuse" value="residential" color="$c_residential"/>
+            <switch>
+                <case tag="landuse" value="commercial"/>
+                <case tag="landuse" value="industrial"/>
+                <case tag="landuse" value="retail"/>
+                <apply color="$c_industrial"/>
+            </switch>
+            <case tag="landuse" value="cemetery" shader = "topo_cemetery"/>
+            <case tag="natural" value="bare_rock" color="$c_rock_light" color_0="$c_rock_light" shader="topo_bare_rock2"/>
+            <switch>
+                <case tag="natural" value="scree"/>
+                <case tag="natural" value="shingle"/>
+                <apply color="$c_rock_light" color_0="c_rock_light" shader="shingle"/>
+            </switch>
             <case tag="natural" value="water" color="$c_water" />
+            <switch color="$c_wood">
+                <case tag="natural" value="wood" />
+                <case tag="landuse" value="forest"/>
+                <apply minzoom="14">
+                    <switch>
+                        <case additional="leaf_type=needleleaved" shader="topo_wood_needleleaved"/>
+                        <case additional="leaf_type=broadleaved" shader="topo_wood_broadleaved"/>
+                        <case additional="leaf_type=mixed" shader="topo_wood_mixed"/>
+                        <case shader="topo_wood_mixed"/>
+                        <apply color_0="$c_wood"/>
+                    </switch>
+                </apply>
+            </switch>
+            <case tag="natural" value="scrub" color="$c_wood" color_0="$c_dry_green" shader="topo_scrub"/>
+            <case tag="natural" value="heath" color="$c_wood" color_0="$c_dry_green" shader="topo_heath"/>
+            <case tag="natural" value="grassland" color="$c_fresh_green" color_0="$c_dry_green" shader="topo_grassland"/>
+            <case tag="landuse" value="meadow" color="$c_fresh_green" color_0="$c_fresh_green" shader="topo_grassland"/>
+            <case tag="landuse" value="grass" color="$c_fresh_green"/>
+            <case tag="natural" value="fell" color="$c_fresh_green" color_0="$c_dry_green" shader="topo_heath"/>
+            <switch>
+                <case tag="natural" value="beach"/>
+                <case tag="natural" value="sand"/>
+                <apply color="$c_sand" color_0="$c_sand" shader="topo_bare_rock2"/>
+            </switch>
+            <case tag="natural" value="wetland" shader="wetland">
+                <case additional="wetland=bog" shader="wetland_bog"/>
+                <case additional="wetland=marsh" shader="wetland_marsh"/>
+                <case additional="wetland=reedbed" shader="wetland_reedbed"/>
+                <case additional="wetland=swamp" shader="wetland_swamp"/>
+                <case additional="wetland=tidalflat" shader="wetland_tidalflat"/>
+                <case additional="wetland=mangrove" shader="wetland_mangrove"/>
+                <case additional="wetland=saltmarsh" shader="wetland_saltmarsh"/>
+                <case additional="wetland=wet_meadow" shader="wetland_wet_meadow"/>
+            </case>
+            <case tag="building" value="" color="$c_building"/>
         </switch>
     </polygon>
 </renderingStyle>
