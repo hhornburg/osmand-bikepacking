@@ -338,6 +338,19 @@
         <case minzoom="21" pathEffect_2="10_80" pathEffect_3="0_10_10_70" pathEffect_4="0_20_10_60" pathEffect_5="0_30_10_50"/>
     </renderingAttribute>
 
+    <renderingAttribute name="pathEffect_5050">
+        <case maxzoom="12" pathEffect="5_5" />
+        <case minzoom="13" maxzoom="13" pathEffect="10_10" />
+        <case minzoom="14" maxzoom="14" pathEffect="15_15" />
+        <case minzoom="15" maxzoom="15" pathEffect="20_20" />
+        <case minzoom="16" maxzoom="16" pathEffect="25_25" />
+        <case minzoom="17" maxzoom="17" pathEffect="30_30" />
+        <case minzoom="18" maxzoom="18" pathEffect="35_35" />
+        <case minzoom="19" maxzoom="19" pathEffect="40_40" />
+        <case minzoom="20" maxzoom="20" pathEffect="45_45" />
+        <case minzoom="21" pathEffect="50_50" />
+    </renderingAttribute>
+
     <renderingConstant name="c_track_outer" value="#925D3A"/>
     <renderingConstant name="c_track_inner" value="#B3A18F"/>
     <renderingConstant name="c_cycle_outer" value="#2C5DF2"/>
@@ -355,6 +368,10 @@
     <renderingConstant name="c_diff_3" value="#000000"/>
     <renderingConstant name="c_diff_4" value="#FF00FF"/>
 
+    <renderingConstant name="c_rail_dark" value="#303030"/>
+    <renderingConstant name="c_rail_light" value="#FFFFFF"/>
+
+
     <order>
         <!-- 
         Backgrounds: 1-64: default 32
@@ -369,6 +386,14 @@
         -->
         <switch>
             <switch area="false" point="false" objectType="2">
+                <switch order="125">
+                    <case tag="railway" value="rail" />
+                    <apply additional="layer=-2" order="75"/>
+                    <apply layer="-1" order="100"/>
+                    <apply layer="1" order="150"/>
+                    <apply additional="layer=2" order="175"/>
+                    <apply additional="layer=3" order="200"/>
+                </switch>
                 <switch order="126">
                     <case tag="highway" value="motorway"/>
                     <case tag="highway" value="motorway_link"/>
@@ -408,115 +433,122 @@
     </order>
     <line>
         <switch>
+            <!-- Individual modes of transport-->
             <switch>
-                <case tag="highway" value="motorway"/>
-                <case tag="highway" value="motorway_link"/>
-                <apply color="$c_fastroad" color_0="$c_motorway_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5_0"/>
-            </switch>
-            <switch>
-                <case tag="highway" value="trunk"/>
-                <case tag="highway" value="trunk_link"/>
-                <apply color="$c_fastroad" color_0="$c_road_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5_0"/>
-            </switch>
-            <switch>
-                <case tag="highway" value="primary"/>
-                <case tag="highway" value="primary_link"/>
-                <apply color="$c_primary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4_0"/>
-            </switch>
-            <switch>
-                <case tag="highway" value="secondary"/>
-                <case tag="highway" value="secondary_link"/>
-                <apply color="$c_secondary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4_0"/>
-            </switch>
-            <switch>
-                <case tag="highway" value="tertiary"/>
-                <case tag="highway" value="tertiary_link"/>
-                <apply color="$c_tertiary" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0"/>
-            </switch>
-            <switch>
-                <case tag="highway" value="residential"/>
-                <case tag="highway" value="unclassified"/>
-                <case tag="highway" value="living_street"/>
-                <case tag="highway" value="service"/>
-                <case tag="highway" value="road"/>
-                <apply color="c_smallroad" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0"/>
-            </switch>
-            <case tag="highway" value="cycleway" color="c_smallroad" color_0="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2_0"/>
-            <case tag="highway" value="track" color="$c_track_inner" color_0="$c_track_outer">
-                <apply>
-                    <switch>
-                        <case additional="tracktype=grade1"/>
-                        <case additional="tracktype=grade2" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
-                        <case additional="tracktype=grade3" pathEffect_0="$pathEffect_intermediate" pathEffect="$pathEffect_intermediate"/>
-                        <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
-                        <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
-                        <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown" />
-                    </switch>
-                </apply>
-                <apply>
-                    <switch>
-                        <case additional="surface=asphalt"/>
-                        <case additional="surface=concrete"/>
-                        <case additional="surface=paved"/>
-                        <apply color="$c_smallroad"/>
-                    </switch>
-                </apply>
-                <apply strokeWidth_0="$width_l2_0" />
-                <apply strokeWidth="$width_l1"/>
-            </case>
-            <switch>
-                <case tag="highway" value="path"/>
-                <case tag="highway" value="footway"/>
-                <case tag="highway" value="bridleway"/>
-                <apply color="$c_track_outer" strokeWidth="$width_l1" cap="ROUND"/>
-                <apply>
-                    <switch>
-                        <case additional="visibility=excellent"/>
-                        <case additional="visibility=good" pathEffect="$pathEffect_good"/>
-                        <case additional="visibility=intermediate" pathEffect="$pathEffect_intermediate"/>
-                        <case additional="visibility=bad" pathEffect="$pathEffect_bad"/>
-                        <case additional="visibility=horrible" pathEffect="$pathEffect_horrible"/>
-                        <case additional="visibility=no" pathEffect="$pathEffect_no" />
-                        <case pathEffect="$pathEffect_unknown" />
-                    </switch>
-                </apply>
-            </switch>
-            <apply pathEffect_3="$pathEffect_markup">
                 <switch>
-                    <case additional="mtb:scale=0" color_3="$c_diff_0"/>
-                    <case additional="mtb:scale=1" color_3="$c_diff_1"/>
-                    <case additional="mtb:scale=2" color_3="$c_diff_2"/>
-                    <case additional="mtb:scale=3" color_3="$c_diff_3"/>
-                    <case additional="mtb:scale=4" color_3="$c_diff_4"/>
-                    <case additional="mtb:scale=5" color_3="$c_diff_4"/>
-                    <case additional="mtb:scale=6" color_3="$c_diff_4"/>
-                    <apply color_2="#FFFFFF"/>
+                    <case tag="highway" value="motorway"/>
+                    <case tag="highway" value="motorway_link"/>
+                    <apply color="$c_fastroad" color_0="$c_motorway_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5_0"/>
                 </switch>
-            </apply>
-            <apply pathEffect_4="$pathEffect_markup">
                 <switch>
-                    <case additional="mtb:scale:uphill=0" color_4="$c_diff_0"/>
-                    <case additional="mtb:scale:uphill=1" color_4="$c_diff_1"/>
-                    <case additional="mtb:scale:uphill=2" color_4="$c_diff_2"/>
-                    <case additional="mtb:scale:uphill=3" color_4="$c_diff_3"/>
-                    <case additional="mtb:scale:uphill=4" color_4="$c_diff_4"/>
-                    <case additional="mtb:scale:uphill=5" color_4="$c_diff_4"/>
-                    <apply color_2="#FFFFFF"/>
+                    <case tag="highway" value="trunk"/>
+                    <case tag="highway" value="trunk_link"/>
+                    <apply color="$c_fastroad" color_0="$c_road_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5_0"/>
+                </switch>
+                <switch>
+                    <case tag="highway" value="primary"/>
+                    <case tag="highway" value="primary_link"/>
+                    <apply color="$c_primary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4_0"/>
+                </switch>
+                <switch>
+                    <case tag="highway" value="secondary"/>
+                    <case tag="highway" value="secondary_link"/>
+                    <apply color="$c_secondary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4_0"/>
+                </switch>
+                <switch>
+                    <case tag="highway" value="tertiary"/>
+                    <case tag="highway" value="tertiary_link"/>
+                    <apply color="$c_tertiary" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0"/>
+                </switch>
+                <switch>
+                    <case tag="highway" value="residential"/>
+                    <case tag="highway" value="unclassified"/>
+                    <case tag="highway" value="living_street"/>
+                    <case tag="highway" value="service"/>
+                    <case tag="highway" value="road"/>
+                    <apply color="c_smallroad" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0"/>
+                </switch>
+                <case tag="highway" value="cycleway" color="c_smallroad" color_0="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2_0"/>
+                <case tag="highway" value="track" color="$c_track_inner" color_0="$c_track_outer">
+                    <apply>
+                        <switch>
+                            <case additional="tracktype=grade1"/>
+                            <case additional="tracktype=grade2" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
+                            <case additional="tracktype=grade3" pathEffect_0="$pathEffect_intermediate" pathEffect="$pathEffect_intermediate"/>
+                            <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
+                            <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
+                            <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown" />
+                        </switch>
+                    </apply>
+                    <apply>
+                        <switch>
+                            <case additional="surface=asphalt"/>
+                            <case additional="surface=concrete"/>
+                            <case additional="surface=paved"/>
+                            <apply color="$c_smallroad"/>
+                        </switch>
+                    </apply>
+                    <apply strokeWidth_0="$width_l2_0" />
+                    <apply strokeWidth="$width_l1"/>
+                </case>
+                <switch>
+                    <case tag="highway" value="path"/>
+                    <case tag="highway" value="footway"/>
+                    <case tag="highway" value="bridleway"/>
+                    <apply color="$c_track_outer" strokeWidth="$width_l1" cap="ROUND"/>
+                    <apply>
+                        <switch>
+                            <case additional="visibility=excellent"/>
+                            <case additional="visibility=good" pathEffect="$pathEffect_good"/>
+                            <case additional="visibility=intermediate" pathEffect="$pathEffect_intermediate"/>
+                            <case additional="visibility=bad" pathEffect="$pathEffect_bad"/>
+                            <case additional="visibility=horrible" pathEffect="$pathEffect_horrible"/>
+                            <case additional="visibility=no" pathEffect="$pathEffect_no" />
+                            <case pathEffect="$pathEffect_unknown" />
+                        </switch>
+                    </apply>
+                </switch>
+                <apply pathEffect_3="$pathEffect_markup">
+                    <switch>
+                        <case additional="mtb:scale=0" color_3="$c_diff_0"/>
+                        <case additional="mtb:scale=1" color_3="$c_diff_1"/>
+                        <case additional="mtb:scale=2" color_3="$c_diff_2"/>
+                        <case additional="mtb:scale=3" color_3="$c_diff_3"/>
+                        <case additional="mtb:scale=4" color_3="$c_diff_4"/>
+                        <case additional="mtb:scale=5" color_3="$c_diff_4"/>
+                        <case additional="mtb:scale=6" color_3="$c_diff_4"/>
+                        <apply color_2="#FFFFFF"/>
+                    </switch>
+                </apply>
+                <apply pathEffect_4="$pathEffect_markup">
+                    <switch>
+                        <case additional="mtb:scale:uphill=0" color_4="$c_diff_0"/>
+                        <case additional="mtb:scale:uphill=1" color_4="$c_diff_1"/>
+                        <case additional="mtb:scale:uphill=2" color_4="$c_diff_2"/>
+                        <case additional="mtb:scale:uphill=3" color_4="$c_diff_3"/>
+                        <case additional="mtb:scale:uphill=4" color_4="$c_diff_4"/>
+                        <case additional="mtb:scale:uphill=5" color_4="$c_diff_4"/>
+                        <apply color_2="#FFFFFF"/>
 
-                </switch>
-            </apply>
-            <apply pathEffect_5="$pathEffect_markup">
-                <switch>
-                    <case additional="sac_scale=hiking" color_5="$c_diff_0"/>
-                    <case additional="sac_scale=mountain_hiking" color_5="$c_diff_1"/>
-                    <case additional="sac_scale=demanding_mountain_hiking" color_5="$c_diff_2"/>
-                    <case additional="sac_scale=alpine_hiking" color_5="$c_diff_3"/>
-                    <case additional="sac_scale=demanding_alpine_hiking" color_5="$c_diff_4"/>
-                    <case additional="sac_scale=difficult_alpine_hiking" color_5="$c_diff_4"/>
-                    <apply color_2="#FFFFFF"/>
+                    </switch>
+                </apply>
+                <apply pathEffect_5="$pathEffect_markup">
+                    <switch>
+                        <case additional="sac_scale=hiking" color_5="$c_diff_0"/>
+                        <case additional="sac_scale=mountain_hiking" color_5="$c_diff_1"/>
+                        <case additional="sac_scale=demanding_mountain_hiking" color_5="$c_diff_2"/>
+                        <case additional="sac_scale=alpine_hiking" color_5="$c_diff_3"/>
+                        <case additional="sac_scale=demanding_alpine_hiking" color_5="$c_diff_4"/>
+                        <case additional="sac_scale=difficult_alpine_hiking" color_5="$c_diff_4"/>
+                        <apply color_2="#FFFFFF"/>
 
-                </switch>
-            </apply>
+                    </switch>
+                </apply>
+            </switch>
+            <!-- Public transport-->
+            <switch>
+                <case tag="railway" value="rail" color="$c_rail_light" color_0="$c_rail_dark" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0" pathEffect="$pathEffect_5050" />
+            </switch>
         </switch>
     </line>
 </renderingStyle>
