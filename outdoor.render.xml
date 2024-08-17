@@ -371,6 +371,7 @@
     <renderingConstant name="c_rail_dark" value="#303030"/>
     <renderingConstant name="c_rail_light" value="#FFFFFF"/>
 
+    <renderingConstant name="c_water" value="#4C9DFF"/>
 
     <order>
         <!-- 
@@ -386,6 +387,18 @@
         -->
         <switch>
             <switch area="false" point="false" objectType="2">
+                <switch order="120">
+                    <case tag="waterway" value="ditch" minzoom="15"/>
+                    <case tag="waterway" value="drain" minzoom="15"/>
+                    <case tag="waterway" value="stream" minzoom="13"/>
+                    <case tag="waterway" value="canal" />
+                    <case tag="waterway" value="river" />
+                    <apply additional="layer=-2" order="70"/>
+                    <apply layer="-1" order="95"/>
+                    <apply layer="1" order="145"/>
+                    <apply additional="layer=2" order="170"/>
+                    <apply additional="layer=3" order="195"/>
+                </switch>
                 <switch order="125">
                     <case tag="railway" value="rail" />
                     <apply additional="layer=-2" order="75"/>
@@ -428,6 +441,9 @@
                     <apply additional="layer=2" order="177"/>
                     <apply additional="layer=3" order="202"/>
                 </switch>
+            </switch>
+            <switch cycle="true" point="false" objectType="3" addPoint="true">
+                <case tag="natural" value="water" order="32"/>
             </switch>
         </switch>
     </order>
@@ -549,6 +565,20 @@
             <switch>
                 <case tag="railway" value="rail" color="$c_rail_light" color_0="$c_rail_dark" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0" pathEffect="$pathEffect_5050" />
             </switch>
+            <!-- Natural features-->
+            <switch color="$c_water" cap="ROUND">
+                <case tag="waterway" value="ditch" strokeWidth="$width_l1"/>
+                <case tag="waterway" value="drain" strokeWidth="$width_l1"/>
+                <case tag="waterway" value="stream" strokeWidth="$width_l1"/>
+                <case tag="waterway" value="canal" strokeWidth="$width_l2" color_0="$c_road_outer" strokeWidth_0="$width_l3"/>
+                <case tag="waterway" value="river" strokeWidth="$width_l3"/>
+                <apply additional="intermittent=yes" pathEffect="$pathEffect_5050"/>
+            </switch>
         </switch>
     </line>
+    <polygon>
+        <switch>
+            <case tag="natural" value="water" color="$c_water" />
+        </switch>
+    </polygon>
 </renderingStyle>
