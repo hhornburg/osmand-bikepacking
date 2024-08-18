@@ -1,4 +1,9 @@
-<renderingStyle name="Outdoor" depends="" defaultColor="#ffffff" version="1">
+<!-- 
+ Bikepacking Map Style for OsmAnd by Henri Hornburg
+
+ This map style is licensed under is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+ -->
+<renderingStyle name="Bikepacking" depends="" defaultColor="#ffffff" version="1">
     <!-- 
     Concept of the paths:
     (indices apply also to other attributes, not only color)
