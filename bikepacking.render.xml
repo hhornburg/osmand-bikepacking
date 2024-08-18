@@ -639,10 +639,10 @@
                     <case tag="highway" value="living_street"/>
                     <case tag="highway" value="service"/>
                     <case tag="highway" value="road"/>
-                    <apply color="c_smallroad" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3"/>
+                    <apply color="$c_smallroad" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3"/>
                     <apply additional="tunnel=yes" color="$c_smallroad_light" color_0="$c_road_outer_light"/>
                 </switch>
-                <case tag="highway" value="cycleway" color="c_smallroad" color_0="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2">
+                <case tag="highway" value="cycleway" color="$c_smallroad" color_0="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2">
                     <apply additional="tunnel=yes" color="$c_smallroad_light" color_0="$c_cycle_outer_light"/>
                 </case>
                 <case tag="highway" value="track" color="$c_track_inner" color_0="$c_track_outer">
@@ -757,7 +757,7 @@
             <switch>
                 <case tag="natural" value="scree"/>
                 <case tag="natural" value="shingle"/>
-                <apply color="$c_rock_light" color_0="c_rock_light" shader="shingle"/>
+                <apply color="$c_rock_light" color_0="$c_rock_light" shader="shingle"/>
             </switch>
             <case tag="natural" value="water" color="$c_water" />
             <switch color="$c_wood">
