@@ -5,7 +5,14 @@
  -->
 <renderingStyle name="Bikepacking" depends="" defaultColor="#ffffff" version="1">
 
-    <renderingProperty attr="contourLines" name="Show contour lines" description="Select density of contour lines displayed" type="string" possibleValues="off, low,medium,high" defaultValueDescription="medium" category="details"/>
+    <!-- sticking with the original rendering properties, since they are there anyways and their options can't be overridden-->
+    <renderingProperty attr="appMode" name="Rendering mode" description="Map optimization for respective User Profile" type="string" possibleValues="browse map,car,bicycle,pedestrian"/>
+    <renderingProperty attr="baseAppMode" name="Default Rendering mode" description="Map optimization for respective User Profile based on base (parent) profile" type="string" possibleValues="default, car, bicycle, pedestrian, public_transport, boat, ski"/>
+    <renderingProperty attr="contourLines" name="Show contour lines" description="Select minimum zoom level to display in map if available. Separate contour file may be needed." type="string" possibleValues="disabled,16,15,14,13,12,11" defaultValueDescription="default13" category="details"/>
+    <renderingProperty attr="contourColorScheme" name="Contour lines color scheme" description="Contour lines color scheme" type="string" possibleValues="white,yellow,green,light_brown,brown,dark_brown,dark_orange,red,purple" defaultValueDescription="default"/>
+    <renderingProperty attr="contourWidth" name="Contour lines width" description="Contour lines width" type="string" possibleValues="thin,medium,thick" defaultValueDescription="default"/>
+    <renderingProperty attr="contourDensity" name="Contour lines density" description="Contour lines density" type="string" possibleValues="low,medium_w,high" defaultValueDescription="default"/>
+
 
 
     <!-- 
@@ -434,8 +441,7 @@
         <switch>
             <switch area="false" point="false" objectType="2">
                 <case tag="contour" value="elevation" order="65">
-                    <case contourLines="off" order="-1"/>
-                    <case contourLines="low">
+                    <case contourDensity="low">
                         <case additional="contourtype=5m" order="-1"/>
                         <case additional="contourtype=10m" order="-1"/>
                         <case additional="contourtype=20m" minzoom="20"/>
@@ -444,7 +450,7 @@
                         <case additional="contourtype=200m" minzoom="14"/>
                         <case additional="contourtype=1000m" minzoom="12"/>
                     </case>
-                    <case contourLines="medium">
+                    <case contourDensity="medium_w">
                         <case additional="contourtype=5m" order="-1"/>
                         <case additional="contourtype=10m" minzoom="20"/>
                         <case additional="contourtype=20m" minzoom="18"/>
@@ -453,7 +459,7 @@
                         <case additional="contourtype=200m" minzoom="12"/>
                         <case additional="contourtype=1000m" minzoom="10"/>
                     </case>
-                    <case contourLines="high">
+                    <case contourDensity="high">
                         <case additional="contourtype=5m" minzoom="20"/>
                         <case additional="contourtype=10m" minzoom="18"/>
                         <case additional="contourtype=20m" minzoom="16"/>
