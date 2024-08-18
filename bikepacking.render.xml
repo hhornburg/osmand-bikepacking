@@ -262,81 +262,81 @@
     <renderingConstant name="pathEffect_no_z21" value="30_60"/>
 
     <renderingAttribute name="pathEffect_unknown">
-        <case maxzoom="12" pathEffect_0="$pathEffect_unknown_z12" pathEffect="$pathEffect_unknown_z12" />
-        <case minzoom="13" maxzoom="13" pathEffect_0="$pathEffect_unknown_z13" pathEffect="$pathEffect_unknown_z13" />
-        <case minzoom="14" maxzoom="14" pathEffect_0="$pathEffect_unknown_z14" pathEffect="$pathEffect_unknown_z14" />
-        <case minzoom="15" maxzoom="15" pathEffect_0="$pathEffect_unknown_z15" pathEffect="$pathEffect_unknown_z15" />
-        <case minzoom="16" maxzoom="16" pathEffect_0="$pathEffect_unknown_z16" pathEffect="$pathEffect_unknown_z16" />
-        <case minzoom="17" maxzoom="17" pathEffect_0="$pathEffect_unknown_z17" pathEffect="$pathEffect_unknown_z17" />
-        <case minzoom="18" maxzoom="18" pathEffect_0="$pathEffect_unknown_z18" pathEffect="$pathEffect_unknown_z18" />
-        <case minzoom="19" maxzoom="19" pathEffect_0="$pathEffect_unknown_z19" pathEffect="$pathEffect_unknown_z19" />
-        <case minzoom="20" maxzoom="20" pathEffect_0="$pathEffect_unknown_z20" pathEffect="$pathEffect_unknown_z20" />
-        <case minzoom="21" pathEffect_0="$pathEffect_unknown_z21" pathEffect="$pathEffect_unknown_z21" />
+        <case maxzoom="12" attrStringValue="$pathEffect_unknown_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$pathEffect_unknown_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$pathEffect_unknown_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$pathEffect_unknown_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$pathEffect_unknown_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$pathEffect_unknown_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$pathEffect_unknown_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$pathEffect_unknown_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$pathEffect_unknown_z20" />
+        <case minzoom="21" attrStringValue="$pathEffect_unknown_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_good">
-        <case maxzoom="12" pathEffect_0="$pathEffect_good_z12" pathEffect="$pathEffect_good_z12" />
-        <case minzoom="13" maxzoom="13" pathEffect_0="$pathEffect_good_z13" pathEffect="$pathEffect_good_z13" />
-        <case minzoom="14" maxzoom="14" pathEffect_0="$pathEffect_good_z14" pathEffect="$pathEffect_good_z14" />
-        <case minzoom="15" maxzoom="15" pathEffect_0="$pathEffect_good_z15" pathEffect="$pathEffect_good_z15" />
-        <case minzoom="16" maxzoom="16" pathEffect_0="$pathEffect_good_z16" pathEffect="$pathEffect_good_z16" />
-        <case minzoom="17" maxzoom="17" pathEffect_0="$pathEffect_good_z17" pathEffect="$pathEffect_good_z17" />
-        <case minzoom="18" maxzoom="18" pathEffect_0="$pathEffect_good_z18" pathEffect="$pathEffect_good_z18" />
-        <case minzoom="19" maxzoom="19" pathEffect_0="$pathEffect_good_z19" pathEffect="$pathEffect_good_z19" />
-        <case minzoom="20" maxzoom="20" pathEffect_0="$pathEffect_good_z20" pathEffect="$pathEffect_good_z20" />
-        <case minzoom="21" pathEffect_0="$pathEffect_good_z21" pathEffect="$pathEffect_good_z21" />
+        <case maxzoom="12" attrStringValue="$pathEffect_good_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$pathEffect_good_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$pathEffect_good_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$pathEffect_good_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$pathEffect_good_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$pathEffect_good_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$pathEffect_good_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$pathEffect_good_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$pathEffect_good_z20" />
+        <case minzoom="21" attrStringValue="$pathEffect_good_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_intermediate">
-        <case maxzoom="12" pathEffect_0="$pathEffect_intermediate_z12" pathEffect="$pathEffect_intermediate_z12" />
-        <case minzoom="13" maxzoom="13" pathEffect_0="$pathEffect_intermediate_z13" pathEffect="$pathEffect_intermediate_z13" />
-        <case minzoom="14" maxzoom="14" pathEffect_0="$pathEffect_intermediate_z14" pathEffect="$pathEffect_intermediate_z14" />
-        <case minzoom="15" maxzoom="15" pathEffect_0="$pathEffect_intermediate_z15" pathEffect="$pathEffect_intermediate_z15" />
-        <case minzoom="16" maxzoom="16" pathEffect_0="$pathEffect_intermediate_z16" pathEffect="$pathEffect_intermediate_z16" />
-        <case minzoom="17" maxzoom="17" pathEffect_0="$pathEffect_intermediate_z17" pathEffect="$pathEffect_intermediate_z17" />
-        <case minzoom="18" maxzoom="18" pathEffect_0="$pathEffect_intermediate_z18" pathEffect="$pathEffect_intermediate_z18" />
-        <case minzoom="19" maxzoom="19" pathEffect_0="$pathEffect_intermediate_z19" pathEffect="$pathEffect_intermediate_z19" />
-        <case minzoom="20" maxzoom="20" pathEffect_0="$pathEffect_intermediate_z20" pathEffect="$pathEffect_intermediate_z20" />
-        <case minzoom="21" pathEffect_0="$pathEffect_intermediate_z21" pathEffect="$pathEffect_intermediate_z21" />
+        <case maxzoom="12" attrStringValue="$pathEffect_intermediate_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$pathEffect_intermediate_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$pathEffect_intermediate_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$pathEffect_intermediate_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$pathEffect_intermediate_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$pathEffect_intermediate_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$pathEffect_intermediate_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$pathEffect_intermediate_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$pathEffect_intermediate_z20" />
+        <case minzoom="21" attrStringValue="$pathEffect_intermediate_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_bad">
-        <case maxzoom="12" pathEffect_0="$pathEffect_bad_z12" pathEffect="$pathEffect_bad_z12" />
-        <case minzoom="13" maxzoom="13" pathEffect_0="$pathEffect_bad_z13" pathEffect="$pathEffect_bad_z13" />
-        <case minzoom="14" maxzoom="14" pathEffect_0="$pathEffect_bad_z14" pathEffect="$pathEffect_bad_z14" />
-        <case minzoom="15" maxzoom="15" pathEffect_0="$pathEffect_bad_z15" pathEffect="$pathEffect_bad_z15" />
-        <case minzoom="16" maxzoom="16" pathEffect_0="$pathEffect_bad_z16" pathEffect="$pathEffect_bad_z16" />
-        <case minzoom="17" maxzoom="17" pathEffect_0="$pathEffect_bad_z17" pathEffect="$pathEffect_bad_z17" />
-        <case minzoom="18" maxzoom="18" pathEffect_0="$pathEffect_bad_z18" pathEffect="$pathEffect_bad_z18" />
-        <case minzoom="19" maxzoom="19" pathEffect_0="$pathEffect_bad_z19" pathEffect="$pathEffect_bad_z19" />
-        <case minzoom="20" maxzoom="20" pathEffect_0="$pathEffect_bad_z20" pathEffect="$pathEffect_bad_z20" />
-        <case minzoom="21" pathEffect_0="$pathEffect_bad_z21" pathEffect="$pathEffect_bad_z21" />
+        <case maxzoom="12" attrStringValue="$pathEffect_bad_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$pathEffect_bad_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$pathEffect_bad_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$pathEffect_bad_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$pathEffect_bad_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$pathEffect_bad_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$pathEffect_bad_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$pathEffect_bad_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$pathEffect_bad_z20" />
+        <case minzoom="21" attrStringValue="$pathEffect_bad_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_horrible">
-        <case maxzoom="12" pathEffect_0="$pathEffect_horrible_z12" pathEffect="$pathEffect_horrible_z12" />
-        <case minzoom="13" maxzoom="13" pathEffect_0="$pathEffect_horrible_z13" pathEffect="$pathEffect_horrible_z13" />
-        <case minzoom="14" maxzoom="14" pathEffect_0="$pathEffect_horrible_z14" pathEffect="$pathEffect_horrible_z14" />
-        <case minzoom="15" maxzoom="15" pathEffect_0="$pathEffect_horrible_z15" pathEffect="$pathEffect_horrible_z15" />
-        <case minzoom="16" maxzoom="16" pathEffect_0="$pathEffect_horrible_z16" pathEffect="$pathEffect_horrible_z16" />
-        <case minzoom="17" maxzoom="17" pathEffect_0="$pathEffect_horrible_z17" pathEffect="$pathEffect_horrible_z17" />
-        <case minzoom="18" maxzoom="18" pathEffect_0="$pathEffect_horrible_z18" pathEffect="$pathEffect_horrible_z18" />
-        <case minzoom="19" maxzoom="19" pathEffect_0="$pathEffect_horrible_z19" pathEffect="$pathEffect_horrible_z19" />
-        <case minzoom="20" maxzoom="20" pathEffect_0="$pathEffect_horrible_z20" pathEffect="$pathEffect_horrible_z20" />
-        <case minzoom="21" pathEffect_0="$pathEffect_horrible_z21" pathEffect="$pathEffect_horrible_z21" />
+        <case maxzoom="12" attrStringValue="$pathEffect_horrible_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$pathEffect_horrible_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$pathEffect_horrible_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$pathEffect_horrible_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$pathEffect_horrible_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$pathEffect_horrible_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$pathEffect_horrible_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$pathEffect_horrible_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$pathEffect_horrible_z20" />
+        <case minzoom="21" attrStringValue="$pathEffect_horrible_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_no">
-        <case maxzoom="12" pathEffect_0="$pathEffect_no_z12" pathEffect="$pathEffect_no_z12" />
-        <case minzoom="13" maxzoom="13" pathEffect_0="$pathEffect_no_z13" pathEffect="$pathEffect_no_z13" />
-        <case minzoom="14" maxzoom="14" pathEffect_0="$pathEffect_no_z14" pathEffect="$pathEffect_no_z14" />
-        <case minzoom="15" maxzoom="15" pathEffect_0="$pathEffect_no_z15" pathEffect="$pathEffect_no_z15" />
-        <case minzoom="16" maxzoom="16" pathEffect_0="$pathEffect_no_z16" pathEffect="$pathEffect_no_z16" />
-        <case minzoom="17" maxzoom="17" pathEffect_0="$pathEffect_no_z17" pathEffect="$pathEffect_no_z17" />
-        <case minzoom="18" maxzoom="18" pathEffect_0="$pathEffect_no_z18" pathEffect="$pathEffect_no_z18" />
-        <case minzoom="19" maxzoom="19" pathEffect_0="$pathEffect_no_z19" pathEffect="$pathEffect_no_z19" />
-        <case minzoom="20" maxzoom="20" pathEffect_0="$pathEffect_no_z20" pathEffect="$pathEffect_no_z20" />
-        <case minzoom="21" pathEffect_0="$pathEffect_no_z21" pathEffect="$pathEffect_no_z21" />
+        <case maxzoom="12" attrStringValue="$pathEffect_no_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$pathEffect_no_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$pathEffect_no_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$pathEffect_no_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$pathEffect_no_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$pathEffect_no_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$pathEffect_no_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$pathEffect_no_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$pathEffect_no_z20" />
+        <case minzoom="21" attrStringValue="$pathEffect_no_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_markup">
@@ -352,29 +352,16 @@
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_5050">
-        <case maxzoom="12" pathEffect="5_5" />
-        <case minzoom="13" maxzoom="13" pathEffect="10_10" />
-        <case minzoom="14" maxzoom="14" pathEffect="15_15" />
-        <case minzoom="15" maxzoom="15" pathEffect="20_20" />
-        <case minzoom="16" maxzoom="16" pathEffect="25_25" />
-        <case minzoom="17" maxzoom="17" pathEffect="30_30" />
-        <case minzoom="18" maxzoom="18" pathEffect="35_35" />
-        <case minzoom="19" maxzoom="19" pathEffect="40_40" />
-        <case minzoom="20" maxzoom="20" pathEffect="45_45" />
-        <case minzoom="21" pathEffect="50_50" />
-    </renderingAttribute>
-
-    <renderingAttribute name="pathEffect_5050__1">
-        <case maxzoom="12" pathEffect__1="5_5" />
-        <case minzoom="13" maxzoom="13" pathEffect__1="10_10" />
-        <case minzoom="14" maxzoom="14" pathEffect__1="15_15" />
-        <case minzoom="15" maxzoom="15" pathEffect__1="20_20" />
-        <case minzoom="16" maxzoom="16" pathEffect__1="25_25" />
-        <case minzoom="17" maxzoom="17" pathEffect__1="30_30" />
-        <case minzoom="18" maxzoom="18" pathEffect__1="35_35" />
-        <case minzoom="19" maxzoom="19" pathEffect__1="40_40" />
-        <case minzoom="20" maxzoom="20" pathEffect__1="45_45" />
-        <case minzoom="21" pathEffect__1="50_50" />
+        <case maxzoom="12" attrStringValue="5_5" />
+        <case minzoom="13" maxzoom="13" attrStringValue="10_10" />
+        <case minzoom="14" maxzoom="14" attrStringValue="15_15" />
+        <case minzoom="15" maxzoom="15" attrStringValue="20_20" />
+        <case minzoom="16" maxzoom="16" attrStringValue="25_25" />
+        <case minzoom="17" maxzoom="17" attrStringValue="30_30" />
+        <case minzoom="18" maxzoom="18" attrStringValue="35_35" />
+        <case minzoom="19" maxzoom="19" attrStringValue="40_40" />
+        <case minzoom="20" maxzoom="20" attrStringValue="45_45" />
+        <case minzoom="21" attrStringValue="50_50" />
     </renderingAttribute>
 
     <renderingConstant name="c_track_outer" value="#925D3A"/>
@@ -598,11 +585,10 @@
                     <apply strokeWidth="$width_l0"/>
                 </switch>
             </case>
-            <!-- Individual modes of transport
+            <switch>                <!-- Individual modes of transport
              Tunnels - additional dashed outline + light colors
              Avalanche Protectors - additional dashed outline + original colors
              -->
-            <switch>
                 <switch>
                     <case tag="highway" value="motorway"/>
                     <case tag="highway" value="motorway_link"/>
@@ -647,13 +633,12 @@
                 </case>
                 <case tag="highway" value="track" color="$c_track_inner" color_0="$c_track_outer">
                     <apply>
-                        <switch>
-                            <case additional="tracktype=grade1"/>
+                        <switch pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown">
+                            <case additional="tracktype=grade1" pathEffect_0="" pathEffect=""/>
                             <case additional="tracktype=grade2" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
                             <case additional="tracktype=grade3" pathEffect_0="$pathEffect_intermediate" pathEffect="$pathEffect_intermediate"/>
                             <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
                             <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
-                            <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown" />
                         </switch>
                     </apply>
                     <apply strokeWidth="$width_l1" strokeWidth_0="$width_l2" />
@@ -673,14 +658,13 @@
                     <case tag="highway" value="bridleway"/>
                     <apply color="$c_track_outer" strokeWidth="$width_l1" cap="ROUND"/>
                     <apply>
-                        <switch>
-                            <case additional="visibility=excellent"/>
+                        <switch pathEffect="$pathEffect_unknown">
+                            <case additional="visibility=excellent" pathEffect=""/>
                             <case additional="visibility=good" pathEffect="$pathEffect_good"/>
                             <case additional="visibility=intermediate" pathEffect="$pathEffect_intermediate"/>
                             <case additional="visibility=bad" pathEffect="$pathEffect_bad"/>
                             <case additional="visibility=horrible" pathEffect="$pathEffect_horrible"/>
                             <case additional="visibility=no" pathEffect="$pathEffect_no" />
-                            <case pathEffect="$pathEffect_unknown" />
                         </switch>
                     </apply>
                     <apply additional="tunnel=yes" color="$c_track_outer_light"/>
@@ -724,22 +708,22 @@
                     <switch>
                         <case additional="tunnel=yes"/>
                         <case additional="tunnel=avalanche_protector"/>
-                        <apply color__1="$c_road_outer" strokeWidth__1="$width_l5" pathEffect__1="$pathEffect_5050__1" />
+                        <apply color__1="$c_road_outer" strokeWidth__1="$width_l5" pathEffect__1="$pathEffect_5050" />
                     </switch>
                 </apply>
             </switch>
-            <!-- Public transport-->
-            <switch>
+            <switch>                <!-- Public transport-->
                 <case tag="railway" value="rail" color="$c_rail_light" color_0="$c_rail_dark" strokeWidth="$width_l2" strokeWidth_0="$width_l3" pathEffect="$pathEffect_5050" />
             </switch>
-            <!-- Natural features-->
-            <switch color="$c_water" cap="ROUND">
-                <case tag="waterway" value="ditch" strokeWidth="$width_l1"/>
-                <case tag="waterway" value="drain" strokeWidth="$width_l1"/>
-                <case tag="waterway" value="stream" strokeWidth="$width_l1"/>
-                <case tag="waterway" value="canal" strokeWidth="$width_l2" color_0="$c_road_outer" strokeWidth_0="$width_l3"/>
-                <case tag="waterway" value="river" strokeWidth="$width_l3"/>
-                <apply additional="intermittent=yes" pathEffect="$pathEffect_5050"/>
+            <switch>                <!-- Natural features-->
+                <switch color="$c_water" cap="ROUND">
+                    <case tag="waterway" value="ditch" strokeWidth="$width_l1"/>
+                    <case tag="waterway" value="drain" strokeWidth="$width_l1"/>
+                    <case tag="waterway" value="stream" strokeWidth="$width_l1"/>
+                    <case tag="waterway" value="canal" strokeWidth="$width_l2" color_0="$c_road_outer" strokeWidth_0="$width_l3"/>
+                    <case tag="waterway" value="river" strokeWidth="$width_l3"/>
+                    <apply additional="intermittent=yes" pathEffect="$pathEffect_5050"/>
+                </switch>
             </switch>
         </switch>
     </line>
