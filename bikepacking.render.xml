@@ -576,8 +576,10 @@
         <switch>
             <case tag="contour" value="elevation">
                 <switch>
-                    <case contourDensity="low" additional="contourtype=200m"/>
+                    <case additional="contourtype=1000m"/>
+                    <case additional="contourtype=200m"/>
                     <case contourDensity="medium_w" additional="contourtype=100m"/>
+                    <case contourDensity="high" additional="contourtype=100m"/>
                     <case contourDensity="high" additional="contourtype=50m"/>
                     <apply nameTag="elevation"/>
                 </switch>
@@ -587,9 +589,14 @@
     <line>
         <switch>
             <case tag="contour" value="elevation" color="$c_contour" strokeWidth="$width_l00">
-                <case contourDensity="low" additional="contourtype=200m" strokeWidth="$width_l0"/>
-                <case contourDensity="medium_w" additional="contourtype=100m" strokeWidth="$width_l0"/>
-                <case contourDensity="high" additional="contourtype=50m" strokeWidth="$width_l0"/>
+                <switch>
+                    <case additional="contourtype=1000m"/>
+                    <case additional="contourtype=200m"/>
+                    <case contourDensity="medium_w" additional="contourtype=100m"/>
+                    <case contourDensity="high" additional="contourtype=100m"/>
+                    <case contourDensity="high" additional="contourtype=50m"/>
+                    <apply strokeWidth="$width_l0"/>
+                </switch>
             </case>
             <!-- Individual modes of transport-->
             <switch>
