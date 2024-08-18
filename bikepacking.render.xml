@@ -475,7 +475,7 @@
                     </case>
                     <case contourDensity="medium_w">
                         <case additional="contourtype=5m" order="-1"/>
-                        <case additional="contourtype=10m" minzoom="20"/>
+                        <case additional="contourtype=10m" minzoom="-1"/>
                         <case additional="contourtype=20m" minzoom="18"/>
                         <case additional="contourtype=50m" order="-1"/>
                         <case additional="contourtype=100m" minzoom="14"/>
@@ -574,16 +574,22 @@
     </order>
     <text>
         <switch>
-            <case tag="contour" value="elevation">
+            <switch tag="contour" value="elevation">
                 <switch>
                     <case additional="contourtype=1000m"/>
                     <case additional="contourtype=200m"/>
                     <case contourDensity="medium_w" additional="contourtype=100m"/>
                     <case contourDensity="high" additional="contourtype=100m"/>
                     <case contourDensity="high" additional="contourtype=50m"/>
-                    <apply nameTag="elevation"/>
+                    <apply nameTag="elevation" textSize="11" textOnPath="true"/>
                 </switch>
-            </case>
+                <switch>
+                    <case additional="contourtype=5m"/>
+                    <case additional="contourtype=10m"/>
+                    <case additional="contourtype=20m"/>
+                    <apply textSize="0" textOnPath="false"/>
+                </switch>
+            </switch>
         </switch>
     </text>
     <line>
