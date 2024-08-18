@@ -475,7 +475,7 @@
                     </case>
                     <case contourDensity="medium_w">
                         <case additional="contourtype=5m" order="-1"/>
-                        <case additional="contourtype=10m" minzoom="-1"/>
+                        <case additional="contourtype=10m" order="-1"/>
                         <case additional="contourtype=20m" minzoom="18"/>
                         <case additional="contourtype=50m" order="-1"/>
                         <case additional="contourtype=100m" minzoom="14"/>
