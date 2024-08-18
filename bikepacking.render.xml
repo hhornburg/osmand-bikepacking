@@ -26,6 +26,16 @@
     color_4: difficulty markup mtb uphill scale
     color_5: difficulty markup sac scale
     -->
+    <renderingConstant name="width_l00_z12" value="0.25"/>
+    <renderingConstant name="width_l00_z13" value="0.5"/>
+    <renderingConstant name="width_l00_z14" value="0.75"/>
+    <renderingConstant name="width_l00_z15" value="1"/>
+    <renderingConstant name="width_l00_z16" value="1.25"/>
+    <renderingConstant name="width_l00_z17" value="1.5"/>
+    <renderingConstant name="width_l00_z18" value="1.75"/>
+    <renderingConstant name="width_l00_z19" value="2"/>
+    <renderingConstant name="width_l00_z20" value="2.25"/>
+    <renderingConstant name="width_l00_z21" value="2.5"/>
 
     <renderingConstant name="width_l0_z12" value="0.5"/>
     <renderingConstant name="width_l0_z13" value="1"/>
@@ -92,6 +102,19 @@
     <renderingConstant name="width_l5_z19" value="40"/>
     <renderingConstant name="width_l5_z20" value="45"/>
     <renderingConstant name="width_l5_z21" value="50"/>
+
+    <renderingAttribute name="width_l00">
+        <case maxzoom="12" strokeWidth="$width_l00_z12" />
+        <case minzoom="13" maxzoom="13" strokeWidth="$width_l00_z13" />
+        <case minzoom="14" maxzoom="14" strokeWidth="$width_l00_z14" />
+        <case minzoom="15" maxzoom="15" strokeWidth="$width_l00_z15" />
+        <case minzoom="16" maxzoom="16" strokeWidth="$width_l00_z16" />
+        <case minzoom="17" maxzoom="17" strokeWidth="$width_l00_z17" />
+        <case minzoom="18" maxzoom="18" strokeWidth="$width_l00_z18" />
+        <case minzoom="19" maxzoom="19" strokeWidth="$width_l00_z19" />
+        <case minzoom="20" maxzoom="20" strokeWidth="$width_l00_z20" />
+        <case minzoom="21" strokeWidth="$width_l00_z21" />
+    </renderingAttribute>
 
     <renderingAttribute name="width_l0">
         <case maxzoom="12" strokeWidth="$width_l0_z12" />
@@ -444,7 +467,7 @@
                     <case contourDensity="low">
                         <case additional="contourtype=5m" order="-1"/>
                         <case additional="contourtype=10m" order="-1"/>
-                        <case additional="contourtype=20m" minzoom="20"/>
+                        <case additional="contourtype=20m" order="-1"/>
                         <case additional="contourtype=50m" minzoom="18"/>
                         <case additional="contourtype=100m" minzoom="16"/>
                         <case additional="contourtype=200m" minzoom="14"/>
@@ -454,7 +477,7 @@
                         <case additional="contourtype=5m" order="-1"/>
                         <case additional="contourtype=10m" minzoom="20"/>
                         <case additional="contourtype=20m" minzoom="18"/>
-                        <case additional="contourtype=50m" minzoom="16"/>
+                        <case additional="contourtype=50m" order="-1"/>
                         <case additional="contourtype=100m" minzoom="14"/>
                         <case additional="contourtype=200m" minzoom="12"/>
                         <case additional="contourtype=1000m" minzoom="10"/>
@@ -551,21 +574,22 @@
     </order>
     <text>
         <switch>
-            <switch tag="contour" value="elevation">
-                <case contourLines="low" additional="contourtype=200m"/>
-                <case contourLines="medium" additional="contourtype=100m"/>
-                <case contourLines="high" additional="contourtype=50m"/>
-                <apply nameTag="elevation"/>
-            </switch>
+            <case tag="contour" value="elevation">
+                <switch>
+                    <case contourDensity="low" additional="contourtype=200m"/>
+                    <case contourDensity="medium_w" additional="contourtype=100m"/>
+                    <case contourDensity="high" additional="contourtype=50m"/>
+                    <apply nameTag="elevation"/>
+                </switch>
+            </case>
         </switch>
     </text>
     <line>
         <switch>
-            <case tag="contour" value="elevation" color="$c_contour" strokeWidth="$width_l0">
-                <case contourLines="off" strokeWidth="0"/>
-                <case contourLines="low" additional="contourtype=200m" strokeWidth="$width_l1"/>
-                <case contourLines="medium" additional="contourtype=100m" strokeWidth="$width_l1"/>
-                <case contourLines="high" additional="contourtype=50m" strokeWidth="$width_l1"/>
+            <case tag="contour" value="elevation" color="$c_contour" strokeWidth="$width_l00">
+                <case contourDensity="low" additional="contourtype=200m" strokeWidth="$width_l0"/>
+                <case contourDensity="medium_w" additional="contourtype=100m" strokeWidth="$width_l0"/>
+                <case contourDensity="high" additional="contourtype=50m" strokeWidth="$width_l0"/>
             </case>
             <!-- Individual modes of transport-->
             <switch>
