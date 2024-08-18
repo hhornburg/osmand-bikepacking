@@ -427,7 +427,7 @@
     <renderingConstant name="c_diff_2" value="#FF1111"/>
     <renderingConstant name="c_diff_3" value="#000000"/>
     <renderingConstant name="c_diff_4" value="#FF00FF"/>
-    
+
     <renderingConstant name="c_access_yes" value="#FFFFFF"/>
     <renderingConstant name="c_access_bike" value="#0000FF"/>
     <renderingConstant name="c_access_foot" value="#FFFF00"/>
@@ -710,14 +710,14 @@
                     </apply>
                     <apply additional="tunnel=yes" color="$c_track_outer_light"/>
                 </switch>
-                <apply pathEffect_2="$pathEffect_markup1" strokeWidth_2="$width_l1" color_2="$c_access_yes">
-                  <case additional="bicycle=no" color_2="$c_access_foot">
-                    <case additional="foot=no" color_2="$c_access_no"/>
-                  </case>
-                  <case additional="foot=no" color_2="$c_access_bike"/>
-                  <case additional="access=no" color_2="$c_access_no"/>
+                <apply minzoom="13" pathEffect_2="$pathEffect_markup1" strokeWidth_2="$width_l1" color_2="$c_access_yes">
+                    <case additional="bicycle=no" color_2="$c_access_foot">
+                        <case additional="foot=no" color_2="$c_access_no"/>
+                    </case>
+                    <case additional="foot=no" color_2="$c_access_bike"/>
+                    <case additional="access=no" color_2="$c_access_no"/>
                 </apply>
-                <apply pathEffect_3="$pathEffect_markup2" strokeWidth_3="$width_l1">
+                <apply minzoom="13" pathEffect_3="$pathEffect_markup2" strokeWidth_3="$width_l1">
                     <switch>
                         <case additional="mtb:scale=0" color_3="$c_diff_0"/>
                         <case additional="mtb:scale=1" color_3="$c_diff_1"/>
@@ -728,7 +728,7 @@
                         <case additional="mtb:scale=6" color_3="$c_diff_4"/>
                     </switch>
                 </apply>
-                <apply pathEffect_4="$pathEffect_markup3" strokeWidth_4="$width_l1">
+                <apply minzoom="13" pathEffect_4="$pathEffect_markup3" strokeWidth_4="$width_l1">
                     <switch>
                         <case additional="mtb:scale:uphill=0" color_4="$c_diff_0"/>
                         <case additional="mtb:scale:uphill=1" color_4="$c_diff_1"/>
@@ -738,7 +738,7 @@
                         <case additional="mtb:scale:uphill=5" color_4="$c_diff_4"/>
                     </switch>
                 </apply>
-                <apply pathEffect_5="$pathEffect_markup4" strokeWidth_5="$width_l1">
+                <apply minzoom="13" pathEffect_5="$pathEffect_markup4" strokeWidth_5="$width_l1">
                     <switch>
                         <case additional="sac_scale=hiking" color_5="$c_diff_0"/>
                         <case additional="sac_scale=mountain_hiking" color_5="$c_diff_1"/>
