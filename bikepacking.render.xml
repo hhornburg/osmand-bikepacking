@@ -4,6 +4,10 @@
  This map style is licensed under is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
  -->
 <renderingStyle name="Bikepacking" depends="" defaultColor="#ffffff" version="1">
+
+    <renderingProperty attr="contourLines" name="Show contour lines" description="Select density of contour lines displayed" type="string" possibleValues="off, low,medium,high" defaultValueDescription="medium" category="details"/>
+
+
     <!-- 
     Concept of the paths:
     (indices apply also to other attributes, not only color)
@@ -15,6 +19,17 @@
     color_4: difficulty markup mtb uphill scale
     color_5: difficulty markup sac scale
     -->
+
+    <renderingConstant name="width_l0_z12" value="0.5"/>
+    <renderingConstant name="width_l0_z13" value="1"/>
+    <renderingConstant name="width_l0_z14" value="1.5"/>
+    <renderingConstant name="width_l0_z15" value="2"/>
+    <renderingConstant name="width_l0_z16" value="2.5"/>
+    <renderingConstant name="width_l0_z17" value="3"/>
+    <renderingConstant name="width_l0_z18" value="3.5"/>
+    <renderingConstant name="width_l0_z19" value="4"/>
+    <renderingConstant name="width_l0_z20" value="4.5"/>
+    <renderingConstant name="width_l0_z21" value="5"/>
 
     <renderingConstant name="width_l1_z12" value="1"/>
     <renderingConstant name="width_l1_z13" value="2"/>
@@ -70,6 +85,19 @@
     <renderingConstant name="width_l5_z19" value="40"/>
     <renderingConstant name="width_l5_z20" value="45"/>
     <renderingConstant name="width_l5_z21" value="50"/>
+
+    <renderingAttribute name="width_l0">
+        <case maxzoom="12" strokeWidth="$width_l0_z12" />
+        <case minzoom="13" maxzoom="13" strokeWidth="$width_l0_z13" />
+        <case minzoom="14" maxzoom="14" strokeWidth="$width_l0_z14" />
+        <case minzoom="15" maxzoom="15" strokeWidth="$width_l0_z15" />
+        <case minzoom="16" maxzoom="16" strokeWidth="$width_l0_z16" />
+        <case minzoom="17" maxzoom="17" strokeWidth="$width_l0_z17" />
+        <case minzoom="18" maxzoom="18" strokeWidth="$width_l0_z18" />
+        <case minzoom="19" maxzoom="19" strokeWidth="$width_l0_z19" />
+        <case minzoom="20" maxzoom="20" strokeWidth="$width_l0_z20" />
+        <case minzoom="21" strokeWidth="$width_l0_z21" />
+    </renderingAttribute>
 
     <renderingAttribute name="width_l1">
         <case maxzoom="12" strokeWidth="$width_l1_z12" />
@@ -389,7 +417,7 @@
     <renderingConstant name="c_residential" value="#EEDDDD"/>
     <renderingConstant name="c_building" value="#BBAAAA"/>
 
-
+    <renderingConstant name="c_contour" value="#9C5615"/>
 
     <order>
         <!-- 
@@ -405,6 +433,36 @@
         -->
         <switch>
             <switch area="false" point="false" objectType="2">
+                <case tag="contour" value="elevation" order="65">
+                    <case contourLines="off" order="-1"/>
+                    <case contourLines="low">
+                        <case additional="contourtype=5m" order="-1"/>
+                        <case additional="contourtype=10m" order="-1"/>
+                        <case additional="contourtype=20m" minzoom="20"/>
+                        <case additional="contourtype=50m" minzoom="18"/>
+                        <case additional="contourtype=100m" minzoom="16"/>
+                        <case additional="contourtype=200m" minzoom="14"/>
+                        <case additional="contourtype=1000m" minzoom="12"/>
+                    </case>
+                    <case contourLines="medium">
+                        <case additional="contourtype=5m" order="-1"/>
+                        <case additional="contourtype=10m" minzoom="20"/>
+                        <case additional="contourtype=20m" minzoom="18"/>
+                        <case additional="contourtype=50m" minzoom="16"/>
+                        <case additional="contourtype=100m" minzoom="14"/>
+                        <case additional="contourtype=200m" minzoom="12"/>
+                        <case additional="contourtype=1000m" minzoom="10"/>
+                    </case>
+                    <case contourLines="high">
+                        <case additional="contourtype=5m" minzoom="20"/>
+                        <case additional="contourtype=10m" minzoom="18"/>
+                        <case additional="contourtype=20m" minzoom="16"/>
+                        <case additional="contourtype=50m" minzoom="14"/>
+                        <case additional="contourtype=100m" minzoom="12"/>
+                        <case additional="contourtype=200m" minzoom="10"/>
+                        <case additional="contourtype=1000m" minzoom="8"/>
+                    </case>
+                </case>
                 <switch order="120">
                     <case tag="waterway" value="ditch" minzoom="15"/>
                     <case tag="waterway" value="drain" minzoom="15"/>
@@ -485,8 +543,24 @@
             </switch>
         </switch>
     </order>
+    <text>
+        <switch>
+            <switch tag="contour" value="elevation">
+                <case contourLines="low" additional="contourtype=200m"/>
+                <case contourLines="medium" additional="contourtype=100m"/>
+                <case contourLines="high" additional="contourtype=50m"/>
+                <apply nameTag="elevation"/>
+            </switch>
+        </switch>
+    </text>
     <line>
         <switch>
+            <case tag="contour" value="elevation" color="$c_contour" strokeWidth="$width_l0">
+                <case contourLines="off" strokeWidth="0"/>
+                <case contourLines="low" additional="contourtype=200m" strokeWidth="$width_l1"/>
+                <case contourLines="medium" additional="contourtype=100m" strokeWidth="$width_l1"/>
+                <case contourLines="high" additional="contourtype=50m" strokeWidth="$width_l1"/>
+            </case>
             <!-- Individual modes of transport-->
             <switch>
                 <switch>
