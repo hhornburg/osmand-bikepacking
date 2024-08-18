@@ -104,159 +104,94 @@
     <renderingConstant name="width_l5_z21" value="50"/>
 
     <renderingAttribute name="width_l00">
-        <case maxzoom="12" strokeWidth="$width_l00_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l00_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l00_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l00_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l00_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l00_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l00_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l00_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l00_z20" />
-        <case minzoom="21" strokeWidth="$width_l00_z21" />
+        <case maxzoom="12" attrIntValue="$width_l00_z12" attrFloatValue="$width_l00_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l00_z13" attrFloatValue="$width_l00_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l00_z14" attrFloatValue="$width_l00_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l00_z15" attrFloatValue="$width_l00_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l00_z16" attrFloatValue="$width_l00_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l00_z17" attrFloatValue="$width_l00_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l00_z18" attrFloatValue="$width_l00_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l00_z19" attrFloatValue="$width_l00_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l00_z20" attrFloatValue="$width_l00_z20"/>
+        <case minzoom="21" attrIntValue="$width_l00_z21" attrFloatValue="$width_l00_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l0">
-        <case maxzoom="12" strokeWidth="$width_l0_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l0_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l0_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l0_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l0_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l0_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l0_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l0_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l0_z20" />
-        <case minzoom="21" strokeWidth="$width_l0_z21" />
+        <case maxzoom="12" attrIntValue="$width_l0_z12" attrFloatValue="$width_l0_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l0_z13" attrFloatValue="$width_l0_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l0_z14" attrFloatValue="$width_l0_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l0_z15" attrFloatValue="$width_l0_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l0_z16" attrFloatValue="$width_l0_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l0_z17" attrFloatValue="$width_l0_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l0_z18" attrFloatValue="$width_l0_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l0_z19" attrFloatValue="$width_l0_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l0_z20" attrFloatValue="$width_l0_z20"/>
+        <case minzoom="21" attrIntValue="$width_l0_z21" attrFloatValue="$width_l0_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l1">
-        <case maxzoom="12" strokeWidth="$width_l1_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l1_z13" strokeWidth_2="$width_l1_z13" strokeWidth_3="$width_l1_z13" strokeWidth_4="$width_l1_z13" strokeWidth_5="$width_l1_z13"/>
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l1_z14" strokeWidth_2="$width_l1_z14" strokeWidth_3="$width_l1_z14" strokeWidth_4="$width_l1_z14" strokeWidth_5="$width_l1_z15"/>
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l1_z15" strokeWidth_2="$width_l1_z15" strokeWidth_3="$width_l1_z15" strokeWidth_4="$width_l1_z15" strokeWidth_5="$width_l1_z15"/>
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l1_z16" strokeWidth_2="$width_l1_z16" strokeWidth_3="$width_l1_z16" strokeWidth_4="$width_l1_z16" strokeWidth_5="$width_l1_z16"/>
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l1_z17" strokeWidth_2="$width_l1_z17" strokeWidth_3="$width_l1_z17" strokeWidth_4="$width_l1_z17" strokeWidth_5="$width_l1_z17"/>
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l1_z18" strokeWidth_2="$width_l1_z18" strokeWidth_3="$width_l1_z18" strokeWidth_4="$width_l1_z18" strokeWidth_5="$width_l1_z18"/>
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l1_z19" strokeWidth_2="$width_l1_z19" strokeWidth_3="$width_l1_z19" strokeWidth_4="$width_l1_z19" strokeWidth_5="$width_l1_z19"/>
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l1_z20" strokeWidth_2="$width_l1_z20" strokeWidth_3="$width_l1_z20" strokeWidth_4="$width_l1_z20" strokeWidth_5="$width_l1_z20"/>
-        <case minzoom="21" strokeWidth="$width_l1_z21" strokeWidth_2="$width_l1_z21" strokeWidth_3="$width_l1_z21" strokeWidth_4="$width_l1_z21" strokeWidth_5="$width_l1_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l1_z12" attrFloatValue="$width_l1_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l1_z13" attrFloatValue="$width_l1_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l1_z14" attrFloatValue="$width_l1_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l1_z15" attrFloatValue="$width_l1_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l1_z16" attrFloatValue="$width_l1_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l1_z17" attrFloatValue="$width_l1_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l1_z18" attrFloatValue="$width_l1_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l1_z19" attrFloatValue="$width_l1_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l1_z20" attrFloatValue="$width_l1_z20"/>
+        <case minzoom="21" attrIntValue="$width_l1_z21" attrFloatValue="$width_l1_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l2">
-        <case maxzoom="12" strokeWidth="$width_l2_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l2_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l2_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l2_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l2_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l2_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l2_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l2_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l2_z20" />
-        <case minzoom="21" strokeWidth="$width_l2_z21" />
-    </renderingAttribute>
-
-    <renderingAttribute name="width_l2_0">
-        <case maxzoom="12" strokeWidth_0="$width_l2_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth_0="$width_l2_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth_0="$width_l2_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth_0="$width_l2_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth_0="$width_l2_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth_0="$width_l2_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth_0="$width_l2_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth_0="$width_l2_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth_0="$width_l2_z20" />
-        <case minzoom="21" strokeWidth_0="$width_l2_z21" />
+        <case maxzoom="12" attrIntValue="$width_l2_z12" attrFloatValue="$width_l2_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l2_z13" attrFloatValue="$width_l2_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l2_z14" attrFloatValue="$width_l2_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l2_z15" attrFloatValue="$width_l2_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l2_z16" attrFloatValue="$width_l2_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l2_z17" attrFloatValue="$width_l2_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l2_z18" attrFloatValue="$width_l2_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l2_z19" attrFloatValue="$width_l2_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l2_z20" attrFloatValue="$width_l2_z20"/>
+        <case minzoom="21" attrIntValue="$width_l2_z21" attrFloatValue="$width_l2_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l3">
-        <case maxzoom="12" strokeWidth="$width_l3_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l3_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l3_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l3_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l3_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l3_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l3_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l3_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l3_z20" />
-        <case minzoom="21" strokeWidth="$width_l3_z21" />
-    </renderingAttribute>
-
-    <renderingAttribute name="width_l3_0">
-        <case maxzoom="12" strokeWidth_0="$width_l3_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth_0="$width_l3_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth_0="$width_l3_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth_0="$width_l3_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth_0="$width_l3_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth_0="$width_l3_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth_0="$width_l3_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth_0="$width_l3_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth_0="$width_l3_z20" />
-        <case minzoom="21" strokeWidth_0="$width_l3_z21" />
+        <case maxzoom="12" attrIntValue="$width_l3_z12" attrFloatValue="$width_l3_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l3_z13" attrFloatValue="$width_l3_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l3_z14" attrFloatValue="$width_l3_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l3_z15" attrFloatValue="$width_l3_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l3_z16" attrFloatValue="$width_l3_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l3_z17" attrFloatValue="$width_l3_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l3_z18" attrFloatValue="$width_l3_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l3_z19" attrFloatValue="$width_l3_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l3_z20" attrFloatValue="$width_l3_z20"/>
+        <case minzoom="21" attrIntValue="$width_l3_z21" attrFloatValue="$width_l3_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l4">
-        <case maxzoom="12" strokeWidth="$width_l4_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l4_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l4_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l4_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l4_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l4_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l4_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l4_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l4_z20" />
-        <case minzoom="21" strokeWidth="$width_l4_z21" />
-    </renderingAttribute>
-
-    <renderingAttribute name="width_l4_0">
-        <case maxzoom="12" strokeWidth_0="$width_l4_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth_0="$width_l4_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth_0="$width_l4_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth_0="$width_l4_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth_0="$width_l4_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth_0="$width_l4_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth_0="$width_l4_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth_0="$width_l4_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth_0="$width_l4_z20" />
-        <case minzoom="21" strokeWidth_0="$width_l4_z21" />
+        <case maxzoom="12" attrIntValue="$width_l4_z12" attrFloatValue="$width_l4_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l4_z13" attrFloatValue="$width_l4_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l4_z14" attrFloatValue="$width_l4_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l4_z15" attrFloatValue="$width_l4_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l4_z16" attrFloatValue="$width_l4_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l4_z17" attrFloatValue="$width_l4_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l4_z18" attrFloatValue="$width_l4_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l4_z19" attrFloatValue="$width_l4_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l4_z20" attrFloatValue="$width_l4_z20"/>
+        <case minzoom="21" attrIntValue="$width_l4_z21" attrFloatValue="$width_l4_z21"/>
     </renderingAttribute>
 
     <renderingAttribute name="width_l5">
-        <case maxzoom="12" strokeWidth="$width_l5_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth="$width_l5_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth="$width_l5_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth="$width_l5_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth="$width_l5_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth="$width_l5_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth="$width_l5_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth="$width_l5_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth="$width_l5_z20" />
-        <case minzoom="21" strokeWidth="$width_l5_z21" />
-    </renderingAttribute>
-
-    <renderingAttribute name="width_l5_0">
-        <case maxzoom="12" strokeWidth_0="$width_l5_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth_0="$width_l5_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth_0="$width_l5_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth_0="$width_l5_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth_0="$width_l5_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth_0="$width_l5_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth_0="$width_l5_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth_0="$width_l5_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth_0="$width_l5_z20" />
-        <case minzoom="21" strokeWidth_0="$width_l5_z21" />
-    </renderingAttribute>
-
-    <renderingAttribute name="width_l5__1">
-        <case maxzoom="12" strokeWidth__1="$width_l5_z12" />
-        <case minzoom="13" maxzoom="13" strokeWidth__1="$width_l5_z13" />
-        <case minzoom="14" maxzoom="14" strokeWidth__1="$width_l5_z14" />
-        <case minzoom="15" maxzoom="15" strokeWidth__1="$width_l5_z15" />
-        <case minzoom="16" maxzoom="16" strokeWidth__1="$width_l5_z16" />
-        <case minzoom="17" maxzoom="17" strokeWidth__1="$width_l5_z17" />
-        <case minzoom="18" maxzoom="18" strokeWidth__1="$width_l5_z18" />
-        <case minzoom="19" maxzoom="19" strokeWidth__1="$width_l5_z19" />
-        <case minzoom="20" maxzoom="20" strokeWidth__1="$width_l5_z20" />
-        <case minzoom="21" strokeWidth__1="$width_l5_z21" />
+        <case maxzoom="12" attrIntValue="$width_l5_z12" attrFloatValue="$width_l5_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l5_z13" attrFloatValue="$width_l5_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l5_z14" attrFloatValue="$width_l5_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l5_z15" attrFloatValue="$width_l5_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l5_z16" attrFloatValue="$width_l5_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l5_z17" attrFloatValue="$width_l5_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l5_z18" attrFloatValue="$width_l5_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l5_z19" attrFloatValue="$width_l5_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l5_z20" attrFloatValue="$width_l5_z20"/>
+        <case minzoom="21" attrIntValue="$width_l5_z21" attrFloatValue="$width_l5_z21"/>
     </renderingAttribute>
 
     <!-- unknown=horrible+good-->
@@ -671,31 +606,31 @@
                 <switch>
                     <case tag="highway" value="motorway"/>
                     <case tag="highway" value="motorway_link"/>
-                    <apply color="$c_fastroad" color_0="$c_motorway_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5_0"/>
+                    <apply color="$c_fastroad" color_0="$c_motorway_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5"/>
                     <apply additional="tunnel=yes" color="$c_fastroad_light" color_0="$c_motorway_outer_light"/>
                 </switch>
                 <switch>
                     <case tag="highway" value="trunk"/>
                     <case tag="highway" value="trunk_link"/>
-                    <apply color="$c_fastroad" color_0="$c_road_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5_0"/>
+                    <apply color="$c_fastroad" color_0="$c_road_outer" strokeWidth="$width_l4" strokeWidth_0="$width_l5"/>
                     <apply additional="tunnel=yes" color="$c_fastroad_light" color_0="$c_road_outer_light"/>
                 </switch>
                 <switch>
                     <case tag="highway" value="primary"/>
                     <case tag="highway" value="primary_link"/>
-                    <apply color="$c_primary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4_0"/>
+                    <apply color="$c_primary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4"/>
                     <apply additional="tunnel=yes" color="$c_primary_light" color_0="$c_road_outer_light"/>
                 </switch>
                 <switch>
                     <case tag="highway" value="secondary"/>
                     <case tag="highway" value="secondary_link"/>
-                    <apply color="$c_secondary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4_0"/>
+                    <apply color="$c_secondary" color_0="$c_road_outer" strokeWidth="$width_l3" strokeWidth_0="$width_l4"/>
                     <apply additional="tunnel=yes" color="$c_secondary_light" color_0="$c_road_outer_light"/>
                 </switch>
                 <switch>
                     <case tag="highway" value="tertiary"/>
                     <case tag="highway" value="tertiary_link"/>
-                    <apply color="$c_tertiary" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0"/>
+                    <apply color="$c_tertiary" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3"/>
                     <apply additional="tunnel=yes" color="$c_tertiary_light" color_0="$c_road_outer_light"/>
                 </switch>
                 <switch>
@@ -704,10 +639,10 @@
                     <case tag="highway" value="living_street"/>
                     <case tag="highway" value="service"/>
                     <case tag="highway" value="road"/>
-                    <apply color="c_smallroad" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0"/>
+                    <apply color="c_smallroad" color_0="$c_road_outer" strokeWidth="$width_l2" strokeWidth_0="$width_l3"/>
                     <apply additional="tunnel=yes" color="$c_smallroad_light" color_0="$c_road_outer_light"/>
                 </switch>
-                <case tag="highway" value="cycleway" color="c_smallroad" color_0="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2_0">
+                <case tag="highway" value="cycleway" color="c_smallroad" color_0="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2">
                     <apply additional="tunnel=yes" color="$c_smallroad_light" color_0="$c_cycle_outer_light"/>
                 </case>
                 <case tag="highway" value="track" color="$c_track_inner" color_0="$c_track_outer">
@@ -721,7 +656,7 @@
                             <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown" />
                         </switch>
                     </apply>
-                    <apply strokeWidth="$width_l1" strokeWidth_0="$width_l2_0" />
+                    <apply strokeWidth="$width_l1" strokeWidth_0="$width_l2" />
                     <apply additional="tunnel=yes" color="$c_track_inner_light" color_0="$c_track_outer_light"/>
                     <apply>
                         <switch>
@@ -750,7 +685,7 @@
                     </apply>
                     <apply additional="tunnel=yes" color="$c_track_outer_light"/>
                 </switch>
-                <apply pathEffect_3="$pathEffect_markup">
+                <apply pathEffect_3="$pathEffect_markup" strokeWidth_3="$width_l1">
                     <switch>
                         <case additional="mtb:scale=0" color_3="$c_diff_0"/>
                         <case additional="mtb:scale=1" color_3="$c_diff_1"/>
@@ -759,10 +694,10 @@
                         <case additional="mtb:scale=4" color_3="$c_diff_4"/>
                         <case additional="mtb:scale=5" color_3="$c_diff_4"/>
                         <case additional="mtb:scale=6" color_3="$c_diff_4"/>
-                        <apply color_2="#FFFFFF"/>
+                        <apply color_2="#FFFFFF" strokeWidth_2="$width_l1"/>
                     </switch>
                 </apply>
-                <apply pathEffect_4="$pathEffect_markup">
+                <apply pathEffect_4="$pathEffect_markup" strokeWidth_4="$width_l1">
                     <switch>
                         <case additional="mtb:scale:uphill=0" color_4="$c_diff_0"/>
                         <case additional="mtb:scale:uphill=1" color_4="$c_diff_1"/>
@@ -770,11 +705,10 @@
                         <case additional="mtb:scale:uphill=3" color_4="$c_diff_3"/>
                         <case additional="mtb:scale:uphill=4" color_4="$c_diff_4"/>
                         <case additional="mtb:scale:uphill=5" color_4="$c_diff_4"/>
-                        <apply color_2="#FFFFFF"/>
-
+                        <apply color_2="#FFFFFF" strokeWidth_2="$width_l1"/>
                     </switch>
                 </apply>
-                <apply pathEffect_5="$pathEffect_markup">
+                <apply pathEffect_5="$pathEffect_markup" strokeWidth_5="$width_l1">
                     <switch>
                         <case additional="sac_scale=hiking" color_5="$c_diff_0"/>
                         <case additional="sac_scale=mountain_hiking" color_5="$c_diff_1"/>
@@ -782,7 +716,7 @@
                         <case additional="sac_scale=alpine_hiking" color_5="$c_diff_3"/>
                         <case additional="sac_scale=demanding_alpine_hiking" color_5="$c_diff_4"/>
                         <case additional="sac_scale=difficult_alpine_hiking" color_5="$c_diff_4"/>
-                        <apply color_2="#FFFFFF"/>
+                        <apply color_2="#FFFFFF" strokeWidth_2="$width_l1"/>
 
                     </switch>
                 </apply>
@@ -790,13 +724,13 @@
                     <switch>
                         <case additional="tunnel=yes"/>
                         <case additional="tunnel=avalanche_protector"/>
-                        <apply color__1="$c_road_outer" strokeWidth__1="$width_l5__1" pathEffect__1="$pathEffect_5050__1" />
+                        <apply color__1="$c_road_outer" strokeWidth__1="$width_l5" pathEffect__1="$pathEffect_5050__1" />
                     </switch>
                 </apply>
             </switch>
             <!-- Public transport-->
             <switch>
-                <case tag="railway" value="rail" color="$c_rail_light" color_0="$c_rail_dark" strokeWidth="$width_l2" strokeWidth_0="$width_l3_0" pathEffect="$pathEffect_5050" />
+                <case tag="railway" value="rail" color="$c_rail_light" color_0="$c_rail_dark" strokeWidth="$width_l2" strokeWidth_0="$width_l3" pathEffect="$pathEffect_5050" />
             </switch>
             <!-- Natural features-->
             <switch color="$c_water" cap="ROUND">
