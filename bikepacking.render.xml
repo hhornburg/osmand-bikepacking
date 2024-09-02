@@ -13,7 +13,11 @@
     <renderingProperty attr="contourWidth" name="Contour lines width" description="Contour lines width" type="string" possibleValues="thin,medium,thick" defaultValueDescription="default"/>
     <renderingProperty attr="contourDensity" name="Contour lines density" description="Contour lines density" type="string" possibleValues="low,medium_w,high" defaultValueDescription="default"/>
 
-
+    <!-- Some settigns for the renderer -->
+    <renderingAttribute name="shadowRendering">
+        <!-- 0 - no shadow, 1 - one step, 2 - blur shadow, 3 - solid shadow -->
+        <apply attrIntValue="3" />
+    </renderingAttribute>
 
     <!-- 
     Concept of the paths:
