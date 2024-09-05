@@ -579,6 +579,7 @@
                 </switch>
             </switch>
             <switch cycle="true" point="false" objectType="3" addPoint="true">
+                <case tag="natural" value="coastline" order="1"/>
                 <case tag="landuse" value="residential" order="2"/>
                 <case tag="landuse" value="commercial" order="2"/>
                 <case tag="landuse" value="industrial" order="2"/>
@@ -801,7 +802,11 @@
                 <case tag="natural" value="shingle"/>
                 <apply color="$c_rock_light" color_0="$c_rock_light" shader="shingle"/>
             </switch>
-            <case tag="natural" value="water" color="$c_water" />
+            <switch>
+                <case tag="natural" value="coastline"/>
+                <case tag="natural" value="water"/>
+                <apply color="$c_water"/>
+            </switch>
             <switch color="$c_wood">
                 <case tag="natural" value="wood" />
                 <case tag="landuse" value="forest"/>
