@@ -516,6 +516,8 @@
                 </switch>
                 <switch order="125">
                     <case tag="railway" value="rail" />
+                    <case tag="railway" value="light_rail" />
+                    <case tag="railway" value="narrow_gauge" />
                     <apply additional="layer=-2" order="75"/>
                     <apply layer="-1" order="100"/>
                     <apply layer="1" order="150"/>
@@ -633,7 +635,7 @@
                     <apply strokeWidth="$width_l0"/>
                 </switch>
             </case>
-            <switch>                <!-- Physical Transport Infrastructure -->
+            <switch>                <!-- Roads, Tracks & Paths -->
                 <switch>                    <!-- Lines using shadows to mark tunnels (aka mostly onroad stuff) -->
                     <!-- Tunnels - light colors -->
                     <switch>
@@ -678,11 +680,6 @@
                     <case tag="highway" value="cycleway" color="$c_smallroad" shadowColor="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2">
                         <apply additional="tunnel=yes" color="$c_smallroad_light" shadowColor="$c_cycle_outer_light"/>
                     </case>
-                    <switch>                        <!-- Railways-->
-                        <case tag="railway" value="rail" strokeWidth="$width_l2" strokeWidth_0="$width_l2"/>
-                        <apply color="$c_rail_light" pathEffect="$pathEffect_5050" color_0="$c_rail_dark" shadowColor="$c_rail_dark" shadowRadius="$width_l0"/>
-                        <apply additional="tunnel=yes" color="$c_rail_light_tunnel" color_0="$c_rail_dark_tunnel" shadowColor="$c_rail_dark_tunnel"/>
-                    </switch>
                     <apply additional="bridge=yes" shadowRadius="$width_l1"/>
                 </switch>
                 <switch>                    <!-- Dashed Lines (aka mostly offraod stuff)-->
@@ -768,6 +765,13 @@
                         </switch>
                     </apply>
                 </apply>
+            </switch>
+            <switch>                <!-- Railways-->
+                <case tag="railway" value="rail" strokeWidth="$width_l2" strokeWidth_2="$width_l2"/>
+                <case tag="railway" value="light_rail" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
+                <case tag="railway" value="narrow_gauge" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
+                <apply color="$c_rail_light" pathEffect_2="$pathEffect_5050" color_2="$c_rail_dark" shadowRadius="$width_l0" shadowColor="$c_rail_dark" cap="SQUARE" cap_2="SQUARE"/>
+                <apply additional="tunnel=yes" color="$c_rail_light_tunnel" color_2="$c_rail_dark_tunnel"/>
             </switch>
             <switch>                <!-- Natural features-->
                 <switch color="$c_water" cap="ROUND">
