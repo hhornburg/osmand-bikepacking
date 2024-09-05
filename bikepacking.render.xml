@@ -16,7 +16,7 @@
     <!-- Some settigns for the renderer -->
     <renderingAttribute name="shadowRendering">
         <!-- 0 - no shadow, 1 - one step, 2 - blur shadow, 3 - solid shadow -->
-        <apply attrIntValue="3" />
+        <case attrIntValue="3" />
     </renderingAttribute>
 
     <!-- 
@@ -458,7 +458,7 @@
 
     <order>
         <!-- 
-        Backgrounds: 1-64: default 32
+        Backgrounds: 1-10 (important for line shadows): default 5
         Lines:
         Layer -2: 65-89: default 77
         Layer -1: 90-114: default 102
@@ -577,27 +577,27 @@
                 </switch>
             </switch>
             <switch cycle="true" point="false" objectType="3" addPoint="true">
-                <case tag="landuse" value="residential" order="20"/>
-                <case tag="landuse" value="commercial" order="20"/>
-                <case tag="landuse" value="industrial" order="20"/>
-                <case tag="landuse" value="retail" order="20"/>
-                <case tag="landuse" value="cemetery" order="25"/>
-                <case tag="natural" value="bare_rock" order="31"/>
-                <case tag="natural" value="scree" order="31"/>
-                <case tag="natural" value="shingle" order="31"/>
-                <case tag="natural" value="water" order="32"/>
-                <case tag="natural" value="wood" order="33"/>
-                <case tag="landuse" value="forest" order="33"/>
-                <case tag="natural" value="scrub" order="33"/>
-                <case tag="natural" value="heath" order="33"/>
-                <case tag="natural" value="grassland" order="33"/>
-                <case tag="landuse" value="meadow" order="33"/>
-                <case tag="landuse" value="grass" order="33"/>
-                <case tag="natural" value="fell" order="33"/>
-                <case tag="natural" value="beach" order="33"/>
-                <case tag="natural" value="sand" order="33"/>
-                <case tag="natural" value="wetland" order="33"/>
-                <case tag="building" value="" order="40" minzoom="15"/>
+                <case tag="landuse" value="residential" order="2"/>
+                <case tag="landuse" value="commercial" order="2"/>
+                <case tag="landuse" value="industrial" order="2"/>
+                <case tag="landuse" value="retail" order="2"/>
+                <case tag="landuse" value="cemetery" order="3"/>
+                <case tag="natural" value="bare_rock" order="4"/>
+                <case tag="natural" value="scree" order="4"/>
+                <case tag="natural" value="shingle" order="4"/>
+                <case tag="natural" value="water" order="4"/>
+                <case tag="natural" value="wood" order="5"/>
+                <case tag="landuse" value="forest" order="5"/>
+                <case tag="natural" value="scrub" order="5"/>
+                <case tag="natural" value="heath" order="5"/>
+                <case tag="natural" value="grassland" order="5"/>
+                <case tag="landuse" value="meadow" order="5"/>
+                <case tag="landuse" value="grass" order="5"/>
+                <case tag="natural" value="fell" order="5"/>
+                <case tag="natural" value="beach" order="5"/>
+                <case tag="natural" value="sand" order="5"/>
+                <case tag="natural" value="wetland" order="5"/>
+                <case tag="building" value="" order="40" minzoom="7"/>
             </switch>
         </switch>
     </order>
