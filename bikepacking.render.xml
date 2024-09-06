@@ -435,6 +435,7 @@
     <renderingConstant name="c_access_yes" value="#FFFFFF"/>
     <renderingConstant name="c_access_bike" value="#0000FF"/>
     <renderingConstant name="c_access_foot" value="#FFFF00"/>
+    <renderingConstant name="c_access_foot_and_bike" value="#00FF00"/>
     <renderingConstant name="c_access_no" value="#FF0000"/>
 
     <renderingConstant name="c_rail_dark" value="#303030"/>
@@ -727,12 +728,53 @@
                     </switch>
                 </switch>
                 <apply>                    <!-- Access/Biking/Hiking Markups -->
-                    <apply minzoom="13" pathEffect_2="$pathEffect_markup1" strokeWidth_2="$width_l1" color_2="$c_access_yes">
-                        <case additional="bicycle=no" color_2="$c_access_foot">
-                            <case additional="foot=no" color_2="$c_access_no"/>
+                    <apply minzoom="13" pathEffect_2="$pathEffect_markup1" strokeWidth_2="$width_l1" color_2="$c_access_yes">                        <!-- Access -->
+                        <switch>                            <!-- No general access -->
+                            <case additional="access=no"/>
+                            <case additional="access=private"/>
+                            <apply color_2="$c_access_no"/>
+                            <apply>
+                                <switch>                                    <!-- If bikes allowed -->
+                                    <case additional="bicycle=yes" />
+                                    <case additional="bicycle=designated" />
+                                    <case additional="bicycle=permissive" />
+                                    <apply color_2="$c_access_bike"/>
+                                    <apply >
+                                        <switch>                                            <!-- If foot and bike allowed -->
+                                            <case additional="foot=yes" />
+                                            <case additional="foot=designated" />
+                                            <case additional="foot=permissive" />
+                                            <apply color_2="$c_access_foot_and_bike"/>
+                                        </switch>
+                                    </apply>
+                                </switch>
+                                <switch>                                    <!-- If foot allowed, but bike not -->
+                                    <case additional="foot=yes" />
+                                    <case additional="foot=designated" />
+                                    <case additional="foot=permissive" />
+                                    <apply color_2="$c_access_foot"/>
+                                </switch>
+                            </apply>
+                        </switch>
+                        <case>                            <!-- General access yes -->
+                            <switch>                                <!-- If bikes not allowed -->
+                                <case additional="bicycle=no" />
+                                <case additional="bicycle=private" />
+                                <apply color_2="$c_access_foot"/>
+                                <apply >
+                                    <switch>                                        <!-- Neither foot nor bike allowed -->
+                                        <case additional="foot=no" />
+                                        <case additional="foot=private" />
+                                        <apply color_2="$c_access_no"/>
+                                    </switch>
+                                </apply>
+                            </switch>
+                            <switch>                                <!-- If bike allowed, but foot not -->
+                                <case additional="foot=no" />
+                                <case additional="foot=private" />
+                                <apply color_2="$c_access_bike"/>
+                            </switch>
                         </case>
-                        <case additional="foot=no" color_2="$c_access_bike"/>
-                        <case additional="access=no" color_2="$c_access_no"/>
                     </apply>
                     <apply minzoom="13" pathEffect_3="$pathEffect_markup2" strokeWidth_3="$width_l1">
                         <switch>
