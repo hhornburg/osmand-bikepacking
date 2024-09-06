@@ -457,9 +457,15 @@
 
     <renderingConstant name="c_contour" value="#9C5615"/>
 
+    <renderingConstant name="c_text_civilization" value="#000000"/>
+    <renderingConstant name="c_text_flora" value="#90C090"/>
+    <renderingConstant name="c_text_water" value="#5050FF"/>
+    <renderingConstant name="c_text_geology" value="#AA5020"/>
+    <renderingConstant name="c_text_road" value="#000000"/>
+
     <order>
         <!-- 
-        Backgrounds: 1-10 (important for line shadows): default 5
+        Areas: 1-10 (important for line shadows): default 5
         Lines:
         Layer -2: 65-89: default 77
         Layer -1: 90-114: default 102
@@ -467,9 +473,13 @@
         Layer 1: 140-164: default 152
         Layer 2: 165-189: default 177
         Layer 3: 190-214: default 202
-        Points: 215-255: default 240
+        Points: 136-195: default 165
+        Text: 196-255: default 225
         -->
         <switch>
+            <switch area="false" point="true" objectType="1" order="165">
+                <case tag="place" value=""/>
+            </switch>
             <switch area="false" point="false" objectType="2">
                 <case tag="contour" value="elevation" order="65">
                     <case contourDensity="low">
@@ -622,6 +632,54 @@
                     <case additional="contourtype=20m"/>
                     <apply textSize="0" textOnPath="false"/>
                 </switch>
+            </switch>
+            <switch>                <!-- water labels-->
+                <case tag="natural" value="water"/>
+                <switch>
+                    <case tag="waterway" value="ditch"/>
+                    <case tag="waterway" value="drain"/>
+                    <case tag="waterway" value="stream"/>
+                    <case tag="waterway" value="canal" />
+                    <case tag="waterway" value="river" />
+                    <apply textOnPath="true"/>
+                </switch>
+                <apply textSize="10" textColor="$c_text_water"/>
+            </switch>
+            <switch>                <!-- flora labels-->
+                <case tag="natural" value="wood" />
+                <case tag="natural" value="scrub"/>
+                <case tag="natural" value="heath"/>
+                <case tag="natural" value="grassland"/>
+                <case tag="natural" value="fell"/>
+                <case tag="natural" value="wetland"/>
+                <case tag="landuse" value="forest"/>
+                <case tag="landuse" value="meadow"/>
+                <case tag="landuse" value="grass"/>
+                <apply textSize="10" textColor="$c_text_flora"/>
+            </switch>
+            <switch>                <!-- geology labels-->
+                <case tag="natural" value="bare_rock"/>
+                <case tag="natural" value="scree"/>
+                <case tag="natural" value="shingle"/>
+                <case tag="natural" value="beach"/>
+                <case tag="natural" value="sand"/>
+                <case tag="natural" value="wetland"/>
+                <apply textSize="10" textColor="$c_text_geology"/>
+            </switch>
+            <switch>                <!-- civilization labels-->
+                <case tag="place" value="city" textSize="13" />
+                <case tag="place" value="suburb" textSize="12" textItalic="true" />
+                <case tag="place" value="town" textSize="12" />
+                <case tag="place" value="village" textSize="11" />
+                <case tag="place" value="hamlet" textSize="10" />
+                <case tag="place" value="isolated_dwelling" textSize="10" />
+                <case tag="place" value="farm" textSize="10" />
+                <case tag="place" value="allotments" textSize="10" />
+                <switch>
+                    <case tag="highway" value=""/>
+                    <apply textOnPath="true"/>
+                </switch>
+                <apply textColor="$c_text_civilization"/>
             </switch>
         </switch>
     </text>
