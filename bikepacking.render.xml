@@ -519,7 +519,7 @@
     <renderingConstant name="c_access_no" value="#FF0000"/>
 
     <renderingConstant name="c_route_bike" value="#0000FF"/>
-    <renderingConstant name="c_route_foot" value="#FFFF00"/>
+    <renderingConstant name="c_route_hike" value="#FFFF00"/>
     <renderingConstant name="c_route_mtb" value="#00FF00"/>
 
     <renderingConstant name="c_rail_dark" value="#303030"/>
@@ -1028,7 +1028,7 @@
                             <case hikingRoutesOSMC="walkingRoutesOSMC"/>
                             <case hikingRoutesOSMC="walkingRoutesScopeOSMC"/>
                             <case hikingRoutesOSMC="walkingRoutesOSMCNodes"/>
-                            <apply tag="route_hiking" value="" shadowColor="$c_route_hiking" shadowWidth="$width_l1" />
+                            <apply tag="route_hiking" value="" shadowColor="$c_route_hike" shadowWidth="$width_l1" />
                         </switch>
                     </apply>
                     <apply showMtbRoutes="true">                        <!-- MTB Routes-->
