@@ -54,24 +54,24 @@
 
     <renderingConstant name="width_l1_z12" value="1"/>
     <renderingConstant name="width_l1_z13" value="2"/>
-    <renderingConstant name="width_l1_z14" value="3"/>
+    <renderingConstant name="width_l1_z14" value="2"/>
     <renderingConstant name="width_l1_z15" value="4"/>
-    <renderingConstant name="width_l1_z16" value="5"/>
+    <renderingConstant name="width_l1_z16" value="4"/>
     <renderingConstant name="width_l1_z17" value="6"/>
-    <renderingConstant name="width_l1_z18" value="7"/>
+    <renderingConstant name="width_l1_z18" value="6"/>
     <renderingConstant name="width_l1_z19" value="8"/>
-    <renderingConstant name="width_l1_z20" value="9"/>
+    <renderingConstant name="width_l1_z20" value="8"/>
     <renderingConstant name="width_l1_z21" value="10"/>
 
     <renderingConstant name="width_l2_z12" value="2"/>
     <renderingConstant name="width_l2_z13" value="4"/>
-    <renderingConstant name="width_l2_z14" value="6"/>
+    <renderingConstant name="width_l2_z14" value="4"/>
     <renderingConstant name="width_l2_z15" value="8"/>
-    <renderingConstant name="width_l2_z16" value="10"/>
+    <renderingConstant name="width_l2_z16" value="8"/>
     <renderingConstant name="width_l2_z17" value="12"/>
-    <renderingConstant name="width_l2_z18" value="14"/>
+    <renderingConstant name="width_l2_z18" value="12"/>
     <renderingConstant name="width_l2_z19" value="16"/>
-    <renderingConstant name="width_l2_z20" value="18"/>
+    <renderingConstant name="width_l2_z20" value="16"/>
     <renderingConstant name="width_l2_z21" value="20"/>
 
     <renderingConstant name="width_l3_z12" value="3"/>
@@ -199,71 +199,71 @@
     </renderingAttribute>
 
     <!-- unknown=horrible+good-->
-    <renderingConstant name="pathEffect_unknown_z12" value="4_5_7_2"/>
-    <renderingConstant name="pathEffect_unknown_z13" value="8_10_14_4"/>
-    <renderingConstant name="pathEffect_unknown_z14" value="12_15_21_6"/>
-    <renderingConstant name="pathEffect_unknown_z15" value="16_20_28_8"/>
-    <renderingConstant name="pathEffect_unknown_z16" value="20_25_35_10"/>
-    <renderingConstant name="pathEffect_unknown_z17" value="24_30_42_12"/>
-    <renderingConstant name="pathEffect_unknown_z18" value="28_35_49_14"/>
-    <renderingConstant name="pathEffect_unknown_z19" value="32_40_56_16"/>
-    <renderingConstant name="pathEffect_unknown_z20" value="34_45_63_18"/>
-    <renderingConstant name="pathEffect_unknown_z21" value="38_50_70_20"/>
+    <renderingConstant name="pathEffect_unknown_z12" value="3_2_3_2_9_1"/>
+    <renderingConstant name="pathEffect_unknown_z13" value="6_4_6_4_18_2"/>
+    <renderingConstant name="pathEffect_unknown_z14" value="6_4_6_4_18_2"/>
+    <renderingConstant name="pathEffect_unknown_z15" value="12_8_12_8_36_4"/>
+    <renderingConstant name="pathEffect_unknown_z16" value="12_8_12_8_36_4"/>
+    <renderingConstant name="pathEffect_unknown_z17" value="18_12_18_12_54_6"/>
+    <renderingConstant name="pathEffect_unknown_z18" value="18_12_18_12_54_6"/>
+    <renderingConstant name="pathEffect_unknown_z19" value="24_16_24_16_72_8"/>
+    <renderingConstant name="pathEffect_unknown_z20" value="24_16_24_16_72_8"/>
+    <renderingConstant name="pathEffect_unknown_z21" value="30_20_30_20_90_10"/>
 
-    <renderingConstant name="pathEffect_good_z12" value="7_2"/>
-    <renderingConstant name="pathEffect_good_z13" value="14_4"/>
-    <renderingConstant name="pathEffect_good_z14" value="21_6"/>
-    <renderingConstant name="pathEffect_good_z15" value="28_8"/>
-    <renderingConstant name="pathEffect_good_z16" value="35_10"/>
-    <renderingConstant name="pathEffect_good_z17" value="42_12"/>
-    <renderingConstant name="pathEffect_good_z18" value="49_14"/>
-    <renderingConstant name="pathEffect_good_z19" value="56_16"/>
-    <renderingConstant name="pathEffect_good_z20" value="63_18"/>
-    <renderingConstant name="pathEffect_good_z21" value="70_20"/>
+    <renderingConstant name="pathEffect_good_z12" value="9_1"/>
+    <renderingConstant name="pathEffect_good_z13" value="18_2"/>
+    <renderingConstant name="pathEffect_good_z14" value="18_2"/>
+    <renderingConstant name="pathEffect_good_z15" value="36_4"/>
+    <renderingConstant name="pathEffect_good_z16" value="36_4"/>
+    <renderingConstant name="pathEffect_good_z17" value="54_6"/>
+    <renderingConstant name="pathEffect_good_z18" value="54_6"/>
+    <renderingConstant name="pathEffect_good_z19" value="72_8"/>
+    <renderingConstant name="pathEffect_good_z20" value="72_8"/>
+    <renderingConstant name="pathEffect_good_z21" value="90_10"/>
 
-    <renderingConstant name="pathEffect_intermediate_z12" value="6_3"/>
-    <renderingConstant name="pathEffect_intermediate_z13" value="12_6"/>
-    <renderingConstant name="pathEffect_intermediate_z14" value="18_9"/>
-    <renderingConstant name="pathEffect_intermediate_z15" value="24_12"/>
-    <renderingConstant name="pathEffect_intermediate_z16" value="30_15"/>
-    <renderingConstant name="pathEffect_intermediate_z17" value="36_18"/>
-    <renderingConstant name="pathEffect_intermediate_z18" value="42_21"/>
-    <renderingConstant name="pathEffect_intermediate_z19" value="48_24"/>
-    <renderingConstant name="pathEffect_intermediate_z20" value="54_27"/>
-    <renderingConstant name="pathEffect_intermediate_z21" value="60_30"/>
+    <renderingConstant name="pathEffect_intermediate_z12" value="8_2"/>
+    <renderingConstant name="pathEffect_intermediate_z13" value="16_4"/>
+    <renderingConstant name="pathEffect_intermediate_z14" value="16_4"/>
+    <renderingConstant name="pathEffect_intermediate_z15" value="32_8"/>
+    <renderingConstant name="pathEffect_intermediate_z16" value="32_8"/>
+    <renderingConstant name="pathEffect_intermediate_z17" value="48_12"/>
+    <renderingConstant name="pathEffect_intermediate_z18" value="48_12"/>
+    <renderingConstant name="pathEffect_intermediate_z19" value="64_16"/>
+    <renderingConstant name="pathEffect_intermediate_z20" value="64_16"/>
+    <renderingConstant name="pathEffect_intermediate_z21" value="80_20"/>
 
-    <renderingConstant name="pathEffect_bad_z12" value="5_4"/>
-    <renderingConstant name="pathEffect_bad_z13" value="10_8"/>
-    <renderingConstant name="pathEffect_bad_z14" value="15_12"/>
-    <renderingConstant name="pathEffect_bad_z15" value="20_16"/>
-    <renderingConstant name="pathEffect_bad_z16" value="25_20"/>
-    <renderingConstant name="pathEffect_bad_z17" value="30_24"/>
-    <renderingConstant name="pathEffect_bad_z18" value="35_28"/>
-    <renderingConstant name="pathEffect_bad_z19" value="40_32"/>
-    <renderingConstant name="pathEffect_bad_z20" value="45_36"/>
-    <renderingConstant name="pathEffect_bad_z21" value="50_40"/>
+    <renderingConstant name="pathEffect_bad_z12" value="7_3"/>
+    <renderingConstant name="pathEffect_bad_z13" value="14_6"/>
+    <renderingConstant name="pathEffect_bad_z14" value="14_6"/>
+    <renderingConstant name="pathEffect_bad_z15" value="28_12"/>
+    <renderingConstant name="pathEffect_bad_z16" value="28_12"/>
+    <renderingConstant name="pathEffect_bad_z17" value="42_18"/>
+    <renderingConstant name="pathEffect_bad_z18" value="42_18"/>
+    <renderingConstant name="pathEffect_bad_z19" value="56_24"/>
+    <renderingConstant name="pathEffect_bad_z20" value="56_24"/>
+    <renderingConstant name="pathEffect_bad_z21" value="70_30"/>
 
-    <renderingConstant name="pathEffect_horrible_z12" value="4_5"/>
-    <renderingConstant name="pathEffect_horrible_z13" value="8_10"/>
-    <renderingConstant name="pathEffect_horrible_z14" value="12_15"/>
-    <renderingConstant name="pathEffect_horrible_z15" value="16_20"/>
-    <renderingConstant name="pathEffect_horrible_z16" value="20_25"/>
-    <renderingConstant name="pathEffect_horrible_z17" value="24_30"/>
-    <renderingConstant name="pathEffect_horrible_z18" value="28_35"/>
-    <renderingConstant name="pathEffect_horrible_z19" value="32_40"/>
-    <renderingConstant name="pathEffect_horrible_z20" value="36_45"/>
-    <renderingConstant name="pathEffect_horrible_z21" value="40_50"/>
+    <renderingConstant name="pathEffect_horrible_z12" value="3_2"/>
+    <renderingConstant name="pathEffect_horrible_z13" value="6_4"/>
+    <renderingConstant name="pathEffect_horrible_z14" value="6_4"/>
+    <renderingConstant name="pathEffect_horrible_z15" value="12_8"/>
+    <renderingConstant name="pathEffect_horrible_z16" value="12_8"/>
+    <renderingConstant name="pathEffect_horrible_z17" value="18_12"/>
+    <renderingConstant name="pathEffect_horrible_z18" value="18_12"/>
+    <renderingConstant name="pathEffect_horrible_z19" value="24_16"/>
+    <renderingConstant name="pathEffect_horrible_z20" value="24_16"/>
+    <renderingConstant name="pathEffect_horrible_z21" value="30_20"/>
 
-    <renderingConstant name="pathEffect_no_z12" value="3_6"/>
-    <renderingConstant name="pathEffect_no_z13" value="6_12"/>
-    <renderingConstant name="pathEffect_no_z14" value="9_18"/>
-    <renderingConstant name="pathEffect_no_z15" value="12_24"/>
-    <renderingConstant name="pathEffect_no_z16" value="15_30"/>
-    <renderingConstant name="pathEffect_no_z17" value="18_36"/>
-    <renderingConstant name="pathEffect_no_z18" value="21_42"/>
-    <renderingConstant name="pathEffect_no_z19" value="24_48"/>
-    <renderingConstant name="pathEffect_no_z20" value="27_54"/>
-    <renderingConstant name="pathEffect_no_z21" value="30_60"/>
+    <renderingConstant name="pathEffect_no_z12" value="2_3"/>
+    <renderingConstant name="pathEffect_no_z13" value="4_6"/>
+    <renderingConstant name="pathEffect_no_z14" value="4_6"/>
+    <renderingConstant name="pathEffect_no_z15" value="8_12"/>
+    <renderingConstant name="pathEffect_no_z16" value="8_12"/>
+    <renderingConstant name="pathEffect_no_z17" value="12_18"/>
+    <renderingConstant name="pathEffect_no_z18" value="12_18"/>
+    <renderingConstant name="pathEffect_no_z19" value="16_24"/>
+    <renderingConstant name="pathEffect_no_z20" value="16_24"/>
+    <renderingConstant name="pathEffect_no_z21" value="20_30"/>
 
     <renderingAttribute name="pathEffect_unknown">
         <case maxzoom="12" attrStringValue="$pathEffect_unknown_z12" />
@@ -344,51 +344,51 @@
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_markup1">
-        <case minzoom="13" maxzoom="13" attrStringValue="2_16" />
-        <case minzoom="14" maxzoom="14" attrStringValue="3_24" />
-        <case minzoom="15" maxzoom="15" attrStringValue="4_32" />
-        <case minzoom="16" maxzoom="16" attrStringValue="5_40" />
-        <case minzoom="17" maxzoom="17" attrStringValue="6_48" />
-        <case minzoom="18" maxzoom="18" attrStringValue="7_56" />
-        <case minzoom="19" maxzoom="19" attrStringValue="8_64" />
-        <case minzoom="20" maxzoom="20" attrStringValue="9_72" />
-        <case minzoom="21" attrStringValue="10_80" />
+        <case minzoom="13" maxzoom="13" attrStringValue="1_19" />
+        <case minzoom="14" maxzoom="14" attrStringValue="1_19" />
+        <case minzoom="15" maxzoom="15" attrStringValue="2_38" />
+        <case minzoom="16" maxzoom="16" attrStringValue="2_38" />
+        <case minzoom="17" maxzoom="17" attrStringValue="3_57" />
+        <case minzoom="18" maxzoom="18" attrStringValue="3_57" />
+        <case minzoom="19" maxzoom="19" attrStringValue="4_76" />
+        <case minzoom="20" maxzoom="20" attrStringValue="4_76" />
+        <case minzoom="21" attrStringValue="5_95" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_markup2">
-        <case minzoom="13" maxzoom="13" attrStringValue="0_2_2_14" />
-        <case minzoom="14" maxzoom="14" attrStringValue="0_3_3_21" />
-        <case minzoom="15" maxzoom="15" attrStringValue="0_4_4_28" />
-        <case minzoom="16" maxzoom="16" attrStringValue="0_5_5_35" />
-        <case minzoom="17" maxzoom="17" attrStringValue="0_6_6_42" />
-        <case minzoom="18" maxzoom="18" attrStringValue="0_7_7_49" />
-        <case minzoom="19" maxzoom="19" attrStringValue="0_8_8_56" />
-        <case minzoom="20" maxzoom="20" attrStringValue="0_9_9_63" />
-        <case minzoom="21" attrStringValue="0_10_10_70" />
+        <case minzoom="13" maxzoom="13" attrStringValue="0_1_1_18" />
+        <case minzoom="14" maxzoom="14" attrStringValue="0_1_1_18" />
+        <case minzoom="15" maxzoom="15" attrStringValue="0_2_2_36" />
+        <case minzoom="16" maxzoom="16" attrStringValue="0_2_2_36" />
+        <case minzoom="17" maxzoom="17" attrStringValue="0_3_3_54" />
+        <case minzoom="18" maxzoom="18" attrStringValue="0_3_3_54" />
+        <case minzoom="19" maxzoom="19" attrStringValue="0_4_4_72" />
+        <case minzoom="20" maxzoom="20" attrStringValue="0_4_4_72" />
+        <case minzoom="21" attrStringValue="0_5_5_90" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_markup3">
-        <case minzoom="13" maxzoom="13" attrStringValue="0_4_2_12" />
-        <case minzoom="14" maxzoom="14" attrStringValue="0_6_3_18" />
-        <case minzoom="15" maxzoom="15" attrStringValue="0_8_4_24" />
-        <case minzoom="16" maxzoom="16" attrStringValue="0_10_5_30" />
-        <case minzoom="17" maxzoom="17" attrStringValue="0_12_6_36" />
-        <case minzoom="18" maxzoom="18" attrStringValue="0_14_7_42" />
-        <case minzoom="19" maxzoom="19" attrStringValue="0_16_8_48" />
-        <case minzoom="20" maxzoom="20" attrStringValue="0_18_9_54" />
-        <case minzoom="21" attrStringValue="0_20_10_60" />
+        <case minzoom="13" maxzoom="13" attrStringValue="0_2_1_17" />
+        <case minzoom="14" maxzoom="14" attrStringValue="0_2_1_17" />
+        <case minzoom="15" maxzoom="15" attrStringValue="0_4_2_34" />
+        <case minzoom="16" maxzoom="16" attrStringValue="0_4_2_34" />
+        <case minzoom="17" maxzoom="17" attrStringValue="0_6_3_53" />
+        <case minzoom="18" maxzoom="18" attrStringValue="0_6_3_53" />
+        <case minzoom="19" maxzoom="19" attrStringValue="0_8_4_68" />
+        <case minzoom="20" maxzoom="20" attrStringValue="0_8_4_68" />
+        <case minzoom="21" attrStringValue="0_10_5_85" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_markup4">
-        <case minzoom="13" maxzoom="13" attrStringValue="0_6_2_10" />
-        <case minzoom="14" maxzoom="14" attrStringValue="0_9_3_15" />
-        <case minzoom="15" maxzoom="15" attrStringValue="0_12_4_20" />
-        <case minzoom="16" maxzoom="16" attrStringValue="0_15_5_25" />
-        <case minzoom="17" maxzoom="17" attrStringValue="0_18_6_30" />
-        <case minzoom="18" maxzoom="18" attrStringValue="0_21_7_35" />
-        <case minzoom="19" maxzoom="19" attrStringValue="0_24_8_40" />
-        <case minzoom="20" maxzoom="20" attrStringValue="0_27_9_45" />
-        <case minzoom="21" attrStringValue="0_30_10_50" />
+        <case minzoom="13" maxzoom="13" attrStringValue="0_3_1_16" />
+        <case minzoom="14" maxzoom="14" attrStringValue="0_3_1_16" />
+        <case minzoom="15" maxzoom="15" attrStringValue="0_6_2_32" />
+        <case minzoom="16" maxzoom="16" attrStringValue="0_6_2_32" />
+        <case minzoom="17" maxzoom="17" attrStringValue="0_9_3_48" />
+        <case minzoom="18" maxzoom="18" attrStringValue="0_9_3_48" />
+        <case minzoom="19" maxzoom="19" attrStringValue="0_12_4_64" />
+        <case minzoom="20" maxzoom="20" attrStringValue="0_12_4_64" />
+        <case minzoom="21" attrStringValue="0_15_5_80" />
     </renderingAttribute>
 
     <renderingAttribute name="pathEffect_5050">
@@ -771,7 +771,7 @@
                         <case tag="highway" value="path"/>
                         <case tag="highway" value="footway"/>
                         <case tag="highway" value="bridleway"/>
-                        <apply color="$c_track_outer" strokeWidth="$width_l1" cap="ROUND" pathEffect="$pathEffect_unknown"/>
+                        <apply color="$c_track_outer" strokeWidth="$width_l1" pathEffect="$pathEffect_unknown"/>
                         <apply>
                             <switch>
                                 <case additional="trail_visibility=excellent" pathEffect=""/>
