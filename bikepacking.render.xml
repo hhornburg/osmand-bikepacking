@@ -407,7 +407,7 @@
     <renderingConstant name="c_track_outer" value="#925D3A"/>
     <renderingConstant name="c_track_inner" value="#B3A18F"/>
     <renderingConstant name="c_cycle_outer" value="#2C5DF2"/>
-    <renderingConstant name="c_road_outer" value="#303030"/>
+    <renderingConstant name="c_paved_outer" value="#303030"/>
     <renderingConstant name="c_smallroad" value="#FFFFFF"/>
     <renderingConstant name="c_tertiary" value="#FFFFAA"/>
     <renderingConstant name="c_secondary" value="#FFFF00"/>
@@ -418,13 +418,66 @@
     <renderingConstant name="c_track_outer_light" value="#E8C6A3"/>
     <renderingConstant name="c_track_inner_light" value="#F2E8D9"/>
     <renderingConstant name="c_cycle_outer_light" value="#8AB4FF"/>
-    <renderingConstant name="c_road_outer_light" value="#777777"/>
+    <renderingConstant name="c_paved_outer_light" value="#777777"/>
     <renderingConstant name="c_smallroad_light" value="#E6E6E6"/>
     <renderingConstant name="c_tertiary_light" value="#FFFFE6"/>
     <renderingConstant name="c_secondary_light" value="#FFFF99"/>
     <renderingConstant name="c_primary_light" value="#FFD699"/>
     <renderingConstant name="c_fastroad_light" value="#FF6666"/>
     <renderingConstant name="c_motorway_outer_light" value="#FFD699"/>
+
+    <renderingAttribute name="c_smallroad_inner">
+        <switch>
+            <case additional="surface=compacted" />
+            <case additional="surface=dirt" />
+            <case additional="surface=earth" />
+            <case additional="surface=fine_gravel" />
+            <case additional="surface=gravel" />
+            <case additional="surface=ground" />
+            <case additional="surface=unpaved" />
+            <apply attrColorValue="$c_track_inner" />
+        </switch>
+        <case attrColorValue="$c_smallroad" />
+    </renderingAttribute>
+    <renderingAttribute name="c_smallroad_inner_light">
+        <switch>
+            <case additional="surface=compacted" />
+            <case additional="surface=dirt" />
+            <case additional="surface=earth" />
+            <case additional="surface=fine_gravel" />
+            <case additional="surface=gravel" />
+            <case additional="surface=ground" />
+            <case additional="surface=unpaved" />
+            <apply attrColorValue="$c_track_inner_light" />
+        </switch>
+        <case attrColorValue="$c_smallroad_light" />
+    </renderingAttribute>
+    <renderingAttribute name="c_road_outer">
+        <switch>
+            <case additional="surface=compacted" />
+            <case additional="surface=dirt" />
+            <case additional="surface=earth" />
+            <case additional="surface=fine_gravel" />
+            <case additional="surface=gravel" />
+            <case additional="surface=ground" />
+            <case additional="surface=unpaved" />
+            <apply attrColorValue="$c_track_outer" />
+        </switch>
+        <case attrColorValue="$c_paved_outer" />
+    </renderingAttribute>
+    <renderingAttribute name="c_road_outer_light">
+        <switch>
+            <case additional="surface=compacted" />
+            <case additional="surface=dirt" />
+            <case additional="surface=earth" />
+            <case additional="surface=fine_gravel" />
+            <case additional="surface=gravel" />
+            <case additional="surface=ground" />
+            <case additional="surface=unpaved" />
+            <apply attrColorValue="$c_track_outer_light" />
+        </switch>
+        <case attrColorValue="$c_paved_outer_light" />
+    </renderingAttribute>
 
     <renderingConstant name="c_diff_0" value="#00A10F"/>
     <renderingConstant name="c_diff_1" value="#2C5DF2"/>
@@ -734,10 +787,10 @@
                         <case tag="highway" value="living_street"/>
                         <case tag="highway" value="service"/>
                         <case tag="highway" value="road"/>
-                        <apply color="$c_smallroad" strokeWidth="$width_l2" shadowColor="$c_road_outer" shadowRadius="$width_l0"/>
-                        <apply additional="tunnel=yes" color="$c_smallroad_light" shadowColor="$c_road_outer_light"/>
+                        <apply color="$c_smallroad_inner" strokeWidth="$width_l2" shadowColor="$c_road_outer" shadowRadius="$width_l0"/>
+                        <apply additional="tunnel=yes" color="$c_smallroad_inner_light" shadowColor="$c_road_outer_light"/>
                     </switch>
-                    <case tag="highway" value="cycleway" color="$c_smallroad" shadowColor="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2">
+                    <case tag="highway" value="cycleway" color="$c_smallroad_inner" shadowColor="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2">
                         <apply additional="tunnel=yes" color="$c_smallroad_light" shadowColor="$c_cycle_outer_light"/>
                     </case>
                     <apply additional="bridge=yes" shadowRadius="$width_l1"/>
