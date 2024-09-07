@@ -107,6 +107,17 @@
     <renderingConstant name="width_l5_z20" value="45"/>
     <renderingConstant name="width_l5_z21" value="50"/>
 
+    <renderingConstant name="width_l6_z12" value="6"/>
+    <renderingConstant name="width_l6_z13" value="12"/>
+    <renderingConstant name="width_l6_z14" value="18"/>
+    <renderingConstant name="width_l6_z15" value="24"/>
+    <renderingConstant name="width_l6_z16" value="30"/>
+    <renderingConstant name="width_l6_z17" value="36"/>
+    <renderingConstant name="width_l6_z18" value="42"/>
+    <renderingConstant name="width_l6_z19" value="48"/>
+    <renderingConstant name="width_l6_z20" value="54"/>
+    <renderingConstant name="width_l6_z21" value="60"/>
+
     <renderingAttribute name="width_l00">
         <case maxzoom="12" attrIntValue="$width_l00_z12" attrFloatValue="$width_l00_z12"/>
         <case minzoom="13" maxzoom="13" attrIntValue="$width_l00_z13" attrFloatValue="$width_l00_z13"/>
@@ -196,6 +207,19 @@
         <case minzoom="19" maxzoom="19" attrIntValue="$width_l5_z19" attrFloatValue="$width_l5_z19"/>
         <case minzoom="20" maxzoom="20" attrIntValue="$width_l5_z20" attrFloatValue="$width_l5_z20"/>
         <case minzoom="21" attrIntValue="$width_l5_z21" attrFloatValue="$width_l5_z21"/>
+    </renderingAttribute>
+
+    <renderingAttribute name="width_l6">
+        <case maxzoom="12" attrIntValue="$width_l6_z12" attrFloatValue="$width_l6_z12"/>
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l6_z13" attrFloatValue="$width_l6_z13"/>
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l6_z14" attrFloatValue="$width_l6_z14"/>
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l6_z15" attrFloatValue="$width_l6_z15"/>
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l6_z16" attrFloatValue="$width_l6_z16"/>
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l6_z17" attrFloatValue="$width_l6_z17"/>
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l6_z18" attrFloatValue="$width_l6_z18"/>
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l6_z19" attrFloatValue="$width_l6_z19"/>
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l6_z20" attrFloatValue="$width_l6_z20"/>
+        <case minzoom="21" attrIntValue="$width_l6_z21" attrFloatValue="$width_l6_z21"/>
     </renderingAttribute>
 
     <!-- unknown=horrible+good-->
@@ -520,12 +544,12 @@
         <!-- 
         Areas: 1-10 (important for line shadows): default 5
         Lines:
-        Layer -2: 65-89: default 77
-        Layer -1: 90-114: default 102
-        Layer 0: 115-139: default 127
-        Layer 1: 140-164: default 152
-        Layer 2: 165-189: default 177
-        Layer 3: 190-214: default 202
+        Layer -2: 11-31: default 21
+        Layer -1: 32-52: default 42
+        Layer 0: 53-73: default 63
+        Layer 1: 74-94: default 84
+        Layer 2: 95-115: default 105
+        Layer 3: 116-135: default 126
         Points: 136-195: default 165
         Text: 196-255: default 225
         -->
@@ -534,7 +558,7 @@
                 <case tag="place" value=""/>
             </switch>
             <switch area="false" point="false" objectType="2">
-                <case tag="contour" value="elevation" order="65">
+                <case tag="contour" value="elevation" order="10">                    <!-- contours even below shadows-->
                     <case contourDensity="low">
                         <case additional="contourtype=5m" order="-1"/>
                         <case additional="contourtype=10m" order="-1"/>
@@ -563,7 +587,7 @@
                         <case additional="contourtype=1000m" minzoom="8"/>
                     </case>
                 </case>
-                <switch order="120">
+                <switch order="53">
                     <case tag="waterway" value="ditch" minzoom="15"/>
                     <case tag="waterway" value="drain" minzoom="15"/>
                     <case tag="waterway" value="stream" minzoom="13"/>
@@ -578,7 +602,7 @@
                         <case additional="tunnel=yes" order="-1"/>
                     </apply>
                 </switch>
-                <switch order="125">
+                <switch order="59">
                     <case tag="railway" value="rail" />
                     <case tag="railway" value="light_rail" />
                     <case tag="railway" value="narrow_gauge" />
@@ -591,32 +615,38 @@
                         <case additional="tunnel=yes" order="-1"/>
                     </apply>
                 </switch>
-                <switch order="126">
+                <switch order="60">
                     <case tag="highway" value="motorway"/>
                     <case tag="highway" value="motorway_link"/>
-                    <case tag="highway" value="trunk" />
-                    <case tag="highway" value="trunk_link"/>
+                    <apply additional="layer=-2" order="18"/>
+                    <apply layer="-1" order="39"/>
+                    <apply layer="1" order="81"/>
+                    <apply additional="layer=2" order="102"/>
+                    <apply additional="layer=3" order="123"/>
                     <apply>
                         <case additional="tunnel=yes" order="-1"/>
                     </apply>
                 </switch>
-                <switch order="126">
+                <switch order="61">
+                    <case tag="highway" value="trunk" />
+                    <case tag="highway" value="trunk_link"/>
+                    <apply additional="layer=-2" order="19"/>
+                    <apply layer="-1" order="40"/>
+                    <apply layer="1" order="82"/>
+                    <apply additional="layer=2" order="103"/>
+                    <apply additional="layer=3" order="124"/>
+                    <apply>
+                        <case additional="tunnel=yes" order="-1"/>
+                    </apply>
+                </switch>
+                <switch order="62">
                     <case tag="highway" value="primary"/>
                     <case tag="highway" value="primary_link"/>
-                    <case tag="highway" value="secondary"/>
-                    <case tag="highway" value="secondary_link"/>
-                    <case tag="highway" value="tertiary"/>
-                    <case tag="highway" value="tertiary_link"/>
-                    <case tag="highway" value="residential" minzoom="10"/>
-                    <case tag="highway" value="unclassified" minzoom="10"/>
-                    <case tag="highway" value="living_street" minzoom="10"/>
-                    <case tag="highway" value="service" minzoom="10"/>
-                    <case tag="highway" value="road" minzoom="10"/>
-                    <apply additional="layer=-2" order="76"/>
-                    <apply layer="-1" order="101"/>
-                    <apply layer="1" order="151"/>
-                    <apply additional="layer=2" order="176"/>
-                    <apply additional="layer=3" order="201"/>
+                    <apply additional="layer=-2" order="20"/>
+                    <apply layer="-1" order="41"/>
+                    <apply layer="1" order="83"/>
+                    <apply additional="layer=2" order="104"/>
+                    <apply additional="layer=3" order="125"/>
                     <apply>
                         <case additional="tunnel=yes">
                             <switch>
@@ -629,17 +659,69 @@
                         </case>
                     </apply>
                 </switch>
-                <switch order="127">
+                <switch order="63">
+                    <case tag="highway" value="secondary"/>
+                    <case tag="highway" value="secondary_link"/>
+                    <apply additional="layer=-2" order="21"/>
+                    <apply layer="-1" order="42"/>
+                    <apply layer="1" order="84"/>
+                    <apply additional="layer=2" order="105"/>
+                    <apply additional="layer=3" order="126"/>
+                    <apply>
+                        <case additional="tunnel=yes">
+                            <switch>
+                                <case additional="foot=no">
+                                    <case additional="bicycle=no"/>
+                                </case>
+                                <case additional="access=no"/>
+                                <apply order="-1"/>
+                            </switch>
+                        </case>
+                    </apply>
+                </switch>
+                <switch order="64">
+                    <case tag="highway" value="tertiary"/>
+                    <case tag="highway" value="tertiary_link"/>
+                    <apply additional="layer=-2" order="22"/>
+                    <apply layer="-1" order="43"/>
+                    <apply layer="1" order="85"/>
+                    <apply additional="layer=2" order="106"/>
+                    <apply additional="layer=3" order="127"/>
+                    <apply>
+                        <case additional="tunnel=yes">
+                            <switch>
+                                <case additional="foot=no">
+                                    <case additional="bicycle=no"/>
+                                </case>
+                                <case additional="access=no"/>
+                                <apply order="-1"/>
+                            </switch>
+                        </case>
+                    </apply>
+                </switch>
+                <switch order="65">
+                    <case tag="highway" value="residential" minzoom="10"/>
+                    <case tag="highway" value="unclassified" minzoom="10"/>
+                    <case tag="highway" value="living_street" minzoom="10"/>
+                    <case tag="highway" value="service" minzoom="10"/>
+                    <case tag="highway" value="road" minzoom="10"/>
+                    <apply additional="layer=-2" order="23"/>
+                    <apply layer="-1" order="44"/>
+                    <apply layer="1" order="86"/>
+                    <apply additional="layer=2" order="107"/>
+                    <apply additional="layer=3" order="128"/>
+                </switch>
+                <switch order="66">
                     <case tag="highway" value="track" minzoom="11"/>
                     <case tag="highway" value="cycleway" minzoom="11"/>
                     <case tag="highway" value="path" minzoom="12"/>
                     <case tag="highway" value="footway" minzoom="12"/>
                     <case tag="highway" value="bridleway" minzoom="12"/>
-                    <apply additional="layer=-2" order="77"/>
-                    <apply layer="-1" order="102"/>
-                    <apply layer="1" order="152"/>
-                    <apply additional="layer=2" order="177"/>
-                    <apply additional="layer=3" order="202"/>
+                    <apply additional="layer=-2" order="24"/>
+                    <apply layer="-1" order="45"/>
+                    <apply layer="1" order="87"/>
+                    <apply additional="layer=2" order="108"/>
+                    <apply additional="layer=3" order="129"/>
                 </switch>
             </switch>
             <switch cycle="true" point="false" objectType="3" addPoint="true">
@@ -749,37 +831,42 @@
                 </switch>
             </case>
             <switch>                <!-- Roads, Tracks & Paths -->
-                <switch>                    <!-- Lines using shadows to mark tunnels (aka mostly onroad stuff) -->
+                <switch cap="ROUND">                    <!-- Lines using shadows to mark tunnels (aka mostly onroad stuff) -->
                     <!-- Tunnels - light colors -->
                     <switch>
                         <case tag="highway" value="motorway"/>
                         <case tag="highway" value="motorway_link"/>
-                        <apply color="$c_fastroad" strokeWidth="$width_l4" shadowColor="$c_motorway_outer" shadowRadius="$width_l0" />
-                        <apply additional="tunnel=yes" color="$c_fastroad_light" shadowColor="$c_motorway_outer_light"/>
+                        <apply color="$c_fastroad" strokeWidth="$width_l4" color_0="$c_motorway_outer" strokeWidth_0="$width_l5" />
+                        <apply additional="tunnel=yes" color="$c_fastroad_light" color_0="$c_motorway_outer_light"/>
+                        <apply additional="bridge=yes" color__1="$c_road_outer" strokeWidth__1="$width_l6"/>
                     </switch>
                     <switch>
                         <case tag="highway" value="trunk"/>
                         <case tag="highway" value="trunk_link"/>
-                        <apply color="$c_fastroad" strokeWidth="$width_l4" shadowColor="$c_road_outer" shadowRadius="$width_l0"/>
-                        <apply additional="tunnel=yes" color="$c_fastroad_light" shadowColor="$c_road_outer_light"/>
+                        <apply color="$c_fastroad" strokeWidth="$width_l4" color_0="$c_road_outer" strokeWidth_0="$width_l5"/>
+                        <apply additional="tunnel=yes" color="$c_fastroad_light" color_0="$c_road_outer_light"/>
+                        <apply additional="bridge=yes" color__1="$c_road_outer" strokeWidth__1="$width_l6"/>
                     </switch>
                     <switch>
                         <case tag="highway" value="primary"/>
                         <case tag="highway" value="primary_link"/>
-                        <apply color="$c_primary" strokeWidth="$width_l3" shadowColor="$c_road_outer" shadowRadius="$width_l0"/>
-                        <apply additional="tunnel=yes" color="$c_primary_light" shadowColor="$c_road_outer_light"/>
+                        <apply color="$c_primary" strokeWidth="$width_l3" color_0="$c_road_outer" strokeWidth_0="$width_l4"/>
+                        <apply additional="tunnel=yes" color="$c_primary_light" color_0="$c_road_outer_light"/>
+                        <apply additional="bridge=yes" strokeWidth_0="$width_l5"/>
                     </switch>
                     <switch>
                         <case tag="highway" value="secondary"/>
                         <case tag="highway" value="secondary_link"/>
-                        <apply color="$c_secondary" strokeWidth="$width_l3" shadowColor="$c_road_outer" shadowRadius="$width_l0"/>
-                        <apply additional="tunnel=yes" color="$c_secondary_light" shadowColor="$c_road_outer_light"/>
+                        <apply color="$c_secondary" strokeWidth="$width_l3" color_0="$c_road_outer" strokeWidth_0="$width_l4"/>
+                        <apply additional="tunnel=yes" color="$c_secondary_light" color_0="$c_road_outer_light"/>
+                        <apply additional="bridge=yes" strokeWidth_0="$width_l5"/>
                     </switch>
                     <switch>
                         <case tag="highway" value="tertiary"/>
                         <case tag="highway" value="tertiary_link"/>
-                        <apply color="$c_tertiary" strokeWidth="$width_l2" shadowColor="$c_road_outer" shadowRadius="$width_l0"/>
-                        <apply additional="tunnel=yes" color="$c_tertiary_light" shadowColor="$c_road_outer_light"/>
+                        <apply color="$c_tertiary" strokeWidth="$width_l2" color_0="$c_road_outer" strokeWidth_0="$width_l3"/>
+                        <apply additional="tunnel=yes" color="$c_tertiary_light" color_0="$c_road_outer_light"/>
+                        <apply additional="bridge=yes" strokeWidth_0="$width_l4"/>
                     </switch>
                     <switch>
                         <case tag="highway" value="residential"/>
@@ -787,13 +874,15 @@
                         <case tag="highway" value="living_street"/>
                         <case tag="highway" value="service"/>
                         <case tag="highway" value="road"/>
-                        <apply color="$c_smallroad_inner" strokeWidth="$width_l2" shadowColor="$c_road_outer" shadowRadius="$width_l0"/>
-                        <apply additional="tunnel=yes" color="$c_smallroad_inner_light" shadowColor="$c_road_outer_light"/>
+                        <apply color="$c_smallroad_inner" strokeWidth="$width_l2" color_0="$c_road_outer" strokeWidth_0="$width_l3"/>
+                        <apply additional="tunnel=yes" color="$c_smallroad_inner_light" color_0="$c_road_outer_light"/>
+                        <apply additional="bridge=yes" strokeWidth_0="$width_l4"/>
                     </switch>
-                    <case tag="highway" value="cycleway" color="$c_smallroad_inner" shadowColor="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2">
-                        <apply additional="tunnel=yes" color="$c_smallroad_light" shadowColor="$c_cycle_outer_light"/>
+                    <case tag="highway" value="cycleway">
+                        <apply color="$c_smallroad_inner" color_0="$c_cycle_outer" strokeWidth="$width_l1" strokeWidth_0="$width_l2"/>
+                        <apply additional="tunnel=yes" color="$c_smallroad_light" color_0="$c_cycle_outer_light"/>
+                        <apply additional="bridge=yes" color__1="$c_road_outer" strokeWidth__1="$width_l3"/>
                     </case>
-                    <apply additional="bridge=yes" shadowRadius="$width_l1"/>
                 </switch>
                 <switch>                    <!-- Dashed Lines (aka mostly offraod stuff)-->
                     <case tag="highway" value="track">
@@ -811,6 +900,7 @@
                         <apply color="$c_track_inner" color_0="$c_track_outer"/>
                         <apply strokeWidth="$width_l1" strokeWidth_0="$width_l2" />
                         <apply additional="tunnel=yes" color="$c_track_inner_light" color_0="$c_track_outer_light"/>
+                        <apply additional="bridge=yes" color__1="$c_road_outer" strokeWidth__1="$width_l3"/>
                         <apply>
                             <switch>
                                 <case additional="surface=asphalt"/>
@@ -836,6 +926,7 @@
                             </switch>
                         </apply>
                         <apply additional="tunnel=yes" color="$c_track_outer_light"/>
+                        <apply additional="bridge=yes" color_0="$c_road_outer" strokeWidth_0="$width_l2"/>
                     </switch>
                 </switch>
                 <apply>                    <!-- Access/Biking/Hiking Markups -->
@@ -921,10 +1012,10 @@
                 </apply>
             </switch>
             <switch>                <!-- Railways-->
-                <case tag="railway" value="rail" strokeWidth="$width_l2" strokeWidth_2="$width_l2"/>
-                <case tag="railway" value="light_rail" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
-                <case tag="railway" value="narrow_gauge" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
-                <apply color="$c_rail_light" pathEffect_2="$pathEffect_5050" color_2="$c_rail_dark" shadowRadius="$width_l0" shadowColor="$c_rail_dark" cap="SQUARE" cap_2="SQUARE"/>
+                <case tag="railway" value="rail" strokeWidth_0="$width_l3" strokeWidth="$width_l2" strokeWidth_2="$width_l2"/>
+                <case tag="railway" value="light_rail" strokeWidth_0="$width_l2" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
+                <case tag="railway" value="narrow_gauge" strokeWidth_0="$width_l2" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
+                <apply color="$c_rail_light" pathEffect_2="$pathEffect_5050" color_2="$c_rail_dark" color_0="$c_rail_dark" cap="SQUARE" cap_2="SQUARE"/>
                 <apply additional="tunnel=yes" color="$c_rail_light_tunnel" color_2="$c_rail_dark_tunnel"/>
             </switch>
             <switch>                <!-- Natural features-->
