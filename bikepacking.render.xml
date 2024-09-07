@@ -12,6 +12,9 @@
     <renderingProperty attr="contourColorScheme" name="Contour lines color scheme" description="Contour lines color scheme" type="string" possibleValues="white,yellow,green,light_brown,brown,dark_brown,dark_orange,red,purple" defaultValueDescription="default"/>
     <renderingProperty attr="contourWidth" name="Contour lines width" description="Contour lines width" type="string" possibleValues="thin,medium,thick" defaultValueDescription="default"/>
     <renderingProperty attr="contourDensity" name="Contour lines density" description="Contour lines density" type="string" possibleValues="low,medium_w,high" defaultValueDescription="default"/>
+    <renderingProperty attr="showCycleRoutes" name="Show cycle routes" description="Show cycle routes (*cn_networks) in bicycle mode" type="boolean" possibleValues="" category="routes"/>
+    <renderingProperty attr="showMtbRoutes" name="Show MTB routes" description="Show mountain bike routes (*cn_networks) in bicycle mode" type="boolean" possibleValues="" category="routes"/>
+    <renderingProperty attr="hikingRoutesOSMC" name="Hiking symbol overlay" description="Render symbols of OSMC hiking traces" type="string" possibleValues="walkingRoutesOSMC,walkingRoutesScopeOSMC,walkingRoutesOSMCNodes" defaultValueDescription="disabled" category="routes"/>
 
     <!-- Some settigns for the renderer -->
     <renderingAttribute name="shadowRendering">
@@ -515,6 +518,10 @@
     <renderingConstant name="c_access_foot_and_bike" value="#00FF00"/>
     <renderingConstant name="c_access_no" value="#FF0000"/>
 
+    <renderingConstant name="c_route_bike" value="#0000FF"/>
+    <renderingConstant name="c_route_foot" value="#FFFF00"/>
+    <renderingConstant name="c_route_mtb" value="#00FF00"/>
+
     <renderingConstant name="c_rail_dark" value="#303030"/>
     <renderingConstant name="c_rail_light" value="#FFFFFF"/>
     <renderingConstant name="c_rail_dark_tunnel" value="#777777"/>
@@ -587,6 +594,11 @@
                         <case additional="contourtype=1000m" minzoom="8"/>
                     </case>
                 </case>
+                <switch order="11">
+                    <case tag="route_hiking" value=""/>
+                    <case tag="route_mtb" value=""/>
+                    <case tag="route_bicycle" value=""/>
+                </switch>
                 <switch order="53">
                     <case tag="waterway" value="ditch" minzoom="15"/>
                     <case tag="waterway" value="drain" minzoom="15"/>
@@ -1008,6 +1020,23 @@
                             <case additional="sac_scale=demanding_alpine_hiking" color_5="$c_diff_4"/>
                             <case additional="sac_scale=difficult_alpine_hiking" color_5="$c_diff_4"/>
                         </switch>
+                    </apply>
+                </apply>
+                <apply>                    <!-- Hiking/Biking/Walking Routes-->
+                    <apply>                        <!-- Hiking Routes-->
+                        <switch>                            <!-- Don't care what is exactly selected-->
+                            <case hikingRoutesOSMC="walkingRoutesOSMC"/>
+                            <case hikingRoutesOSMC="walkingRoutesScopeOSMC"/>
+                            <case hikingRoutesOSMC="walkingRoutesOSMCNodes"/>
+                            <apply tag="route_hiking" value="" shadowColor="$c_route_hiking" shadowWidth="$width_l1" />
+                        </switch>
+                    </apply>
+                    <apply showMtbRoutes="true">                        <!-- MTB Routes-->
+                        <case tag="route_mtb" value="" shadowColor="$c_route_mtb" shadowWidth="$width_l1" />
+                    </apply>
+                    <apply showCycleRoutes="true">                        <!-- Biking Routes-->
+                        <case tag="route_bicycle" value="" shadowColor="$c_route_bike" shadowWidth="$width_l1" />
+
                     </apply>
                 </apply>
             </switch>
