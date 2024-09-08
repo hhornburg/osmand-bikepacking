@@ -747,6 +747,7 @@
                 <case tag="natural" value="scree" order="4"/>
                 <case tag="natural" value="shingle" order="4"/>
                 <case tag="natural" value="water" order="4"/>
+                <case tag="landuse" value="reservoir" order="4"/>
                 <case tag="natural" value="wood" order="5"/>
                 <case tag="landuse" value="forest" order="5"/>
                 <case tag="natural" value="scrub" order="5"/>
@@ -1078,6 +1079,7 @@
             <switch>
                 <case tag="natural" value="coastline"/>
                 <case tag="natural" value="water"/>
+                <case tag="landuse" value="reservoir"/>
                 <apply color="$c_water"/>
             </switch>
             <switch color="$c_wood">
