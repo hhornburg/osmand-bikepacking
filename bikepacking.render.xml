@@ -551,6 +551,7 @@
         <!-- 
         Areas: 1-10 (important for line shadows): default 5
         Lines:
+        Routes: 11
         Layer -2: 11-31: default 21
         Layer -1: 32-52: default 42
         Layer 0: 53-73: default 63
@@ -595,9 +596,9 @@
                     </case>
                 </case>
                 <switch order="11">
-                    <case tag="route_hiking" value=""/>
-                    <case tag="route_mtb" value=""/>
-                    <case tag="route_bicycle" value=""/>
+                    <case tag="route" value="hiking"/>
+                    <case tag="route" value="mtb"/>
+                    <case tag="route" value="bicycle"/>
                 </switch>
                 <switch order="53">
                     <case tag="waterway" value="ditch" minzoom="15"/>
@@ -1029,14 +1030,14 @@
                             <case hikingRoutesOSMC="walkingRoutesOSMC"/>
                             <case hikingRoutesOSMC="walkingRoutesScopeOSMC"/>
                             <case hikingRoutesOSMC="walkingRoutesOSMCNodes"/>
-                            <apply tag="route_hiking" value="" shadowColor="$c_route_hike" shadowWidth="$width_l1" />
+                            <apply tag="route" value="hiking" color="$c_route_hike" strokeWidth="$width_l4" />
                         </switch>
                     </apply>
                     <apply showMtbRoutes="true">                        <!-- MTB Routes-->
-                        <case tag="route_mtb" value="" shadowColor="$c_route_mtb" shadowWidth="$width_l1" />
+                        <case tag="route" value="mtb" color="$c_route_mtb" strokeWidth="$width_l4" />
                     </apply>
                     <apply showCycleRoutes="true">                        <!-- Biking Routes-->
-                        <case tag="route_bicycle" value="" shadowColor="$c_route_bike" shadowWidth="$width_l1" />
+                        <case tag="route" value="bicycle" color="$c_route_bike" strokeWidth="$width_l4" />
 
                     </apply>
                 </apply>
