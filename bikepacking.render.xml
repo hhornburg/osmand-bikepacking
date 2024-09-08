@@ -12,9 +12,11 @@
     <renderingProperty attr="contourColorScheme" name="Contour lines color scheme" description="Contour lines color scheme" type="string" possibleValues="white,yellow,green,light_brown,brown,dark_brown,dark_orange,red,purple" defaultValueDescription="default"/>
     <renderingProperty attr="contourWidth" name="Contour lines width" description="Contour lines width" type="string" possibleValues="thin,medium,thick" defaultValueDescription="default"/>
     <renderingProperty attr="contourDensity" name="Contour lines density" description="Contour lines density" type="string" possibleValues="low,medium_w,high" defaultValueDescription="default"/>
-    <renderingProperty attr="showCycleRoutes" name="Show cycle routes" description="Show cycle routes (*cn_networks) in bicycle mode" type="boolean" possibleValues="" category="routes"/>
-    <renderingProperty attr="showMtbRoutes" name="Show MTB routes" description="Show mountain bike routes (*cn_networks) in bicycle mode" type="boolean" possibleValues="" category="routes"/>
-    <renderingProperty attr="hikingRoutesOSMC" name="Hiking symbol overlay" description="Render symbols of OSMC hiking traces" type="string" possibleValues="walkingRoutesOSMC,walkingRoutesScopeOSMC,walkingRoutesOSMCNodes" defaultValueDescription="disabled" category="routes"/>
+
+    <!-- My Options -->
+    <renderingProperty attr="showCyclingNetwork" name="Show cycle routes" description="Show cycle routes" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="showMTBNetwork" name="Show MTB routes" description="Show mountain bike routes" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="showHikingNetwork" name="Hiking symbol overlay" description="Show hiking routes" type="boolean" possibleValues="" category="details"/>
 
     <!-- Some settigns for the renderer -->
     <renderingAttribute name="shadowRendering">
@@ -1025,18 +1027,13 @@
                     </apply>
                 </apply>
                 <apply>                    <!-- Hiking/Biking/Walking Routes-->
-                    <apply>                        <!-- Hiking Routes-->
-                        <switch>                            <!-- Don't care what is exactly selected-->
-                            <case hikingRoutesOSMC="walkingRoutesOSMC"/>
-                            <case hikingRoutesOSMC="walkingRoutesScopeOSMC"/>
-                            <case hikingRoutesOSMC="walkingRoutesOSMCNodes"/>
-                            <apply tag="route" value="hiking" color="$c_route_hike" strokeWidth="$width_l4" />
-                        </switch>
+                    <apply showHikingNetwork="true">                        <!-- Hiking Routes-->
+                        <case tag="route" value="hiking" color="$c_route_hike" strokeWidth="$width_l4" />
                     </apply>
-                    <apply showMtbRoutes="true">                        <!-- MTB Routes-->
+                    <apply showMTBNetwork="true">                        <!-- MTB Routes-->
                         <case tag="route" value="mtb" color="$c_route_mtb" strokeWidth="$width_l4" />
                     </apply>
-                    <apply showCycleRoutes="true">                        <!-- Biking Routes-->
+                    <apply showCyclingNetwork="true">                        <!-- Biking Routes-->
                         <case tag="route" value="bicycle" color="$c_route_bike" strokeWidth="$width_l4" />
 
                     </apply>
