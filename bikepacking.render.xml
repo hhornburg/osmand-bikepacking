@@ -1067,16 +1067,9 @@
                     </apply>
                 </apply>
                 <apply>                    <!-- Hiking/Biking/Walking Routes-->
-                    <apply showHikingNetwork="true">                        <!-- Hiking Routes-->
-                        <case tag="route_hiking" value="" color="$c_route_hike" strokeWidth="$width_l4" />
-                    </apply>
-                    <apply showMTBNetwork="true">                        <!-- MTB Routes-->
-                        <case tag="route_mtb" value="" color="$c_route_mtb" strokeWidth="$width_l4" />
-                    </apply>
-                    <apply showCyclingNetwork="true">                        <!-- Biking Routes-->
-                        <case tag="route_bicycle" value="" color="$c_route_bike" strokeWidth="$width_l4" />
-
-                    </apply>
+                    <case showHikingNetwork="true" tag="route_hiking" value="" color="$c_route_hike" strokeWidth="$width_l4" />
+                    <case showMTBNetwork="true" tag="route_mtb" value="" color="$c_route_mtb" strokeWidth="$width_l4" />
+                    <case showCyclingNetwork="true" tag="route_bicycle" value="" color="$c_route_bike" strokeWidth="$width_l4" />
                 </apply>
             </switch>
             <switch>                <!-- Railways-->
