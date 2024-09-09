@@ -543,6 +543,14 @@
 
     <renderingConstant name="c_contour" value="#9C5615"/>
 
+    <renderingConstant name="text_s" value="10"/>
+    <renderingConstant name="text_m" value="15"/>
+    <renderingConstant name="text_l" value="20"/>
+    <renderingConstant name="text_xl" value="25"/>
+
+    <renderingConstant name="text_halo" value="2"/>
+    <renderingConstant name="c_halo" value="#FFFFFF"/>
+
     <renderingConstant name="c_text_civilization" value="#000000"/>
     <renderingConstant name="c_text_flora" value="#90C090"/>
     <renderingConstant name="c_text_water" value="#5050FF"/>
@@ -787,15 +795,15 @@
         </switch>
     </order>
     <text>
-        <switch>
-            <switch tag="contour" value="elevation">
+        <switch textOrder="225">
+            <switch tag="contour" value="elevation" textOrder="196">
                 <switch>
                     <case additional="contourtype=1000m"/>
                     <case additional="contourtype=200m"/>
                     <case contourDensity="medium_w" additional="contourtype=100m"/>
                     <case contourDensity="high" additional="contourtype=100m"/>
                     <case contourDensity="high" additional="contourtype=50m"/>
-                    <apply nameTag="elevation" textSize="11" textOnPath="true"/>
+                    <apply nameTag="elevation" textSize="$text_s" textOnPath="true"/>
                 </switch>
                 <switch>
                     <case additional="contourtype=5m"/>
@@ -814,7 +822,7 @@
                     <case tag="waterway" value="river" />
                     <apply textOnPath="true"/>
                 </switch>
-                <apply textSize="10" textColor="$c_text_water"/>
+                <apply textSize="$text_s" textColor="$c_text_water" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
             </switch>
             <switch>                <!-- flora labels-->
                 <case tag="natural" value="wood" />
@@ -826,7 +834,7 @@
                 <case tag="landuse" value="forest"/>
                 <case tag="landuse" value="meadow"/>
                 <case tag="landuse" value="grass"/>
-                <apply textSize="10" textColor="$c_text_flora"/>
+                <apply textSize="$text_s" textColor="$c_text_flora" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
             </switch>
             <switch>                <!-- geology labels-->
                 <case tag="natural" value="bare_rock"/>
@@ -835,22 +843,34 @@
                 <case tag="natural" value="beach"/>
                 <case tag="natural" value="sand"/>
                 <case tag="natural" value="wetland"/>
-                <apply textSize="10" textColor="$c_text_geology"/>
+                <apply textSize="$text_s" textColor="$c_text_geology" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
             </switch>
             <switch>                <!-- civilization labels-->
-                <case tag="place" value="city" textSize="13" />
-                <case tag="place" value="suburb" textSize="12" textItalic="true" />
-                <case tag="place" value="town" textSize="12" />
-                <case tag="place" value="village" textSize="11" />
-                <case tag="place" value="hamlet" textSize="10" />
-                <case tag="place" value="isolated_dwelling" textSize="10" />
-                <case tag="place" value="farm" textSize="10" />
-                <case tag="place" value="allotments" textSize="10" />
+                <case tag="place" value="city" textSize="$text_xl" textOrder="250"/>
+                <case tag="place" value="suburb" textSize="$text_l" textItalic="true" textOrder="249"/>
+                <case tag="place" value="town" textSize="$text_l" textOrder="245"/>
+                <case tag="place" value="village" textSize="$text_m" textOrder="240"/>
+                <case tag="place" value="hamlet" textSize="$text_s" textOrder="235"/>
+                <case tag="place" value="isolated_dwelling" textSize="$text_s" textOrder="230"/>
+                <case tag="place" value="farm" textSize="$text_s" textOrder="230"/>
+                <case tag="place" value="allotments" textSize="$text_s" textOrder="230"/>
                 <switch>
-                    <case tag="highway" value=""/>
-                    <apply textOnPath="true"/>
+                    <case tag="highway" value="primary" />
+                    <case tag="highway" value="secondary" />
+                    <case tag="highway" value="tertiary" />
+                    <case tag="highway" value="residential" />
+                    <case tag="highway" value="unclassified" />
+                    <case tag="highway" value="living_street" />
+                    <case tag="highway" value="service" />
+                    <case tag="highway" value="road" />
+                    <case tag="highway" value="track"/>
+                    <case tag="highway" value="cycleway"/>
+                    <case tag="highway" value="path"/>
+                    <case tag="highway" value="footway"/>
+                    <case tag="highway" value="bridleway"/>
+                    <apply textOnPath="true" textSize="$text_s"/>
                 </switch>
-                <apply textColor="$c_text_civilization"/>
+                <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
             </switch>
         </switch>
     </text>
