@@ -606,33 +606,9 @@
                     </case>
                 </case>
                 <switch order="11">
-                    <switch>
-                        <case tag="route_hiking" value=""/>
-                        <apply>
-                            <switch>
-                                <case additional="network=iwn" minzoom="6"/>
-                                <case additional="network=nwn" minzoom="7"/>
-                                <case additional="network=rwn" minzoom="9"/>
-                                <case additional="network=lwn" minzoom="11"/>
-                                <!-- yes we loose some true routes with it, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
-                                <case order="-1"/>
-                            </switch>
-                        </apply>
-                    </switch>
-                    <switch>
-                        <case tag="route_mtb" value=""/>
-                        <case tag="route_bicycle" value=""/>
-                        <apply>
-                            <switch>
-                                <case additional="network=icn" minzoom="6"/>
-                                <case additional="network=ncn" minzoom="7"/>
-                                <case additional="network=rcn" minzoom="9"/>
-                                <case additional="network=lcn" minzoom="11"/>
-                                <!-- yes we loose some true routes with it, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
-                                <case order="-1"/>
-                            </switch>
-                        </apply>
-                    </switch>
+                    <case tag="route_hiking" value=""/>
+                    <case tag="route_mtb" value=""/>
+                    <case tag="route_bicycle" value=""/>
                 </switch>
                 <switch order="53">
                     <case tag="waterway" value="ditch" minzoom="15"/>
@@ -1071,9 +1047,30 @@
                     </apply>
                 </apply>
                 <apply>                    <!-- Hiking/Biking/Walking Routes-->
-                    <case showHikingNetwork="true" tag="route_hiking" value="" color="$c_route_hike" strokeWidth="$width_l4" />
-                    <case showMTBNetwork="true" tag="route_mtb" value="" color="$c_route_mtb" strokeWidth="$width_l4" />
-                    <case showCyclingNetwork="true" tag="route_bicycle" value="" color="$c_route_bike" strokeWidth="$width_l4" />
+                    <switch showHikingNetwork="true" tag="route_hiking" value="">
+                        <!-- yes we loose some true routes with using only routes that have a network tag set, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
+                        <case additional="network=iwn" minzoom="6"/>
+                        <case additional="network=nwn" minzoom="7"/>
+                        <case additional="network=rwn" minzoom="9"/>
+                        <case additional="network=lwn" minzoom="11"/>
+                        <apply color="$c_route_hike" strokeWidth="$width_l4" />
+                    </switch>
+                    <switch showMTBNetwork="true" tag="route_mtb" value="">
+                        <!-- yes we loose some true routes with using only routes that have a network tag set, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
+                        <case additional="network=icn" minzoom="6"/>
+                        <case additional="network=ncn" minzoom="7"/>
+                        <case additional="network=rcn" minzoom="9"/>
+                        <case additional="network=lcn" minzoom="11"/>
+                        <apply color="$c_route_mtb" strokeWidth="$width_l4" />
+                    </switch>
+                    <switch showCyclingNetwork="true" tag="route_bicycle" value="">
+                        <!-- yes we loose some true routes with using only routes that have a network tag set, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
+                        <case additional="network=icn" minzoom="6"/>
+                        <case additional="network=ncn" minzoom="7"/>
+                        <case additional="network=rcn" minzoom="9"/>
+                        <case additional="network=lcn" minzoom="11"/>
+                        <apply color="$c_route_bike" strokeWidth="$width_l4" />
+                    </switch>
                 </apply>
             </switch>
             <switch>                <!-- Railways-->
