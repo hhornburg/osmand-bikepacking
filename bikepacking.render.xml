@@ -923,14 +923,14 @@
                 <switch>                    <!-- Dashed Lines (aka mostly offraod stuff)-->
                     <case tag="highway" value="track">
                         <apply>
-                            <!--Default case if tag is not set-->
-                            <apply pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown"/>
                             <switch>
                                 <case additional="tracktype=grade1" pathEffect_0="" pathEffect=""/>
                                 <case additional="tracktype=grade2" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
                                 <case additional="tracktype=grade3" pathEffect_0="$pathEffect_intermediate" pathEffect="$pathEffect_intermediate"/>
                                 <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
                                 <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
+                                <!--Default case if tag is not set-->
+                                <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown"/>
                             </switch>
                         </apply>
                         <apply color="$c_track_inner" color_0="$c_track_outer"/>
