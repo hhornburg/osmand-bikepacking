@@ -574,6 +574,12 @@
         <switch>
             <switch area="false" point="true" objectType="1" order="165">
                 <case tag="place" value=""/>
+                <case tag="natural" value="peak"/>
+                <case tag="natural" value="volcano"/>
+                <case tag="natural" value="hill"/>
+                <case tag="mountain_pass" value="yes"/>
+                <case tag="natural" value="saddle"/>
+                <case tag="natural" value="cave_entrance"/>
             </switch>
             <switch area="false" point="false" objectType="2">
                 <case tag="contour" value="elevation" order="10">                    <!-- contours even below shadows-->
@@ -828,6 +834,15 @@
                 <case tag="natural" value="beach"/>
                 <case tag="natural" value="sand"/>
                 <case tag="natural" value="wetland"/>
+                <switch>
+                    <case tag="natural" value="peak"/>
+                    <case tag="natural" value="volcano"/>
+                    <case tag="natural" value="hill"/>
+                    <case tag="natural" value="saddle"/>
+                    <case tag="mountain_pass" value="yes"/>
+                    <case tag="natural" value="cave_entrance"/>
+                    <apply nameTag="name" nameTag2="ele"/>
+                </switch>
                 <apply textSize="$text_s" textColor="$c_text_geology" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
             </switch>
             <switch>                <!-- civilization labels-->
@@ -879,6 +894,16 @@
             </switch>
         </switch>
     </text>
+    <point>
+        <switch>
+            <case tag="natural" value="peak" icon="natural_peak"/>
+            <case tag="natural" value="volcano" icon="natural_volcano_map"/>
+            <case tag="natural" value="hill" icon="hill"/>
+            <case tag="natural" value="saddle" icon="natural_saddle"/>
+            <case tag="mountain_pass" value="yes" icon="topo_mountain_pass"/>
+            <case tag="natural" value="cave_entrance" icon="cave_entrance"/>
+        </switch>
+    </point>
     <line>
         <switch>
             <case tag="contour" value="elevation" color="$c_contour" strokeWidth="$width_l00">
