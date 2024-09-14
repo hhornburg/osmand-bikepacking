@@ -848,9 +848,29 @@
                     <case tag="highway" value="path"/>
                     <case tag="highway" value="footway"/>
                     <case tag="highway" value="bridleway"/>
-                    <apply textOnPath="true" textSize="$text_s"/>
+                    <apply>
+                        <switch>
+                            <case nameTag="name" nameTag2="ref"/>
+                            <case nameTag="ref"/>
+                            <apply textOnPath="true" textSize="$text_s"/>
+                        </switch>
+                    </apply>
                 </switch>
                 <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+            </switch>
+            <switch>                <!-- Route Labels-->
+                <case tag="route_hiking" value="" textColor="$c_route_hike"/>
+                <case tag="route_mtb" value="" textColor="$c_route_mtb"/>
+                <case tag="route_bicycle" value="" textColor="$c_route_bike"/>
+                <apply>
+                    <switch>
+                        <case nameTag="bicycle_name" nameTag2="bicycle_ref"/>
+                        <case nameTag="bicycle_ref"/>
+                        <case nameTag="hiking_name" nameTag2="hiking_ref"/>
+                        <case nameTag="hiking_ref"/>
+                        <apply textSize="$text_s" textOnPath="true" textDy="$text_m" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+                    </switch>
+                </apply>
             </switch>
         </switch>
     </text>
