@@ -759,6 +759,8 @@
                 <case tag="natural" value="shingle" order="4"/>
                 <case tag="natural" value="water" order="4"/>
                 <case tag="landuse" value="reservoir" order="4"/>
+                <!-- salt ponds above water, as they may have both tags -->
+                <case tag="landuse" value="salt_pond" order="5"/>
                 <case tag="natural" value="wood" order="5"/>
                 <case tag="landuse" value="forest" order="5"/>
                 <case tag="natural" value="scrub" order="5"/>
@@ -800,6 +802,9 @@
                     <case tag="waterway" value="stream"/>
                     <case tag="waterway" value="canal" />
                     <case tag="waterway" value="river" />
+                    <case tag="natural" value="water"/>
+                    <case tag="landuse" value="reservoir"/>
+                    <case tag="landuse" value="salt_pond"/>
                     <apply textOnPath="true"/>
                 </switch>
                 <apply textSize="$text_s" textColor="$c_text_water" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
@@ -1132,6 +1137,10 @@
                 <case tag="natural" value="water"/>
                 <case tag="landuse" value="reservoir"/>
                 <apply color="$c_water"/>
+            </switch>
+            <switch>
+                <case tag="landuse" value="salt_pond"/>
+                <apply color="$c_water" shader="water_salt"/>
             </switch>
             <switch color="$c_wood">
                 <case tag="natural" value="wood" />
