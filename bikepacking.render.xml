@@ -975,8 +975,8 @@
                         <apply>
                             <switch>
                                 <case additional="tracktype=grade1" pathEffect_0="" pathEffect=""/>
-                                <case additional="tracktype=grade2" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
-                                <case additional="tracktype=grade3" pathEffect_0="$pathEffect_intermediate" pathEffect="$pathEffect_intermediate"/>
+                                <case additional="tracktype=grade2" pathEffect_0="" pathEffect=""/>
+                                <case additional="tracktype=grade3" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
                                 <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
                                 <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
                                 <!--Default case if tag is not set-->
@@ -992,6 +992,7 @@
                                 <case additional="surface=asphalt"/>
                                 <case additional="surface=concrete"/>
                                 <case additional="surface=paved"/>
+                                <case additional="tracktype=grade1"/>
                                 <apply color="$c_smallroad"/>
                             </switch>
                         </apply>
