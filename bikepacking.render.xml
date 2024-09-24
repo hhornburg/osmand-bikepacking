@@ -81,46 +81,46 @@
 
     <renderingConstant name="width_l3_z12" value="3"/>
     <renderingConstant name="width_l3_z13" value="6"/>
-    <renderingConstant name="width_l3_z14" value="9"/>
+    <renderingConstant name="width_l3_z14" value="6"/>
     <renderingConstant name="width_l3_z15" value="12"/>
-    <renderingConstant name="width_l3_z16" value="15"/>
+    <renderingConstant name="width_l3_z16" value="12"/>
     <renderingConstant name="width_l3_z17" value="18"/>
-    <renderingConstant name="width_l3_z18" value="21"/>
+    <renderingConstant name="width_l3_z18" value="28"/>
     <renderingConstant name="width_l3_z19" value="24"/>
-    <renderingConstant name="width_l3_z20" value="27"/>
+    <renderingConstant name="width_l3_z20" value="24"/>
     <renderingConstant name="width_l3_z21" value="30"/>
 
     <renderingConstant name="width_l4_z12" value="4"/>
     <renderingConstant name="width_l4_z13" value="8"/>
-    <renderingConstant name="width_l4_z14" value="12"/>
+    <renderingConstant name="width_l4_z14" value="8"/>
     <renderingConstant name="width_l4_z15" value="16"/>
-    <renderingConstant name="width_l4_z16" value="20"/>
+    <renderingConstant name="width_l4_z16" value="16"/>
     <renderingConstant name="width_l4_z17" value="24"/>
-    <renderingConstant name="width_l4_z18" value="28"/>
+    <renderingConstant name="width_l4_z18" value="24"/>
     <renderingConstant name="width_l4_z19" value="32"/>
-    <renderingConstant name="width_l4_z20" value="36"/>
+    <renderingConstant name="width_l4_z20" value="32"/>
     <renderingConstant name="width_l4_z21" value="40"/>
 
     <renderingConstant name="width_l5_z12" value="5"/>
     <renderingConstant name="width_l5_z13" value="10"/>
-    <renderingConstant name="width_l5_z14" value="15"/>
+    <renderingConstant name="width_l5_z14" value="10"/>
     <renderingConstant name="width_l5_z15" value="20"/>
-    <renderingConstant name="width_l5_z16" value="25"/>
+    <renderingConstant name="width_l5_z16" value="20"/>
     <renderingConstant name="width_l5_z17" value="30"/>
-    <renderingConstant name="width_l5_z18" value="35"/>
+    <renderingConstant name="width_l5_z18" value="30"/>
     <renderingConstant name="width_l5_z19" value="40"/>
-    <renderingConstant name="width_l5_z20" value="45"/>
+    <renderingConstant name="width_l5_z20" value="40"/>
     <renderingConstant name="width_l5_z21" value="50"/>
 
     <renderingConstant name="width_l6_z12" value="6"/>
     <renderingConstant name="width_l6_z13" value="12"/>
-    <renderingConstant name="width_l6_z14" value="18"/>
+    <renderingConstant name="width_l6_z14" value="12"/>
     <renderingConstant name="width_l6_z15" value="24"/>
-    <renderingConstant name="width_l6_z16" value="30"/>
+    <renderingConstant name="width_l6_z16" value="24"/>
     <renderingConstant name="width_l6_z17" value="36"/>
-    <renderingConstant name="width_l6_z18" value="42"/>
+    <renderingConstant name="width_l6_z18" value="36"/>
     <renderingConstant name="width_l6_z19" value="48"/>
-    <renderingConstant name="width_l6_z20" value="54"/>
+    <renderingConstant name="width_l6_z20" value="48"/>
     <renderingConstant name="width_l6_z21" value="60"/>
 
     <renderingAttribute name="width_l00">
@@ -931,74 +931,83 @@
                 </switch>
             </case>
             <switch>                <!-- Roads, Tracks & Paths -->
-                <switch cap="ROUND">                    <!-- Big roads -->
-                    <!-- Tunnels - light colors -->
-                    <switch>
-                        <case tag="highway" value="motorway"/>
-                        <case tag="highway" value="motorway_link"/>
-                        <apply color="$c_fastroad" color_1="$c_motorway_center" />
-                        <apply additional="tunnel=yes" color="$c_fastroad_light" color_1="$c_motorway_center_light"/>
+                <switch>                    <!-- With shadow, i.e. roads & tracks-->
+                    <switch>                        <!-- Solid Lines i.e. Roads-->
+                        <switch>                            <!-- Big roads -->
+                            <switch>
+                                <case tag="highway" value="motorway"/>
+                                <case tag="highway" value="motorway_link"/>
+                                <apply color="$c_fastroad" color_1="$c_motorway_center" />
+                                <apply additional="tunnel=yes" color="$c_fastroad_light" color_1="$c_motorway_center_light"/>
+                            </switch>
+                            <switch>
+                                <case tag="highway" value="trunk"/>
+                                <case tag="highway" value="trunk_link"/>
+                                <apply color="$c_fastroad"/>
+                                <apply additional="tunnel=yes" color="$c_fastroad_light"/>
+                            </switch>
+                            <switch>
+                                <case tag="highway" value="primary"/>
+                                <case tag="highway" value="primary_link"/>
+                                <apply color="$c_primary" />
+                                <apply additional="tunnel=yes" color="$c_primary_light" />
+                            </switch>
+                            <switch>
+                                <case tag="highway" value="secondary"/>
+                                <case tag="highway" value="secondary_link"/>
+                                <apply color="$c_secondary" />
+                                <apply additional="tunnel=yes" color="$c_secondary_light" />
+                            </switch>
+                            <switch>
+                                <case tag="highway" value="tertiary"/>
+                                <case tag="highway" value="tertiary_link"/>
+                                <apply color="$c_tertiary" />
+                                <apply additional="tunnel=yes" color="$c_tertiary_light" />
+                            </switch>
+                            <switch>
+                                <case tag="highway" value="unclassified"/>
+                                <case tag="highway" value="road"/>
+                                <apply color="$c_surface_inner" />
+                                <apply additional="tunnel=yes" color="$c_surface_inner_light" />
+                            </switch>
+                            <apply strokeWidth="$width_l2"/>
+                            <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4"/>
+                        </switch>
+                        <switch>                            <!-- Small Roads -->
+                            <case tag="highway" value="residential"/>
+                            <case tag="highway" value="living_street"/>
+                            <case tag="highway" value="service"/>
+                            <case tag="highway" value="cycleway" />
+                            <apply color="$c_surface_inner" strokeWidth="$width_l1"/>
+                            <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l3"/>
+                        </switch>
+                        <apply cap="ROUND"/>
                     </switch>
-                    <switch>
-                        <case tag="highway" value="trunk"/>
-                        <case tag="highway" value="trunk_link"/>
-                        <apply color="$c_fastroad"/>
-                        <apply additional="tunnel=yes" color="$c_fastroad_light"/>
-                    </switch>
-                    <switch>
-                        <case tag="highway" value="primary"/>
-                        <case tag="highway" value="primary_link"/>
-                        <apply color="$c_primary" />
-                        <apply additional="tunnel=yes" color="$c_primary_light" />
-                    </switch>
-                    <switch>
-                        <case tag="highway" value="secondary"/>
-                        <case tag="highway" value="secondary_link"/>
-                        <apply color="$c_secondary" />
-                        <apply additional="tunnel=yes" color="$c_secondary_light" />
-                    </switch>
-                    <switch>
-                        <case tag="highway" value="tertiary"/>
-                        <case tag="highway" value="tertiary_link"/>
-                        <apply color="$c_tertiary" />
-                        <apply additional="tunnel=yes" color="$c_tertiary_light" />
-                    </switch>
-                    <apply strokeWidth="$width_l2"/>
-                    <apply shadowColor="$c_surface_outer" shadowRadius="$width_l1"/>
-                    <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4"/>
-                </switch>
-                <switch strokeWidth="$width_l1">                    <!-- Small Roads -->
-                    <case tag="highway" value="unclassified" strokeWidth="$width_l2"/>
-                    <case tag="highway" value="road" strokeWidth="$width_l2"/>
-                    <case tag="highway" value="residential"/>
-                    <case tag="highway" value="living_street"/>
-                    <case tag="highway" value="service"/>
-                    <apply color="$c_surface_inner"/>
-                    <apply shadowColor="$c_surface_outer" shadowRadius="$width_l1"/>
-                    <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4"/>
-                </switch>
-                <case tag="highway" value="cycleway">
-                    <apply color="$c_surface_inner" strokeWidth="$width_l1"/>
-                    <apply shadowColor="$c_cycle_outer" shadowRadius="$width_l1"/>
-                    <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4"/>
-                    <apply additional="tunnel=yes" shadowColor="$c_cycle_outer_light"/>
-                </case>
-                <case tag="highway" value="track">
+                    <case tag="highway" value="track">
+                        <apply>
+                            <switch>
+                                <case additional="tracktype=grade1" pathEffect_0="" pathEffect=""/>
+                                <case additional="tracktype=grade2" pathEffect_0="" pathEffect=""/>
+                                <case additional="tracktype=grade3" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
+                                <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
+                                <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
+                                <!--Default case if tag is not set-->
+                                <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown"/>
+                            </switch>
+                        </apply>
+                        <apply color="$c_surface_inner" strokeWidth="$width_l1"/>
+                        <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l3"/>
+                    </case>
+                    <apply shadowColor="$c_surface_outer" shadowRadius="$width_l0"/>
                     <apply>
                         <switch>
-                            <case additional="tracktype=grade1" pathEffect_0="" pathEffect=""/>
-                            <case additional="tracktype=grade2" pathEffect_0="" pathEffect=""/>
-                            <case additional="tracktype=grade3" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
-                            <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
-                            <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
-                            <!--Default case if tag is not set-->
-                            <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown"/>
+                            <case tag="highway" value="cycleway"/>
+                            <case additional="bicycle=designated" />
+                            <apply shadowColor="$c_cycle_outer"/>
+                            <apply additional="tunnel=yes" shadowColor="$c_cycle_outer_light"/>
                         </switch>
                     </apply>
-                    <apply color="$c_surface_inner" strokeWidth="$width_l1"/>
-                    <apply shadowColor="$c_surface_outer" shadowRadius="$width_l1"/>
-                    <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4"/>
-                </case>
+                </switch>
                 <switch>                    <!-- Paths etc -->
                     <case tag="highway" value="path"/>
                     <case tag="highway" value="footway"/>
