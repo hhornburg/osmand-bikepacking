@@ -546,9 +546,9 @@
     <renderingConstant name="c_contour" value="#9C5615"/>
 
     <renderingConstant name="text_s" value="10"/>
-    <renderingConstant name="text_m" value="15"/>
-    <renderingConstant name="text_l" value="20"/>
-    <renderingConstant name="text_xl" value="25"/>
+    <renderingConstant name="text_m" value="13"/>
+    <renderingConstant name="text_l" value="17"/>
+    <renderingConstant name="text_xl" value="20"/>
 
     <renderingConstant name="text_halo" value="2"/>
     <renderingConstant name="c_halo" value="#FFFFFF"/>
@@ -572,7 +572,6 @@
         Layer 2: 95-115: default 105
         Layer 3: 116-135: default 126
         Points: 136-195: default 165
-        Text: 196-255: default 225
         -->
         <switch>
             <switch area="false" point="true" objectType="1" order="165">
@@ -785,9 +784,9 @@
             </switch>
         </switch>
     </order>
-    <text>
-        <switch textOrder="225">
-            <switch tag="contour" value="elevation" textOrder="196">
+    <text>        <!-- Text order goes in opposite direction: 1 is most important, bigger looses importance -->
+        <switch>
+            <switch tag="contour" value="elevation" textOrder="200">
                 <switch>
                     <case additional="contourtype=1000m"/>
                     <case additional="contourtype=200m"/>
@@ -848,37 +847,70 @@
                 </switch>
                 <apply textSize="$text_s" textColor="$c_text_geology" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
             </switch>
-            <switch>                <!-- civilization labels-->
-                <case tag="place" value="city" textSize="$text_xl" textOrder="250"/>
-                <case tag="place" value="suburb" textSize="$text_l" textItalic="true" textOrder="249"/>
-                <case tag="place" value="town" textSize="$text_l" textOrder="245"/>
-                <case tag="place" value="village" textSize="$text_m" textOrder="240"/>
-                <case tag="place" value="hamlet" textSize="$text_s" textOrder="235"/>
-                <case tag="place" value="isolated_dwelling" textSize="$text_s" textOrder="230"/>
-                <case tag="place" value="farm" textSize="$text_s" textOrder="230"/>
-                <case tag="place" value="allotments" textSize="$text_s" textOrder="230"/>
-                <switch>
-                    <case tag="highway" value="primary" />
-                    <case tag="highway" value="secondary" />
-                    <case tag="highway" value="tertiary" />
-                    <case tag="highway" value="residential" />
-                    <case tag="highway" value="unclassified" />
-                    <case tag="highway" value="living_street" />
-                    <case tag="highway" value="service" />
-                    <case tag="highway" value="road" />
-                    <case tag="highway" value="track"/>
-                    <case tag="highway" value="cycleway"/>
-                    <case tag="highway" value="path"/>
-                    <case tag="highway" value="footway"/>
-                    <case tag="highway" value="bridleway"/>
-                    <apply>
-                        <switch>
-                            <case nameTag="name" nameTag2="ref"/>
-                            <case nameTag="ref"/>
-                            <apply textOnPath="true" textSize="$text_s"/>
-                        </switch>
-                    </apply>
-                </switch>
+            <switch>                <!-- place labels-->
+                <case tag="place" value="city" textSize="$text_xl"/>
+                <case tag="place" value="suburb" textSize="$text_m" textItalic="true" minzoom="11" />
+                <case tag="place" value="town" textSize="$text_l" minzoom="9" />
+                <case tag="place" value="village" textSize="$text_m" minzoom="11" />
+                <case tag="place" value="hamlet" textSize="$text_s" minzoom="13" />
+                <case tag="place" value="isolated_dwelling" textSize="$text_s" minzoom="13" />
+                <case tag="place" value="farm" textSize="$text_s" minzoom="13" />
+                <case tag="place" value="allotments" textSize="$text_s" minzoom="13"/>
+                <apply>
+                    <case additional="population_rounded=1500000000" textOrder="6"/>
+                    <case additional="population_rounded=400000000" textOrder="7"/>
+                    <case additional="population_rounded=200000000" textOrder="8"/>
+                    <case additional="population_rounded=100000000" textOrder="9"/>
+                    <case additional="population_rounded=50000000" textOrder="10"/>
+                    <case additional="population_rounded=25000000" textOrder="11"/>
+                    <case additional="population_rounded=20000000" textOrder="12"/>
+                    <case additional="population_rounded=15000000" textOrder="13"/>
+                    <case additional="population_rounded=12000000" textOrder="14"/>
+                    <case additional="population_rounded=9000000" textOrder="15"/>
+                    <case additional="population_rounded=7000000" textOrder="16"/>
+                    <case additional="population_rounded=5000000" textOrder="17"/>
+                    <case additional="population_rounded=3000000" textOrder="18"/>
+                    <case additional="population_rounded=2000000" textOrder="19"/>
+                    <case additional="population_rounded=1000000" textOrder="20"/>
+                    <case additional="population_rounded=700000" textOrder="21"/>
+                    <case additional="population_rounded=400000" textOrder="22"/>
+                    <case additional="population_rounded=200000" textOrder="32"/>
+                    <case additional="population_rounded=100000" textOrder="33"/>
+                    <case additional="population_rounded=70000" textOrder="34"/>
+                    <case additional="population_rounded=40000" textOrder="35"/>
+                    <case additional="population_rounded=20000" textOrder="36"/>
+                    <case additional="population_rounded=10000" textOrder="37"/>
+                    <case additional="population_rounded=5000" textOrder="38"/>
+                    <case additional="population_rounded=2500" textOrder="39"/>
+                    <case additional="population_rounded=1000" textOrder="40"/>
+                    <case additional="population_rounded=500" textOrder="41"/>
+                    <case additional="population_rounded=200" textOrder="42"/>
+                    <case additional="population_rounded=100" textOrder="43"/>
+                </apply>
+                <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+
+            </switch>
+            <switch minzoom="11">
+                <case tag="highway" value="primary" />
+                <case tag="highway" value="secondary" />
+                <case tag="highway" value="tertiary" />
+                <case tag="highway" value="residential" />
+                <case tag="highway" value="unclassified" />
+                <case tag="highway" value="living_street" />
+                <case tag="highway" value="service" />
+                <case tag="highway" value="road" />
+                <case tag="highway" value="track"/>
+                <case tag="highway" value="cycleway"/>
+                <case tag="highway" value="path"/>
+                <case tag="highway" value="footway"/>
+                <case tag="highway" value="bridleway"/>
+                <apply>
+                    <switch>
+                        <case nameTag="name" nameTag2="ref"/>
+                        <case nameTag="ref"/>
+                        <apply textOnPath="true" textSize="$text_s"/>
+                    </switch>
+                </apply>
                 <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
             </switch>
             <switch>                <!-- Route Labels-->
