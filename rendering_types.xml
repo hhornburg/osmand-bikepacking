@@ -1,0 +1,42 @@
+<osmand_types>
+    <!-- Coastline tag is required, otherwise map creation crashes (see https://github.com/osmandapp/OsmAnd-tools/blob/4dbbffb12559eebb37df7eebb6e7ad841d6723f3/java-tools/OsmAndMapCreatorUtilities/src/main/java/net/osmand/obf/preparation/IndexVectorMapCreator.java#L513) -->
+    <category name="natural">
+        <type tag="natural" value="coastline" minzoom="1" />
+    </category>
+    <category name="routes">
+        <type tag="route" value="bicycle" minzoom="6"/>
+        <type tag="route" value="mtb" minzoom="6"/>
+        <type tag="route" value="hiking" minzoom="6"/>
+        <!-- network as additional can set the minzoom, as the max of minzooms is taken. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L423-->
+        <type tag="network" value="icn" minzoom="6" additional="true"/>
+        <type tag="network" value="ncn" minzoom="7" additional="true"/>
+        <type tag="network" value="rcn" minzoom="9" additional="true"/>
+        <type tag="network" value="lcn" minzoom="11" additional="true"/>
+        <type tag="network" value="iwn" minzoom="6" additional="true"/>
+        <type tag="network" value="nwn" minzoom="7" additional="true"/>
+        <type tag="network" value="rwn" minzoom="9" additional="true"/>
+        <type tag="network" value="lwn" minzoom="11" additional="true"/>
+    </category>
+    <category name="highway">
+        <type tag="highway" value="motorway" minzoom="6" />
+        <type tag="highway" value="motorway_link" minzoom="10" />
+        <type tag="highway" value="trunk" minzoom="6" />
+        <type tag="highway" value="trunk_link" minzoom="10" />
+        <type tag="highway" value="primary" minzoom="7" />
+        <type tag="highway" value="primary_link" minzoom="10" />
+        <type tag="highway" value="secondary" minzoom="9" />
+        <type tag="highway" value="secondary_link" minzoom="10" />
+        <type tag="highway" value="tertiary" minzoom="11" />
+        <type tag="highway" value="tertiary_link" minzoom="11" />
+        <type tag="highway" value="residential" minzoom="11" />
+        <type tag="highway" value="service" minzoom="11" />
+        <type tag="highway" value="busway" minzoom="11" />
+        <type tag="highway" value="bus_guideway" minzoom="11" />
+        <type tag="highway" value="unclassified" minzoom="11" />
+        <type tag="highway" value="road" minzoom="11" />
+        <type tag="highway" value="track" minzoom="11" />
+        <!-- Additional tags for highways-->
+        <type tag="bridge" value="yes" minzoom="12" additional="true"/>
+        <type tag="tunnel" value="yes" minzoom="12" additional="true"/>
+    </category>
+</osmand_types>
