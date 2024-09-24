@@ -968,7 +968,6 @@
                                 <case tag="highway" value="unclassified"/>
                                 <case tag="highway" value="road"/>
                                 <apply color="$c_surface_inner" />
-                                <apply additional="tunnel=yes" color="$c_surface_inner_light" />
                             </switch>
                             <apply strokeWidth="$width_l2"/>
                             <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4"/>
@@ -1020,6 +1019,10 @@
                             <case additional="trail_visibility=bad" pathEffect="$pathEffect_bad"/>
                             <case additional="trail_visibility=horrible" pathEffect="$pathEffect_horrible"/>
                             <case additional="trail_visibility=no" pathEffect="$pathEffect_no" />
+                            <case additional="surface=asphalt" pathEffect=""/>
+                            <case additional="surface=paved" pathEffect=""/>
+                            <case additional="surface=concrete" pathEffect=""/>
+                            <case additional="surface=paving_stones" pathEffect=""/>
                             <!--Default case if tag is not set-->
                             <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown"/>
                         </switch>
