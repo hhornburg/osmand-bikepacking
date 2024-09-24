@@ -24,17 +24,6 @@
         <case attrIntValue="3" />
     </renderingAttribute>
 
-    <!-- 
-    Concept of the paths:
-    (indices apply also to other attributes, not only color)
-    color__1: route background marking
-    color_0: path outline (i.e. track)
-    color: path fill
-    color_2: difficulty markup key (white box)
-    color_3: difficulty markup mtb scale
-    color_4: difficulty markup mtb uphill scale
-    color_5: difficulty markup sac scale
-    -->
     <renderingConstant name="width_l00_z12" value="0.25"/>
     <renderingConstant name="width_l00_z13" value="0.5"/>
     <renderingConstant name="width_l00_z14" value="0.75"/>
