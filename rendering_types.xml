@@ -4,10 +4,11 @@
         <type tag="natural" value="coastline" minzoom="1" />
     </category>
     <category name="routes">
-        <!-- relationGroup turns a relation into a proper entity, combining tag and value with an underscore. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L318-->
-        <type tag="route" value="bicycle" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network"/>
-        <type tag="route" value="mtb" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network"/>
-        <type tag="route" value="hiking" minzoom="6" relationGroup="true" relationGroupSort="network=iwn,nwn,rwn,lwn" additionalTags="network"/>
+        <!-- relationGroup turns a relation into a proper entity, combining tag and value with an underscore. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L318 -->
+        <!-- additionalPrefix is used such that a track has the network of the highest importance hiking, biking and mtb route separately. Otherwise e.g. a network=lwn could overwrite a ntwork=icn. additionalNamePrefix as mentioned in the documentation does not exist. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L344 -->
+        <type tag="route" value="bicycle" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network" additionalPrefix="bicycle_"/>
+        <type tag="route" value="mtb" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network" additionalPrefix="mtb_"/>
+        <type tag="route" value="hiking" minzoom="6" relationGroup="true" relationGroupSort="network=iwn,nwn,rwn,lwn" additionalTags="network" additionalPrefix="hiking_"/>
         <!-- network as additional can set the minzoom, as the max of minzooms is taken. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L423-->
         <type tag="network" value="icn" minzoom="6" additional="true"/>
         <type tag="network" value="ncn" minzoom="7" additional="true"/>
