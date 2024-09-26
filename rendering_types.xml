@@ -1,23 +1,198 @@
 <osmand_types>
-    <!-- Coastline tag is required, otherwise map creation crashes (see https://github.com/osmandapp/OsmAnd-tools/blob/4dbbffb12559eebb37df7eebb6e7ad841d6723f3/java-tools/OsmAndMapCreatorUtilities/src/main/java/net/osmand/obf/preparation/IndexVectorMapCreator.java#L513) -->
-    <category name="natural">
-        <type tag="natural" value="coastline" minzoom="1" />
+    <category name="general">
+        <type tag="ele" additional="text" />
+        <type tag="dominance" additional="text" />
+        <type tag="dominance_limit" value="highest" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="1000000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="500000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="200000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="100000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="50000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="20000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="10000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="5000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="2000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="1000" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="500" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="200" additional="true" notosm="true" />
+        <type tag="dominance_limit" value="100" additional="true" notosm="true" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_not_less_tag1="dominance" if_not_less_value1="1000000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="highest" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="1000000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="1000000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="500000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="500000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="200000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="200000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="100000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="100000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="50000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="50000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="20000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="20000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="10000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="10000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="5000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="5000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="2000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="2000" />
+
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="1000" to_tag1="dominance" to_tag2="dominance_limit" to_value2="1000" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="500" to_tag1="dominance" to_tag2="dominance_limit" to_value2="500" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="200" to_tag1="dominance" to_tag2="dominance_limit" to_value2="200" />
+        <entity_convert pattern="tag_transform" from_tag="dominance" if_less_tag1="dominance" if_less_value1="100" to_tag1="dominance" to_tag2="dominance_limit" to_value2="100" />
+
+        <type tag="height_limit" value="1000" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="500" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="200" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="100" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="50" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="20" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="10" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="5" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="2" minzoom="10" additional="true" notosm="true" />
+        <type tag="height_limit" value="1" minzoom="10" additional="true" notosm="true" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="1000" to_tag1="height" to_tag2="height_limit" to_value2="1000" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="500" to_tag1="height" to_tag2="height_limit" to_value2="500" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="200" to_tag1="height" to_tag2="height_limit" to_value2="200" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="100" to_tag1="height" to_tag2="height_limit" to_value2="100" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="50" to_tag1="height" to_tag2="height_limit" to_value2="50" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="20" to_tag1="height" to_tag2="height_limit" to_value2="20" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="10" to_tag1="height" to_tag2="height_limit" to_value2="10" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="5" to_tag1="height" to_tag2="height_limit" to_value2="5" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="2" to_tag1="height" to_tag2="height_limit" to_value2="2" />
+        <entity_convert pattern="tag_transform" from_tag="height" if_less_tag1="height" if_less_value1="1" to_tag1="height" to_tag2="height_limit" to_value2="1" />
+
+        <type tag="surface" value="unpaved" minzoom="14" additional="true" />
+        <type tag="surface" value="sand" minzoom="14" additional="true" />
+        <type tag="surface" value="grass" minzoom="14" additional="true" />
+        <type tag="surface" value="grass;ground" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="grass;earth" to_tag1="surface" to_value1="grass;ground" />
+        <type tag="surface" value="grass_paver" minzoom="14" additional="true" />
+        <type tag="surface" value="ground" minzoom="14" additional="true" />
+        <type tag="surface" value="ground;grass" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="earth" to_tag1="surface" to_value1="ground" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="soil" to_tag1="surface" to_value1="ground" />
+        <type tag="surface" value="dirt" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="dirt/sand" to_tag1="surface" to_value1="dirt" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="clay" to_tag1="surface" to_value1="dirt" poi="false" />
+        <type tag="surface" value="mud" minzoom="14" additional="true" />
+        <type tag="surface" value="ice" minzoom="14" additional="true" />
+        <type tag="surface" value="salt" minzoom="14" additional="true" />
+        <type tag="surface" value="snow" minzoom="14" additional="true" />
+
+        <type tag="surface" value="pebblestone" minzoom="14" additional="true" />
+        <type tag="surface" value="stone" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="granite" to_tag1="surface" to_value1="stone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="rock" to_tag1="surface" to_value1="stone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="rocks" to_tag1="surface" to_value1="stone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="rocky" to_tag1="surface" to_value1="stone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="limerock" to_tag1="surface" to_value1="stone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="bare_rock" to_tag1="surface" to_value1="stone" />
+        <type tag="surface" value="metal" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="metal_grid" to_tag1="surface" to_value1="metal" />
+        <type tag="surface" value="wood" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="boardwalk" to_tag1="surface" to_value1="wood" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="woodchips" to_tag1="surface" to_value1="wood" />
+        <type tag="surface" value="gravel" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="grit" to_tag1="surface" to_value1="gravel" />
+        <type tag="surface" value="gravel;ground" minzoom="14" additional="true" />
+        <type tag="surface" value="fine_gravel" minzoom="14" additional="true" />
+        <type tag="surface" value="compacted" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="hard" to_tag1="surface" to_value1="compacted" />
+
+        <type tag="surface" value="paved" minzoom="14" additional="true" />
+        <type tag="surface" value="asphalt" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="tarmac" to_tag1="surface" to_value1="asphalt" />
+        <type tag="surface" value="chipseal" minzoom="14" additional="true" />
+        <type tag="surface" value="concrete" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="concrete:plates" to_tag1="surface" to_value1="concrete" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="concrete:lanes" to_tag1="surface" to_value1="concrete" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="cement" to_tag1="surface" to_value1="concrete" />
+        <type tag="surface" value="sett" minzoom="14" additional="true" />
+        <type tag="surface" value="cobblestone" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="cobblestone:flattened" to_tag1="surface" to_value1="sett" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="brick" to_tag1="surface" to_value1="cobblestone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="bricks" to_tag1="surface" to_value1="cobblestone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="laterite" to_tag1="surface" to_value1="cobblestone" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="unhewn_cobblestone" to_tag1="surface" to_value1="cobblestone" routing="no" />
+        <type tag="surface" value="paving_stones" minzoom="14" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="paving_stones:20" to_tag1="surface" to_value1="paving_stones" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="paving_stones:30" to_tag1="surface" to_value1="paving_stones" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="paving_stones:double_t" to_tag1="surface" to_value1="paving_stones" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="paving_stones:lanes" to_tag1="surface" to_value1="paving_stones" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="stepping_stones" to_tag1="surface" to_value1="paving_stones" poi="no" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="brick_weave" to_tag1="surface" to_value1="paving_stones" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="shells" to_tag1="surface" to_value1="paved" poi="no" />
+        <entity_convert pattern="tag_transform" from_tag="surface" from_value="moss" to_tag1="surface" to_value1="grass" poi="no" />
+
+        <entity_convert pattern="tag_transform" from_tag="material" from_value="wood;planks" to_tag1="material" to_value1="wood" map="no" />
+        <entity_convert pattern="tag_transform" from_tag="material" from_value="boulder" to_tag1="material" to_value1="stone" map="no" />
+        <entity_convert pattern="tag_transform" from_tag="material" from_value="dry_stone" to_tag1="material" to_value1="stone" map="no" />
+        <entity_convert pattern="tag_transform" from_tag="material" from_value="white rough sand" to_tag1="material" to_value1="sandstone" map="no" />
+        <entity_convert pattern="tag_transform" from_tag="material" from_value="soil" to_tag1="material" to_value1="earth" map="no" />
+        <entity_convert pattern="tag_transform" from_tag="material" from_value="ground" to_tag1="material" to_value1="earth" map="no" />
+        <entity_convert pattern="tag_transform" from_tag="material" from_value="granite" to_tag1="material" to_value1="granite_stone" map="no" />
+
+        <type tag="access" value="yes" additional="true" />
+        <type tag="access" value="no" additional="true" />
+        <type tag="access" value="destination" additional="true" />
+        <type tag="access" value="permissive" additional="true" />
+        <type tag="access" value="private" additional="true" />
+        <type tag="motor_vehicle" value="yes" additional="true" />
+        <type tag="motor_vehicle" value="no" additional="true" />
+        <type tag="motor_vehicle" value="destination" additional="true" />
+        <type tag="motor_vehicle" value="permissive" additional="true" />
+        <type tag="motor_vehicle" value="private" additional="true" />
+        <type tag="foot" value="yes" additional="true" />
+        <type tag="foot" value="no" additional="true" />
+        <type tag="foot" value="destination" additional="true" />
+        <type tag="foot" value="permissive" additional="true" />
+        <type tag="foot" value="designated" additional="true" />
+        <type tag="foot" value="private" additional="true" />
+        <type tag="bicycle" value="yes" additional="true" />
+        <type tag="bicycle" value="no" additional="true" />
+        <type tag="bicycle" value="destination" additional="true" />
+        <type tag="bicycle" value="permissive" additional="true" />
+        <type tag="bicycle" value="designated" additional="true" />
+        <type tag="bicycle" value="private" additional="true" />
+
+        <!-- Propagate Access -->
+        <entity_convert pattern="tag_transform" if_not_tag1="bicycle" from_tag="access" from_value="yes" to_tag1="access" to_value1="yes" to_tag2="bicycle" to_value2="yes" />
+        <entity_convert pattern="tag_transform" if_not_tag1="bicycle" from_tag="access" from_value="no" to_tag1="access" to_value1="no" to_tag2="bicycle" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_not_tag1="bicycle" from_tag="access" from_value="destination" to_tag1="access" to_value1="destination" to_tag2="bicycle" to_value2="destination" />
+        <entity_convert pattern="tag_transform" if_not_tag1="bicycle" from_tag="access" from_value="permissive" to_tag1="access" to_value1="permissive" to_tag2="bicycle" to_value2="permissive" />
+        <entity_convert pattern="tag_transform" if_not_tag1="bicycle" from_tag="access" from_value="private" to_tag1="access" to_value1="private" to_tag2="bicycle" to_value2="private" />
+        <entity_convert pattern="tag_transform" if_not_tag1="foot" from_tag="access" from_value="yes" to_tag1="access" to_value1="yes" to_tag2="foot" to_value2="yes" />
+        <entity_convert pattern="tag_transform" if_not_tag1="foot" from_tag="access" from_value="no" to_tag1="access" to_value1="no" to_tag2="foot" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_not_tag1="foot" from_tag="access" from_value="destination" to_tag1="access" to_value1="destination" to_tag2="foot" to_value2="destination" />
+        <entity_convert pattern="tag_transform" if_not_tag1="foot" from_tag="access" from_value="permissive" to_tag1="access" to_value1="permissive" to_tag2="foot" to_value2="permissive" />
+        <entity_convert pattern="tag_transform" if_not_tag1="foot" from_tag="access" from_value="private" to_tag1="access" to_value1="private" to_tag2="foot" to_value2="private" />
+        <entity_convert pattern="tag_transform" if_not_tag1="motor_vehicle" from_tag="access" from_value="yes" to_tag1="access" to_value1="yes" to_tag2="motor_vehicle" to_value2="yes" />
+        <entity_convert pattern="tag_transform" if_not_tag1="motor_vehicle" from_tag="access" from_value="no" to_tag1="access" to_value1="no" to_tag2="motor_vehicle" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_not_tag1="motor_vehicle" from_tag="access" from_value="destination" to_tag1="access" to_value1="destination" to_tag2="motor_vehicle" to_value2="destination" />
+        <entity_convert pattern="tag_transform" if_not_tag1="motor_vehicle" from_tag="access" from_value="permissive" to_tag1="access" to_value1="permissive" to_tag2="motor_vehicle" to_value2="permissive" />
+        <entity_convert pattern="tag_transform" if_not_tag1="motor_vehicle" from_tag="access" from_value="private" to_tag1="access" to_value1="private" to_tag2="motor_vehicle" to_value2="private" />
+
+        <!-- Fallback to highway defaults -->
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="bicycle" if_not_tag2="access" from_tag="highway" from_value="bridleway" to_tag1="highway" to_value1="bridleway" to_tag2="bicycle" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="bicycle" if_not_tag2="access" from_tag="highway" from_value="cycleway" to_tag1="highway" to_value1="cycleway" to_tag2="bicycle" to_value2="designated" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="bicycle" if_not_tag2="access" from_tag="highway" from_value="footway" to_tag1="highway" to_value1="footway" to_tag2="bicycle" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="bicycle" if_not_tag2="access" from_tag="highway" from_value="pedestrian" to_tag1="highway" to_value1="footway" to_tag2="bicycle" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="bicycle" if_not_tag2="access" from_tag="highway" from_value="motorway" to_tag1="highway" to_value1="motorway" to_tag2="bicycle" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="bicycle" if_not_tag2="access" from_tag="motorroad" from_value="yes" to_tag1="motorroad" to_value1="yes" to_tag2="bicycle" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="foot" if_not_tag2="access" from_tag="highway" from_value="bridleway" to_tag1="highway" to_value1="bridleway" to_tag2="foot" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="foot" if_not_tag2="access" from_tag="highway" from_value="cycleway" to_tag1="highway" to_value1="cycleway" to_tag2="foot" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="foot" if_not_tag2="access" from_tag="highway" from_value="footway" to_tag1="highway" to_value1="footway" to_tag2="foot" to_value2="designated" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="foot" if_not_tag2="access" from_tag="highway" from_value="pedestrian" to_tag1="highway" to_value1="footway" to_tag2="foot" to_value2="designated" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="foot" if_not_tag2="access" from_tag="highway" from_value="motorway" to_tag1="highway" to_value1="motorway" to_tag2="foot" to_value2="no" />
+        <entity_convert pattern="tag_transform" if_region_name="$germany" if_not_tag1="foot" if_not_tag2="access" from_tag="motorroad" from_value="yes" to_tag1="motorroad" to_value1="yes" to_tag2="foot" to_value2="no" />
     </category>
     <category name="routes">
         <!-- relationGroup turns a relation into a proper entity, combining tag and value with an underscore. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L318 -->
         <!-- additionalPrefix is used such that a track has the network of the highest importance hiking, biking and mtb route separately. Otherwise e.g. a network=lwn could overwrite a ntwork=icn. additionalNamePrefix as mentioned in the documentation does not exist. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L344 -->
-        <type tag="route" value="bicycle" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network" additionalPrefix="bicycle_"/>
-        <type tag="route" value="mtb" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network" additionalPrefix="mtb_"/>
-        <type tag="route" value="hiking" minzoom="6" relationGroup="true" relationGroupSort="network=iwn,nwn,rwn,lwn" additionalTags="network" additionalPrefix="hiking_"/>
+        <type tag="route" value="bicycle" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network" additionalPrefix="bicycle_" />
+        <type tag="route" value="mtb" minzoom="6" relationGroup="true" relationGroupSort="network=icn,ncn,rcn,lcn" additionalTags="network" additionalPrefix="mtb_" />
+        <type tag="route" value="hiking" minzoom="6" relationGroup="true" relationGroupSort="network=iwn,nwn,rwn,lwn" additionalTags="network" additionalPrefix="hiking_" />
         <!-- network as additional can set the minzoom, as the max of minzooms is taken. See https://github.com/osmandapp/OsmAnd/blob/8115e5fa0de8bab3ed10634d38f9b09207ba36df/OsmAnd-java/src/main/java/net/osmand/osm/MapRenderingTypes.java#L423-->
-        <type tag="network" value="icn" minzoom="6" additional="true"/>
-        <type tag="network" value="ncn" minzoom="7" additional="true"/>
-        <type tag="network" value="rcn" minzoom="9" additional="true"/>
-        <type tag="network" value="lcn" minzoom="11" additional="true"/>
-        <type tag="network" value="iwn" minzoom="6" additional="true"/>
-        <type tag="network" value="nwn" minzoom="7" additional="true"/>
-        <type tag="network" value="rwn" minzoom="9" additional="true"/>
-        <type tag="network" value="lwn" minzoom="11" additional="true"/>
+        <type tag="network" value="icn" minzoom="6" additional="true" />
+        <type tag="network" value="ncn" minzoom="7" additional="true" />
+        <type tag="network" value="rcn" minzoom="9" additional="true" />
+        <type tag="network" value="lcn" minzoom="11" additional="true" />
+        <type tag="network" value="iwn" minzoom="6" additional="true" />
+        <type tag="network" value="nwn" minzoom="7" additional="true" />
+        <type tag="network" value="rwn" minzoom="9" additional="true" />
+        <type tag="network" value="lwn" minzoom="11" additional="true" />
     </category>
     <category name="highway">
         <type tag="highway" value="motorway" minzoom="6" />
@@ -30,6 +205,7 @@
         <type tag="highway" value="secondary_link" minzoom="10" />
         <type tag="highway" value="tertiary" minzoom="11" />
         <type tag="highway" value="tertiary_link" minzoom="11" />
+        <type tag="highway" value="living_street" minzoom="11" />
         <type tag="highway" value="residential" minzoom="11" />
         <type tag="highway" value="service" minzoom="11" />
         <type tag="highway" value="busway" minzoom="11" />
@@ -37,8 +213,310 @@
         <type tag="highway" value="unclassified" minzoom="11" />
         <type tag="highway" value="road" minzoom="11" />
         <type tag="highway" value="track" minzoom="11" />
+        <type tag="highway" value="cycleway" minzoom="11" />
+        <type tag="highway" value="path" minzoom="11" />
+        <type tag="highway" value="footway" minzoom="11" />
+        <type tag="highway" value="bridleway" minzoom="11" />
+
         <!-- Additional tags for highways-->
-        <type tag="bridge" value="yes" minzoom="12" additional="true"/>
-        <type tag="tunnel" value="yes" minzoom="12" additional="true"/>
+        <type tag="bridge" value="yes" minzoom="12" additional="true" />
+        <type tag="tunnel" value="yes" minzoom="12" additional="true" />
+        <type tag="tracktype" value="grade1" additional="true" />
+        <type tag="tracktype" value="grade2" additional="true" />
+        <type tag="tracktype" value="grade3" additional="true" />
+        <type tag="tracktype" value="grade4" additional="true" />
+        <type tag="tracktype" value="grade5" additional="true" />
+
+    </category>
+    <category name="hike_bike_difficulty">
+        <type tag="mtb:scale" value="0" minzoom="11" additional="true" />
+        <type tag="mtb:scale" value="1" minzoom="11" additional="true" />
+        <type tag="mtb:scale" value="2" minzoom="11" additional="true" />
+        <type tag="mtb:scale" value="3" minzoom="11" additional="true" />
+        <type tag="mtb:scale" value="4" minzoom="11" additional="true" />
+        <type tag="mtb:scale" value="5" minzoom="11" additional="true" />
+        <type tag="mtb:scale" value="6" minzoom="11" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="0+" to_tag1="mtb:scale" to_value1="0" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="1-" to_tag1="mtb:scale" to_value1="1" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="1+" to_tag1="mtb:scale" to_value1="1" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="2-" to_tag1="mtb:scale" to_value1="2" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="2+" to_tag1="mtb:scale" to_value1="2" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="3-" to_tag1="mtb:scale" to_value1="3" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="3+" to_tag1="mtb:scale" to_value1="3" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="4-" to_tag1="mtb:scale" to_value1="4" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="4+" to_tag1="mtb:scale" to_value1="4" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="5-" to_tag1="mtb:scale" to_value1="5" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="5+" to_tag1="mtb:scale" to_value1="5" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="6-" to_tag1="mtb:scale" to_value1="6" />
+        <entity_convert pattern="tag_transform" from_tag="mtb:scale" from_value="6+" to_tag1="mtb:scale" to_value1="6" />
+        <type tag="mtb:scale:uphill" value="1" minzoom="11" additional="true" />
+        <type tag="mtb:scale:uphill" value="2" minzoom="11" additional="true" />
+        <type tag="mtb:scale:uphill" value="3" minzoom="11" additional="true" />
+        <type tag="mtb:scale:uphill" value="4" minzoom="11" additional="true" />
+        <type tag="mtb:scale:uphill" value="5" minzoom="11" additional="true" />
+        <type tag="sac_scale" value="hiking" minzoom="12" additional="true" />
+        <type tag="sac_scale" value="mountain_hiking" minzoom="12" additional="true" />
+        <type tag="sac_scale" value="demanding_mountain_hiking" minzoom="12" additional="true" />
+        <type tag="sac_scale" value="alpine_hiking" minzoom="12" additional="true" />
+        <type tag="sac_scale" value="demanding_alpine_hiking" minzoom="12" additional="true" />
+        <type tag="sac_scale" value="difficult_alpine_hiking" minzoom="12" additional="true" />
+
+    </category>
+    <category name="places">
+        <type tag="place" value="ocean" minzoom="1" point="true" />
+        <type tag="place" value="continent" minzoom="1" point="true" />
+        <type tag="place" value="country" minzoom="3" point="true" />
+        <type tag="place" value="state" minzoom="3" point="true" />
+        <type tag="place" value="region" minzoom="4" point="true" />
+        <type tag="place" value="sea" minzoom="3" point="true" />
+        <type tag="place" value="county" minzoom="9" />
+        <type tag="place" value="city" minzoom="5" point="true" />
+        <type tag="place" value="town" minzoom="6" point="true" />
+        <type tag="place" value="village" minzoom="10" />
+        <type tag="place" value="hamlet" minzoom="10" />
+        <type tag="place" value="isolated_dwelling" minzoom="10" />
+        <type tag="place" value="suburb" minzoom="10" />
+        <type tag="place" value="borough" minzoom="10" />
+        <type tag="place" value="quarter" minzoom="10" />
+        <type tag="place" value="neighbourhood" minzoom="10" />
+        <type tag="place" value="city_block" minzoom="10" />
+        <type tag="place" value="locality" minzoom="10" />
+        <type tag="place" value="allotments" minzoom="10" />
+        <type tag="place" value="farm" minzoom="10" />
+        <type tag="place" value="municipality" minzoom="10" />
+        <type tag="place" value="plot" minzoom="10" />
+        <type tag="place" value="square" minzoom="13" />
+        <type tag="place" value="island" minzoom="10" />
+        <type tag="place" value="islet" minzoom="10" />
+        <type tag="place" value="atoll" minzoom="10" />
+        <type tag="population_limit" value="1500000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="400000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="200000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="100000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="50000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="25000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="20000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="15000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="12000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="9000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="7000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="5000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="3000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="2000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="1000000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="700000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="400000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="200000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="100000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="70000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="40000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="20000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="10000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="5000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="2500" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="1000" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="500" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="200" minzoom="3" additional="true" notosm="true" />
+        <type tag="population_limit" value="100" minzoom="3" additional="true" notosm="true" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="1500000000" to_tag1="population" to_tag2="population_limit" to_value2="1500000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="400000000" to_tag1="population" to_tag2="population_limit" to_value2="400000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="200000000" to_tag1="population" to_tag2="population_limit" to_value2="200000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="100000000" to_tag1="population" to_tag2="population_limit" to_value2="100000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="50000000" to_tag1="population" to_tag2="population_limit" to_value2="50000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="25000000" to_tag1="population" to_tag2="population_limit" to_value2="25000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="20000000" to_tag1="population" to_tag2="population_limit" to_value2="20000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="15000000" to_tag1="population" to_tag2="population_limit" to_value2="15000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="12000000" to_tag1="population" to_tag2="population_limit" to_value2="12000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="9000000" to_tag1="population" to_tag2="population_limit" to_value2="9000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="7000000" to_tag1="population" to_tag2="population_limit" to_value2="7000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="5000000" to_tag1="population" to_tag2="population_limit" to_value2="5000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="3000000" to_tag1="population" to_tag2="population_limit" to_value2="3000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="2000000" to_tag1="population" to_tag2="population_limit" to_value2="2000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="1000000" to_tag1="population" to_tag2="population_limit" to_value2="1000000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="700000" to_tag1="population" to_tag2="population_limit" to_value2="700000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="400000" to_tag1="population" to_tag2="population_limit" to_value2="400000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="200000" to_tag1="population" to_tag2="population_limit" to_value2="200000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="100000" to_tag1="population" to_tag2="population_limit" to_value2="100000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="70000" to_tag1="population" to_tag2="population_limit" to_value2="70000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="40000" to_tag1="population" to_tag2="population_limit" to_value2="40000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="20000" to_tag1="population" to_tag2="population_limit" to_value2="20000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="10000" to_tag1="population" to_tag2="population_limit" to_value2="10000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="5000" to_tag1="population" to_tag2="population_limit" to_value2="5000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="2500" to_tag1="population" to_tag2="population_limit" to_value2="2500" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="1000" to_tag1="population" to_tag2="population_limit" to_value2="1000" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="500" to_tag1="population" to_tag2="population_limit" to_value2="500" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="200" to_tag1="population" to_tag2="population_limit" to_value2="200" />
+        <entity_convert pattern="tag_transform" from_tag="population" if_less_tag1="population" if_less_value1="100" to_tag1="population" to_tag2="population_limit" to_value2="100" />
+    </category>    <!-- Coastline tag is required, otherwise map creation crashes (see https://github.com/osmandapp/OsmAnd-tools/blob/4dbbffb12559eebb37df7eebb6e7ad841d6723f3/java-tools/OsmAndMapCreatorUtilities/src/main/java/net/osmand/obf/preparation/IndexVectorMapCreator.java#L513) -->
+    <category name="natural">
+        <type tag="natural" value="coastline" minzoom="1" />
+        <type tag="natural" value="water" minzoom="4" />
+        <type tag="natural" value="bay" minzoom="4" />
+        <type tag="natural" value="beach" minzoom="11" />
+        <type tag="natural" value="cliff" minzoom="12" />
+        <type tag="natural" value="slope" minzoom="12" />
+        <type tag="natural" value="earth_bank" minzoom="12" />
+        <type tag="natural" value="fell" minzoom="6" />
+        <type tag="geological" value="moraine" minzoom="10" />
+        <type tag="geological" value="outcrop" minzoom="11" />
+        <type tag="geological" value="volcanic_lava_field" minzoom="11" />
+        <type tag="natural" value="glacier" minzoom="4" />
+        <type tag="natural" value="heath" minzoom="11" />
+        <type tag="natural" value="landslide" minzoom="11" />
+        <type tag="natural" value="desert" minzoom="6" />
+        <type tag="natural" value="lava" minzoom="6" />
+        <type tag="natural" value="peak" minzoom="10" nameTags="ele" />
+        <type tag="natural" value="hill" minzoom="13" nameTags="ele" />
+        <type tag="natural" value="bare_rock" minzoom="10" />
+        <type tag="natural" value="rock" minzoom="10" />
+        <type tag="natural" value="dune" minzoom="10" />
+        <!-- See Wiki that they are more or less synonymous -->
+        <entity_convert pattern="tag_transform" from_tag="natural" from_value="rock" to_tag1="natural" to_value1="bare_rock" />
+        <type tag="natural" value="ridge" minzoom="10" />
+        <type tag="natural" value="arete" minzoom="10" />
+        <type tag="natural" value="saddle" minzoom="10" nameTags="ele" />
+        <type tag="natural" value="cape" minzoom="9" />
+        <type tag="natural" value="volcano" minzoom="10" nameTags="ele" />
+        <type tag="natural" value="crater" minzoom="10" />
+        <type tag="natural" value="fumarole" minzoom="13" />
+        <type tag="natural" value="cave_entrance" minzoom="10" nameTags="ele" />
+        <type tag="natural" value="crevasse" minzoom="10" />
+        <type tag="glacial" value="crevasse_zone" minzoom="10" />
+        <type tag="natural" value="sand" minzoom="5" />
+        <type tag="natural" value="scree" minzoom="11" />
+        <type tag="natural" value="shingle" minzoom="11" />
+        <type tag="natural" value="sinkhole" minzoom="13" />
+        <type tag="natural" value="scrub" minzoom="11" />
+        <type tag="natural" value="shrubbery" minzoom="11" />
+        <type tag="natural" value="shrub" minzoom="15" />
+        <type tag="natural" value="grassland" minzoom="11" />
+        <type tag="natural" value="tundra" minzoom="11" />
+        <type tag="natural" value="spring" minzoom="10" />
+        <type tag="natural" value="geyser" minzoom="10" />
+        <type tag="natural" value="blowhole" minzoom="14" />
+        <type tag="natural" value="stone" minzoom="10" />
+        <type tag="natural" value="valley" minzoom="6" />
+        <type tag="natural" value="gully" minzoom="11" />
+        <type tag="natural" value="gorge" minzoom="10" />
+        <type tag="natural" value="couloir" minzoom="10" />
+        <type tag="natural" value="plateau" minzoom="6" />
+        <type tag="natural" value="arch" minzoom="12" />
+        <type tag="natural" value="tree" minzoom="17" />
+        <type tag="natural" value="tree_row" minzoom="14" />
+        <type tag="natural" value="fjord" minzoom="12" />
+        <type tag="natural" value="reef" minzoom="6" />
+        <type tag="natural" value="shoal" minzoom="6" />
+        <type tag="reef" value="coral" minzoom="11" additional="true" />
+        <type tag="reef" value="rock" minzoom="11" additional="true" />
+        <type tag="reef" value="stone" minzoom="11" additional="true" />
+        <type tag="natural" value="strait" minzoom="4" />
+        <type tag="natural" value="wetland" minzoom="10" />
+        <type tag="wetland" value="tidalflat" minzoom="11" additional="true" />
+        <type tag="wetland" value="bog" minzoom="12" additional="true" />
+        <type tag="wetland" value="marsh" minzoom="12" additional="true" />
+        <type tag="wetland" value="swamp" minzoom="12" additional="true" />
+        <type tag="wetland" value="reedbed" minzoom="12" additional="true" />
+        <type tag="wetland" value="mangrove" minzoom="12" additional="true" />
+        <type tag="wetland" value="wet_meadow" minzoom="12" additional="true" />
+        <type tag="wetland" value="string_bog" minzoom="12" additional="true" />
+        <type tag="wetland" value="fen" minzoom="12" additional="true" />
+        <type tag="wetland" value="palsa_bog" minzoom="12" additional="true" />
+        <type tag="wetland" value="mud" minzoom="12" additional="true" />
+        <type tag="natural" value="wood" minzoom="6" />
+        <type tag="point" value="depth" minzoom="6" notosm="true" />
+        <type tag="leisure" value="nature_reserve" minzoom="6" />
+        <type tag="leaf_type" value="broadleaved" minzoom="12" additional="true" />
+        <type tag="leaf_type" value="needleleaved" minzoom="12" additional="true" />
+        <type tag="leaf_type" value="mixed" minzoom="12" additional="true" />
+        <type tag="leaf_type" value="leafless" minzoom="12" additional="true" />
+    </category>
+    <category name="water">
+        <type tag="waterway" value="boatyard" minzoom="15" />
+        <type tag="waterway" value="canal" minzoom="10" />
+        <type tag="waterway" value="dam" minzoom="12" />
+        <type tag="waterway" value="ditch" minzoom="13" />
+        <type tag="waterway" value="dock" minzoom="10" />
+        <type tag="waterway" value="drain" minzoom="13" />
+        <type tag="waterway" value="drystream" minzoom="13" />
+        <type tag="waterway" value="lock_gate" minzoom="15" />
+        <type tag="waterway" value="rapids" minzoom="13" />
+        <type tag="waterway" value="river" minzoom="5" />
+        <type tag="waterway" value="tidal_channel" minzoom="5" />
+        <type tag="waterway" value="stream" minzoom="10" />
+        <type tag="waterway" value="turning_point" minzoom="15" />
+        <type tag="waterway" value="wadi" minzoom="10" />
+        <type tag="waterway" value="waterfall" minzoom="10" nameTags="height" />
+        <type tag="waterway" value="weir" minzoom="15" propagateToNodes="true" />
+        <type tag="waterway" value="fish_pass" minzoom="15" />
+        <type tag="water" value="lake" additional="true" />
+        <type tag="water" value="lake" additional="true" />
+        <type tag="water" value="pond" additional="true" />
+        <type tag="water" value="reservoir" additional="true" />
+        <!-- deprecated but still in heavy use -->
+        <entity_convert pattern="tag_transform" from_tag="landuse" from_value="reservoir" to_tag1="water" to_value1="reservoir" to_tag2="natural" to_value2="water" />
+        <type tag="water" value="river" additional="true" />
+        <type tag="water" value="basin" additional="true" />
+        <type tag="water" value="wastewater" additional="true" />
+        <type tag="water" value="canal" additional="true" />
+        <type tag="water" value="stream" additional="true" />
+        <type tag="water" value="oxbow" additional="true" />
+        <type tag="water" value="ditch" additional="true" />
+        <type tag="water" value="lagoon" additional="true" />
+        <type tag="water" value="drain" additional="true" />
+        <type tag="water" value="rapids" additional="true" />
+        <type tag="water" value="lock" additional="true" />
+        <type tag="water" value="stream_pool" additional="true" />
+        <type tag="water" value="salt_pool" additional="true" />
+        <type tag="water" value="moat" additional="true" />
+        <type tag="water" value="reflecting_pool" additional="true" />
+        <type tag="water" value="harbour" additional="true" />
+    </category>
+    <category name="landuse">
+        <type tag="landuse" value="allotments" minzoom="10" />
+        <type tag="landuse" value="basin" minzoom="10" />
+        <type tag="landuse" value="brownfield" minzoom="11" />
+        <type tag="landuse" value="cemetery" minzoom="11" />
+        <type tag="cemetery" value="sector" nameTags="ref" minzoom="11" />
+        <type tag="landuse" value="commercial" minzoom="11" />
+        <type tag="landuse" value="construction" minzoom="11" />
+        <type tag="landuse" value="farmland" minzoom="11" />
+        <type tag="landuse" value="farmyard" minzoom="11" />
+        <type tag="landuse" value="flowerbed" minzoom="16" />
+        <type tag="landuse" value="forest" minzoom="6" />
+        <type tag="landuse" value="garages" minzoom="12" />
+        <type tag="landuse" value="grass" minzoom="11" />
+        <entity_convert pattern="tag_transform" from_tag="natural" from_value="grass" to_tag1="landuse" />
+        <entity_convert pattern="tag_transform" from_tag="landuse" from_value="grass" if_tag1="tourism" to_tag1="landuse" to_value1="grass" to_tag2="surface" to_value2="grass" />
+        <entity_convert pattern="tag_transform" from_tag="landuse" from_value="grass" if_tag1="amenity" to_tag1="landuse" to_value1="grass" to_tag2="surface" to_value2="grass" />
+        <entity_convert pattern="tag_transform" from_tag="landuse" from_value="grass" if_tag1="leisure" to_tag1="landuse" to_value1="grass" to_tag2="surface" to_value2="grass" />
+        <type tag="landuse" value="greenery" minzoom="11" />
+        <type tag="landuse" value="greenfield" minzoom="11" />
+        <type tag="landuse" value="greenhouse_horticulture" minzoom="11" />
+        <type tag="landuse" value="aquaculture" minzoom="11" />
+        <type tag="landuse" value="industrial" minzoom="11" />
+        <type tag="industrial" value="port" minzoom="11" additional="true" />
+        <type tag="landuse" value="landfill" minzoom="11" />
+        <type tag="landuse" value="logging" minzoom="11" />
+        <entity_convert pattern="tag_transform" from_tag="man_made" from_value="clearcut" to_tag1="landuse" to_value1="logging" to_tag2="logging" to_value2="clearcutting" />
+        <type tag="logging" value="clearcutting" minzoom="10" additional="true" />
+        <type tag="logging" value="selective_cutting" minzoom="10" additional="true" />
+        <type tag="landuse" value="military" minzoom="10" />
+        <type tag="landuse" value="orchard" minzoom="12" />
+        <type tag="landuse" value="plant_nursery" minzoom="11" />
+        <type tag="landuse" value="railway" minzoom="11" />
+        <type tag="landuse" value="depot" minzoom="11" />
+        <type tag="landuse" value="recreation_ground" minzoom="11" />
+        <type tag="landuse" value="religious" minzoom="13" />
+        <entity_convert pattern="tag_transform" from_tag="landuse" from_value="churchyard" to_tag1="landuse" to_value1="religious" />
+        <type tag="landuse" value="village_green" minzoom="11" />
+        <type tag="landuse" value="residential" minzoom="9" />
+        <type tag="residential" value="rural" minzoom="10" additional="true" />
+        <type tag="residential" value="urban" minzoom="10" additional="true" />
+        <type tag="landuse" value="retail" minzoom="11" />
+        <type tag="landuse" value="quarry" minzoom="11" />
+        <type tag="landuse" value="salt_pond" minzoom="11" />
+    </category>
+    <category name="man_made">
+        <type tag="building" value="yes" minzoom="13" />
     </category>
 </osmand_types>
