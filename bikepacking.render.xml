@@ -6,17 +6,17 @@
 <renderingStyle name="Bikepacking" depends="" defaultColor="#ffffff" version="1">
 
     <!-- sticking with the original rendering properties, since they are there anyways and their options can't be overridden-->
-    <renderingProperty attr="appMode" name="Rendering mode" description="Map optimization for respective User Profile" type="string" possibleValues="browse map,car,bicycle,pedestrian"/>
-    <renderingProperty attr="baseAppMode" name="Default Rendering mode" description="Map optimization for respective User Profile based on base (parent) profile" type="string" possibleValues="default, car, bicycle, pedestrian, public_transport, boat, ski"/>
-    <renderingProperty attr="contourLines" name="Show contour lines" description="Select minimum zoom level to display in map if available. Separate contour file may be needed." type="string" possibleValues="disabled,16,15,14,13,12,11" defaultValueDescription="default13" category="details"/>
-    <renderingProperty attr="contourColorScheme" name="Contour lines color scheme" description="Contour lines color scheme" type="string" possibleValues="white,yellow,green,light_brown,brown,dark_brown,dark_orange,red,purple" defaultValueDescription="default"/>
-    <renderingProperty attr="contourWidth" name="Contour lines width" description="Contour lines width" type="string" possibleValues="thin,medium,thick" defaultValueDescription="default"/>
-    <renderingProperty attr="contourDensity" name="Contour lines density" description="Contour lines density" type="string" possibleValues="low,medium_w,high" defaultValueDescription="default"/>
+    <renderingProperty attr="appMode" name="Rendering mode" description="Map optimization for respective User Profile" type="string" possibleValues="browse map,car,bicycle,pedestrian" />
+    <renderingProperty attr="baseAppMode" name="Default Rendering mode" description="Map optimization for respective User Profile based on base (parent) profile" type="string" possibleValues="default, car, bicycle, pedestrian, public_transport, boat, ski" />
+    <renderingProperty attr="contourLines" name="Show contour lines" description="Select minimum zoom level to display in map if available. Separate contour file may be needed." type="string" possibleValues="disabled,16,15,14,13,12,11" defaultValueDescription="default13" category="details" />
+    <renderingProperty attr="contourColorScheme" name="Contour lines color scheme" description="Contour lines color scheme" type="string" possibleValues="white,yellow,green,light_brown,brown,dark_brown,dark_orange,red,purple" defaultValueDescription="default" />
+    <renderingProperty attr="contourWidth" name="Contour lines width" description="Contour lines width" type="string" possibleValues="thin,medium,thick" defaultValueDescription="default" />
+    <renderingProperty attr="contourDensity" name="Contour lines density" description="Contour lines density" type="string" possibleValues="low,medium_w,high" defaultValueDescription="default" />
 
     <!-- My Options -->
-    <renderingProperty attr="showCyclingNetwork" name="Show cycle routes" description="Show cycle routes" type="boolean" possibleValues="" category="details"/>
-    <renderingProperty attr="showMTBNetwork" name="Show MTB routes" description="Show mountain bike routes" type="boolean" possibleValues="" category="details"/>
-    <renderingProperty attr="showHikingNetwork" name="Show hiking routes" description="Show hiking routes" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="showCyclingNetwork" name="Show cycle routes" description="Show cycle routes" type="boolean" possibleValues="" category="details" />
+    <renderingProperty attr="showMTBNetwork" name="Show MTB routes" description="Show mountain bike routes" type="boolean" possibleValues="" category="details" />
+    <renderingProperty attr="showHikingNetwork" name="Show hiking routes" description="Show hiking routes" type="boolean" possibleValues="" category="details" />
 
     <!-- Some settigns for the renderer -->
     <renderingAttribute name="shadowRendering">
@@ -24,264 +24,264 @@
         <case attrIntValue="3" />
     </renderingAttribute>
 
-    <renderingConstant name="width_l00_z12" value="0.25"/>
-    <renderingConstant name="width_l00_z13" value="0.5"/>
-    <renderingConstant name="width_l00_z14" value="0.75"/>
-    <renderingConstant name="width_l00_z15" value="1"/>
-    <renderingConstant name="width_l00_z16" value="1.25"/>
-    <renderingConstant name="width_l00_z17" value="1.5"/>
-    <renderingConstant name="width_l00_z18" value="1.75"/>
-    <renderingConstant name="width_l00_z19" value="2"/>
-    <renderingConstant name="width_l00_z20" value="2.25"/>
-    <renderingConstant name="width_l00_z21" value="2.5"/>
+    <renderingConstant name="width_l00_z12" value="0.25" />
+    <renderingConstant name="width_l00_z13" value="0.5" />
+    <renderingConstant name="width_l00_z14" value="0.75" />
+    <renderingConstant name="width_l00_z15" value="1" />
+    <renderingConstant name="width_l00_z16" value="1.25" />
+    <renderingConstant name="width_l00_z17" value="1.5" />
+    <renderingConstant name="width_l00_z18" value="1.75" />
+    <renderingConstant name="width_l00_z19" value="2" />
+    <renderingConstant name="width_l00_z20" value="2.25" />
+    <renderingConstant name="width_l00_z21" value="2.5" />
 
-    <renderingConstant name="width_l0_z12" value="0.5"/>
-    <renderingConstant name="width_l0_z13" value="1"/>
-    <renderingConstant name="width_l0_z14" value="1.5"/>
-    <renderingConstant name="width_l0_z15" value="2"/>
-    <renderingConstant name="width_l0_z16" value="2.5"/>
-    <renderingConstant name="width_l0_z17" value="3"/>
-    <renderingConstant name="width_l0_z18" value="3.5"/>
-    <renderingConstant name="width_l0_z19" value="4"/>
-    <renderingConstant name="width_l0_z20" value="4.5"/>
-    <renderingConstant name="width_l0_z21" value="5"/>
+    <renderingConstant name="width_l0_z12" value="0.5" />
+    <renderingConstant name="width_l0_z13" value="1" />
+    <renderingConstant name="width_l0_z14" value="1.5" />
+    <renderingConstant name="width_l0_z15" value="2" />
+    <renderingConstant name="width_l0_z16" value="2.5" />
+    <renderingConstant name="width_l0_z17" value="3" />
+    <renderingConstant name="width_l0_z18" value="3.5" />
+    <renderingConstant name="width_l0_z19" value="4" />
+    <renderingConstant name="width_l0_z20" value="4.5" />
+    <renderingConstant name="width_l0_z21" value="5" />
 
-    <renderingConstant name="width_l1_z12" value="1"/>
-    <renderingConstant name="width_l1_z13" value="2"/>
-    <renderingConstant name="width_l1_z14" value="2"/>
-    <renderingConstant name="width_l1_z15" value="4"/>
-    <renderingConstant name="width_l1_z16" value="4"/>
-    <renderingConstant name="width_l1_z17" value="6"/>
-    <renderingConstant name="width_l1_z18" value="6"/>
-    <renderingConstant name="width_l1_z19" value="8"/>
-    <renderingConstant name="width_l1_z20" value="8"/>
-    <renderingConstant name="width_l1_z21" value="10"/>
+    <renderingConstant name="width_l1_z12" value="1" />
+    <renderingConstant name="width_l1_z13" value="2" />
+    <renderingConstant name="width_l1_z14" value="2" />
+    <renderingConstant name="width_l1_z15" value="4" />
+    <renderingConstant name="width_l1_z16" value="4" />
+    <renderingConstant name="width_l1_z17" value="6" />
+    <renderingConstant name="width_l1_z18" value="6" />
+    <renderingConstant name="width_l1_z19" value="8" />
+    <renderingConstant name="width_l1_z20" value="8" />
+    <renderingConstant name="width_l1_z21" value="10" />
 
-    <renderingConstant name="width_l2_z12" value="2"/>
-    <renderingConstant name="width_l2_z13" value="4"/>
-    <renderingConstant name="width_l2_z14" value="4"/>
-    <renderingConstant name="width_l2_z15" value="8"/>
-    <renderingConstant name="width_l2_z16" value="8"/>
-    <renderingConstant name="width_l2_z17" value="12"/>
-    <renderingConstant name="width_l2_z18" value="12"/>
-    <renderingConstant name="width_l2_z19" value="16"/>
-    <renderingConstant name="width_l2_z20" value="16"/>
-    <renderingConstant name="width_l2_z21" value="20"/>
+    <renderingConstant name="width_l2_z12" value="2" />
+    <renderingConstant name="width_l2_z13" value="4" />
+    <renderingConstant name="width_l2_z14" value="4" />
+    <renderingConstant name="width_l2_z15" value="8" />
+    <renderingConstant name="width_l2_z16" value="8" />
+    <renderingConstant name="width_l2_z17" value="12" />
+    <renderingConstant name="width_l2_z18" value="12" />
+    <renderingConstant name="width_l2_z19" value="16" />
+    <renderingConstant name="width_l2_z20" value="16" />
+    <renderingConstant name="width_l2_z21" value="20" />
 
-    <renderingConstant name="width_l3_z12" value="3"/>
-    <renderingConstant name="width_l3_z13" value="6"/>
-    <renderingConstant name="width_l3_z14" value="6"/>
-    <renderingConstant name="width_l3_z15" value="12"/>
-    <renderingConstant name="width_l3_z16" value="12"/>
-    <renderingConstant name="width_l3_z17" value="18"/>
-    <renderingConstant name="width_l3_z18" value="28"/>
-    <renderingConstant name="width_l3_z19" value="24"/>
-    <renderingConstant name="width_l3_z20" value="24"/>
-    <renderingConstant name="width_l3_z21" value="30"/>
+    <renderingConstant name="width_l3_z12" value="3" />
+    <renderingConstant name="width_l3_z13" value="6" />
+    <renderingConstant name="width_l3_z14" value="6" />
+    <renderingConstant name="width_l3_z15" value="12" />
+    <renderingConstant name="width_l3_z16" value="12" />
+    <renderingConstant name="width_l3_z17" value="18" />
+    <renderingConstant name="width_l3_z18" value="28" />
+    <renderingConstant name="width_l3_z19" value="24" />
+    <renderingConstant name="width_l3_z20" value="24" />
+    <renderingConstant name="width_l3_z21" value="30" />
 
-    <renderingConstant name="width_l4_z12" value="4"/>
-    <renderingConstant name="width_l4_z13" value="8"/>
-    <renderingConstant name="width_l4_z14" value="8"/>
-    <renderingConstant name="width_l4_z15" value="16"/>
-    <renderingConstant name="width_l4_z16" value="16"/>
-    <renderingConstant name="width_l4_z17" value="24"/>
-    <renderingConstant name="width_l4_z18" value="24"/>
-    <renderingConstant name="width_l4_z19" value="32"/>
-    <renderingConstant name="width_l4_z20" value="32"/>
-    <renderingConstant name="width_l4_z21" value="40"/>
+    <renderingConstant name="width_l4_z12" value="4" />
+    <renderingConstant name="width_l4_z13" value="8" />
+    <renderingConstant name="width_l4_z14" value="8" />
+    <renderingConstant name="width_l4_z15" value="16" />
+    <renderingConstant name="width_l4_z16" value="16" />
+    <renderingConstant name="width_l4_z17" value="24" />
+    <renderingConstant name="width_l4_z18" value="24" />
+    <renderingConstant name="width_l4_z19" value="32" />
+    <renderingConstant name="width_l4_z20" value="32" />
+    <renderingConstant name="width_l4_z21" value="40" />
 
-    <renderingConstant name="width_l5_z12" value="5"/>
-    <renderingConstant name="width_l5_z13" value="10"/>
-    <renderingConstant name="width_l5_z14" value="10"/>
-    <renderingConstant name="width_l5_z15" value="20"/>
-    <renderingConstant name="width_l5_z16" value="20"/>
-    <renderingConstant name="width_l5_z17" value="30"/>
-    <renderingConstant name="width_l5_z18" value="30"/>
-    <renderingConstant name="width_l5_z19" value="40"/>
-    <renderingConstant name="width_l5_z20" value="40"/>
-    <renderingConstant name="width_l5_z21" value="50"/>
+    <renderingConstant name="width_l5_z12" value="5" />
+    <renderingConstant name="width_l5_z13" value="10" />
+    <renderingConstant name="width_l5_z14" value="10" />
+    <renderingConstant name="width_l5_z15" value="20" />
+    <renderingConstant name="width_l5_z16" value="20" />
+    <renderingConstant name="width_l5_z17" value="30" />
+    <renderingConstant name="width_l5_z18" value="30" />
+    <renderingConstant name="width_l5_z19" value="40" />
+    <renderingConstant name="width_l5_z20" value="40" />
+    <renderingConstant name="width_l5_z21" value="50" />
 
-    <renderingConstant name="width_l6_z12" value="6"/>
-    <renderingConstant name="width_l6_z13" value="12"/>
-    <renderingConstant name="width_l6_z14" value="12"/>
-    <renderingConstant name="width_l6_z15" value="24"/>
-    <renderingConstant name="width_l6_z16" value="24"/>
-    <renderingConstant name="width_l6_z17" value="36"/>
-    <renderingConstant name="width_l6_z18" value="36"/>
-    <renderingConstant name="width_l6_z19" value="48"/>
-    <renderingConstant name="width_l6_z20" value="48"/>
-    <renderingConstant name="width_l6_z21" value="60"/>
+    <renderingConstant name="width_l6_z12" value="6" />
+    <renderingConstant name="width_l6_z13" value="12" />
+    <renderingConstant name="width_l6_z14" value="12" />
+    <renderingConstant name="width_l6_z15" value="24" />
+    <renderingConstant name="width_l6_z16" value="24" />
+    <renderingConstant name="width_l6_z17" value="36" />
+    <renderingConstant name="width_l6_z18" value="36" />
+    <renderingConstant name="width_l6_z19" value="48" />
+    <renderingConstant name="width_l6_z20" value="48" />
+    <renderingConstant name="width_l6_z21" value="60" />
 
     <renderingAttribute name="width_l00">
-        <case maxzoom="12" attrIntValue="$width_l00_z12" attrFloatValue="$width_l00_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l00_z13" attrFloatValue="$width_l00_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l00_z14" attrFloatValue="$width_l00_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l00_z15" attrFloatValue="$width_l00_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l00_z16" attrFloatValue="$width_l00_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l00_z17" attrFloatValue="$width_l00_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l00_z18" attrFloatValue="$width_l00_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l00_z19" attrFloatValue="$width_l00_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l00_z20" attrFloatValue="$width_l00_z20"/>
-        <case minzoom="21" attrIntValue="$width_l00_z21" attrFloatValue="$width_l00_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l00_z12" attrFloatValue="$width_l00_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l00_z13" attrFloatValue="$width_l00_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l00_z14" attrFloatValue="$width_l00_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l00_z15" attrFloatValue="$width_l00_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l00_z16" attrFloatValue="$width_l00_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l00_z17" attrFloatValue="$width_l00_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l00_z18" attrFloatValue="$width_l00_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l00_z19" attrFloatValue="$width_l00_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l00_z20" attrFloatValue="$width_l00_z20" />
+        <case minzoom="21" attrIntValue="$width_l00_z21" attrFloatValue="$width_l00_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="width_l0">
-        <case maxzoom="12" attrIntValue="$width_l0_z12" attrFloatValue="$width_l0_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l0_z13" attrFloatValue="$width_l0_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l0_z14" attrFloatValue="$width_l0_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l0_z15" attrFloatValue="$width_l0_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l0_z16" attrFloatValue="$width_l0_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l0_z17" attrFloatValue="$width_l0_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l0_z18" attrFloatValue="$width_l0_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l0_z19" attrFloatValue="$width_l0_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l0_z20" attrFloatValue="$width_l0_z20"/>
-        <case minzoom="21" attrIntValue="$width_l0_z21" attrFloatValue="$width_l0_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l0_z12" attrFloatValue="$width_l0_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l0_z13" attrFloatValue="$width_l0_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l0_z14" attrFloatValue="$width_l0_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l0_z15" attrFloatValue="$width_l0_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l0_z16" attrFloatValue="$width_l0_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l0_z17" attrFloatValue="$width_l0_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l0_z18" attrFloatValue="$width_l0_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l0_z19" attrFloatValue="$width_l0_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l0_z20" attrFloatValue="$width_l0_z20" />
+        <case minzoom="21" attrIntValue="$width_l0_z21" attrFloatValue="$width_l0_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="width_l1">
-        <case maxzoom="12" attrIntValue="$width_l1_z12" attrFloatValue="$width_l1_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l1_z13" attrFloatValue="$width_l1_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l1_z14" attrFloatValue="$width_l1_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l1_z15" attrFloatValue="$width_l1_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l1_z16" attrFloatValue="$width_l1_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l1_z17" attrFloatValue="$width_l1_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l1_z18" attrFloatValue="$width_l1_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l1_z19" attrFloatValue="$width_l1_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l1_z20" attrFloatValue="$width_l1_z20"/>
-        <case minzoom="21" attrIntValue="$width_l1_z21" attrFloatValue="$width_l1_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l1_z12" attrFloatValue="$width_l1_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l1_z13" attrFloatValue="$width_l1_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l1_z14" attrFloatValue="$width_l1_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l1_z15" attrFloatValue="$width_l1_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l1_z16" attrFloatValue="$width_l1_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l1_z17" attrFloatValue="$width_l1_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l1_z18" attrFloatValue="$width_l1_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l1_z19" attrFloatValue="$width_l1_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l1_z20" attrFloatValue="$width_l1_z20" />
+        <case minzoom="21" attrIntValue="$width_l1_z21" attrFloatValue="$width_l1_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="width_l2">
-        <case maxzoom="12" attrIntValue="$width_l2_z12" attrFloatValue="$width_l2_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l2_z13" attrFloatValue="$width_l2_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l2_z14" attrFloatValue="$width_l2_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l2_z15" attrFloatValue="$width_l2_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l2_z16" attrFloatValue="$width_l2_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l2_z17" attrFloatValue="$width_l2_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l2_z18" attrFloatValue="$width_l2_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l2_z19" attrFloatValue="$width_l2_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l2_z20" attrFloatValue="$width_l2_z20"/>
-        <case minzoom="21" attrIntValue="$width_l2_z21" attrFloatValue="$width_l2_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l2_z12" attrFloatValue="$width_l2_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l2_z13" attrFloatValue="$width_l2_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l2_z14" attrFloatValue="$width_l2_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l2_z15" attrFloatValue="$width_l2_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l2_z16" attrFloatValue="$width_l2_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l2_z17" attrFloatValue="$width_l2_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l2_z18" attrFloatValue="$width_l2_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l2_z19" attrFloatValue="$width_l2_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l2_z20" attrFloatValue="$width_l2_z20" />
+        <case minzoom="21" attrIntValue="$width_l2_z21" attrFloatValue="$width_l2_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="width_l3">
-        <case maxzoom="12" attrIntValue="$width_l3_z12" attrFloatValue="$width_l3_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l3_z13" attrFloatValue="$width_l3_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l3_z14" attrFloatValue="$width_l3_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l3_z15" attrFloatValue="$width_l3_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l3_z16" attrFloatValue="$width_l3_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l3_z17" attrFloatValue="$width_l3_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l3_z18" attrFloatValue="$width_l3_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l3_z19" attrFloatValue="$width_l3_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l3_z20" attrFloatValue="$width_l3_z20"/>
-        <case minzoom="21" attrIntValue="$width_l3_z21" attrFloatValue="$width_l3_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l3_z12" attrFloatValue="$width_l3_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l3_z13" attrFloatValue="$width_l3_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l3_z14" attrFloatValue="$width_l3_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l3_z15" attrFloatValue="$width_l3_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l3_z16" attrFloatValue="$width_l3_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l3_z17" attrFloatValue="$width_l3_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l3_z18" attrFloatValue="$width_l3_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l3_z19" attrFloatValue="$width_l3_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l3_z20" attrFloatValue="$width_l3_z20" />
+        <case minzoom="21" attrIntValue="$width_l3_z21" attrFloatValue="$width_l3_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="width_l4">
-        <case maxzoom="12" attrIntValue="$width_l4_z12" attrFloatValue="$width_l4_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l4_z13" attrFloatValue="$width_l4_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l4_z14" attrFloatValue="$width_l4_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l4_z15" attrFloatValue="$width_l4_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l4_z16" attrFloatValue="$width_l4_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l4_z17" attrFloatValue="$width_l4_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l4_z18" attrFloatValue="$width_l4_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l4_z19" attrFloatValue="$width_l4_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l4_z20" attrFloatValue="$width_l4_z20"/>
-        <case minzoom="21" attrIntValue="$width_l4_z21" attrFloatValue="$width_l4_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l4_z12" attrFloatValue="$width_l4_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l4_z13" attrFloatValue="$width_l4_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l4_z14" attrFloatValue="$width_l4_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l4_z15" attrFloatValue="$width_l4_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l4_z16" attrFloatValue="$width_l4_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l4_z17" attrFloatValue="$width_l4_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l4_z18" attrFloatValue="$width_l4_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l4_z19" attrFloatValue="$width_l4_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l4_z20" attrFloatValue="$width_l4_z20" />
+        <case minzoom="21" attrIntValue="$width_l4_z21" attrFloatValue="$width_l4_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="width_l5">
-        <case maxzoom="12" attrIntValue="$width_l5_z12" attrFloatValue="$width_l5_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l5_z13" attrFloatValue="$width_l5_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l5_z14" attrFloatValue="$width_l5_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l5_z15" attrFloatValue="$width_l5_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l5_z16" attrFloatValue="$width_l5_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l5_z17" attrFloatValue="$width_l5_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l5_z18" attrFloatValue="$width_l5_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l5_z19" attrFloatValue="$width_l5_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l5_z20" attrFloatValue="$width_l5_z20"/>
-        <case minzoom="21" attrIntValue="$width_l5_z21" attrFloatValue="$width_l5_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l5_z12" attrFloatValue="$width_l5_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l5_z13" attrFloatValue="$width_l5_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l5_z14" attrFloatValue="$width_l5_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l5_z15" attrFloatValue="$width_l5_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l5_z16" attrFloatValue="$width_l5_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l5_z17" attrFloatValue="$width_l5_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l5_z18" attrFloatValue="$width_l5_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l5_z19" attrFloatValue="$width_l5_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l5_z20" attrFloatValue="$width_l5_z20" />
+        <case minzoom="21" attrIntValue="$width_l5_z21" attrFloatValue="$width_l5_z21" />
     </renderingAttribute>
 
     <renderingAttribute name="width_l6">
-        <case maxzoom="12" attrIntValue="$width_l6_z12" attrFloatValue="$width_l6_z12"/>
-        <case minzoom="13" maxzoom="13" attrIntValue="$width_l6_z13" attrFloatValue="$width_l6_z13"/>
-        <case minzoom="14" maxzoom="14" attrIntValue="$width_l6_z14" attrFloatValue="$width_l6_z14"/>
-        <case minzoom="15" maxzoom="15" attrIntValue="$width_l6_z15" attrFloatValue="$width_l6_z15"/>
-        <case minzoom="16" maxzoom="16" attrIntValue="$width_l6_z16" attrFloatValue="$width_l6_z16"/>
-        <case minzoom="17" maxzoom="17" attrIntValue="$width_l6_z17" attrFloatValue="$width_l6_z17"/>
-        <case minzoom="18" maxzoom="18" attrIntValue="$width_l6_z18" attrFloatValue="$width_l6_z18"/>
-        <case minzoom="19" maxzoom="19" attrIntValue="$width_l6_z19" attrFloatValue="$width_l6_z19"/>
-        <case minzoom="20" maxzoom="20" attrIntValue="$width_l6_z20" attrFloatValue="$width_l6_z20"/>
-        <case minzoom="21" attrIntValue="$width_l6_z21" attrFloatValue="$width_l6_z21"/>
+        <case maxzoom="12" attrIntValue="$width_l6_z12" attrFloatValue="$width_l6_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l6_z13" attrFloatValue="$width_l6_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l6_z14" attrFloatValue="$width_l6_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l6_z15" attrFloatValue="$width_l6_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l6_z16" attrFloatValue="$width_l6_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l6_z17" attrFloatValue="$width_l6_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l6_z18" attrFloatValue="$width_l6_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l6_z19" attrFloatValue="$width_l6_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l6_z20" attrFloatValue="$width_l6_z20" />
+        <case minzoom="21" attrIntValue="$width_l6_z21" attrFloatValue="$width_l6_z21" />
     </renderingAttribute>
 
     <!-- unknown=horrible+good-->
-    <renderingConstant name="pathEffect_unknown_z12" value="3_2_3_2_9_1"/>
-    <renderingConstant name="pathEffect_unknown_z13" value="6_4_6_4_18_2"/>
-    <renderingConstant name="pathEffect_unknown_z14" value="6_4_6_4_18_2"/>
-    <renderingConstant name="pathEffect_unknown_z15" value="12_8_12_8_36_4"/>
-    <renderingConstant name="pathEffect_unknown_z16" value="12_8_12_8_36_4"/>
-    <renderingConstant name="pathEffect_unknown_z17" value="18_12_18_12_54_6"/>
-    <renderingConstant name="pathEffect_unknown_z18" value="18_12_18_12_54_6"/>
-    <renderingConstant name="pathEffect_unknown_z19" value="24_16_24_16_72_8"/>
-    <renderingConstant name="pathEffect_unknown_z20" value="24_16_24_16_72_8"/>
-    <renderingConstant name="pathEffect_unknown_z21" value="30_20_30_20_90_10"/>
+    <renderingConstant name="pathEffect_unknown_z12" value="3_2_3_2_9_1" />
+    <renderingConstant name="pathEffect_unknown_z13" value="6_4_6_4_18_2" />
+    <renderingConstant name="pathEffect_unknown_z14" value="6_4_6_4_18_2" />
+    <renderingConstant name="pathEffect_unknown_z15" value="12_8_12_8_36_4" />
+    <renderingConstant name="pathEffect_unknown_z16" value="12_8_12_8_36_4" />
+    <renderingConstant name="pathEffect_unknown_z17" value="18_12_18_12_54_6" />
+    <renderingConstant name="pathEffect_unknown_z18" value="18_12_18_12_54_6" />
+    <renderingConstant name="pathEffect_unknown_z19" value="24_16_24_16_72_8" />
+    <renderingConstant name="pathEffect_unknown_z20" value="24_16_24_16_72_8" />
+    <renderingConstant name="pathEffect_unknown_z21" value="30_20_30_20_90_10" />
 
-    <renderingConstant name="pathEffect_good_z12" value="9_1"/>
-    <renderingConstant name="pathEffect_good_z13" value="18_2"/>
-    <renderingConstant name="pathEffect_good_z14" value="18_2"/>
-    <renderingConstant name="pathEffect_good_z15" value="36_4"/>
-    <renderingConstant name="pathEffect_good_z16" value="36_4"/>
-    <renderingConstant name="pathEffect_good_z17" value="54_6"/>
-    <renderingConstant name="pathEffect_good_z18" value="54_6"/>
-    <renderingConstant name="pathEffect_good_z19" value="72_8"/>
-    <renderingConstant name="pathEffect_good_z20" value="72_8"/>
-    <renderingConstant name="pathEffect_good_z21" value="90_10"/>
+    <renderingConstant name="pathEffect_good_z12" value="9_1" />
+    <renderingConstant name="pathEffect_good_z13" value="18_2" />
+    <renderingConstant name="pathEffect_good_z14" value="18_2" />
+    <renderingConstant name="pathEffect_good_z15" value="36_4" />
+    <renderingConstant name="pathEffect_good_z16" value="36_4" />
+    <renderingConstant name="pathEffect_good_z17" value="54_6" />
+    <renderingConstant name="pathEffect_good_z18" value="54_6" />
+    <renderingConstant name="pathEffect_good_z19" value="72_8" />
+    <renderingConstant name="pathEffect_good_z20" value="72_8" />
+    <renderingConstant name="pathEffect_good_z21" value="90_10" />
 
-    <renderingConstant name="pathEffect_intermediate_z12" value="8_2"/>
-    <renderingConstant name="pathEffect_intermediate_z13" value="16_4"/>
-    <renderingConstant name="pathEffect_intermediate_z14" value="16_4"/>
-    <renderingConstant name="pathEffect_intermediate_z15" value="32_8"/>
-    <renderingConstant name="pathEffect_intermediate_z16" value="32_8"/>
-    <renderingConstant name="pathEffect_intermediate_z17" value="48_12"/>
-    <renderingConstant name="pathEffect_intermediate_z18" value="48_12"/>
-    <renderingConstant name="pathEffect_intermediate_z19" value="64_16"/>
-    <renderingConstant name="pathEffect_intermediate_z20" value="64_16"/>
-    <renderingConstant name="pathEffect_intermediate_z21" value="80_20"/>
+    <renderingConstant name="pathEffect_intermediate_z12" value="8_2" />
+    <renderingConstant name="pathEffect_intermediate_z13" value="16_4" />
+    <renderingConstant name="pathEffect_intermediate_z14" value="16_4" />
+    <renderingConstant name="pathEffect_intermediate_z15" value="32_8" />
+    <renderingConstant name="pathEffect_intermediate_z16" value="32_8" />
+    <renderingConstant name="pathEffect_intermediate_z17" value="48_12" />
+    <renderingConstant name="pathEffect_intermediate_z18" value="48_12" />
+    <renderingConstant name="pathEffect_intermediate_z19" value="64_16" />
+    <renderingConstant name="pathEffect_intermediate_z20" value="64_16" />
+    <renderingConstant name="pathEffect_intermediate_z21" value="80_20" />
 
-    <renderingConstant name="pathEffect_bad_z12" value="7_3"/>
-    <renderingConstant name="pathEffect_bad_z13" value="14_6"/>
-    <renderingConstant name="pathEffect_bad_z14" value="14_6"/>
-    <renderingConstant name="pathEffect_bad_z15" value="28_12"/>
-    <renderingConstant name="pathEffect_bad_z16" value="28_12"/>
-    <renderingConstant name="pathEffect_bad_z17" value="42_18"/>
-    <renderingConstant name="pathEffect_bad_z18" value="42_18"/>
-    <renderingConstant name="pathEffect_bad_z19" value="56_24"/>
-    <renderingConstant name="pathEffect_bad_z20" value="56_24"/>
-    <renderingConstant name="pathEffect_bad_z21" value="70_30"/>
+    <renderingConstant name="pathEffect_bad_z12" value="7_3" />
+    <renderingConstant name="pathEffect_bad_z13" value="14_6" />
+    <renderingConstant name="pathEffect_bad_z14" value="14_6" />
+    <renderingConstant name="pathEffect_bad_z15" value="28_12" />
+    <renderingConstant name="pathEffect_bad_z16" value="28_12" />
+    <renderingConstant name="pathEffect_bad_z17" value="42_18" />
+    <renderingConstant name="pathEffect_bad_z18" value="42_18" />
+    <renderingConstant name="pathEffect_bad_z19" value="56_24" />
+    <renderingConstant name="pathEffect_bad_z20" value="56_24" />
+    <renderingConstant name="pathEffect_bad_z21" value="70_30" />
 
-    <renderingConstant name="pathEffect_horrible_z12" value="3_2"/>
-    <renderingConstant name="pathEffect_horrible_z13" value="6_4"/>
-    <renderingConstant name="pathEffect_horrible_z14" value="6_4"/>
-    <renderingConstant name="pathEffect_horrible_z15" value="12_8"/>
-    <renderingConstant name="pathEffect_horrible_z16" value="12_8"/>
-    <renderingConstant name="pathEffect_horrible_z17" value="18_12"/>
-    <renderingConstant name="pathEffect_horrible_z18" value="18_12"/>
-    <renderingConstant name="pathEffect_horrible_z19" value="24_16"/>
-    <renderingConstant name="pathEffect_horrible_z20" value="24_16"/>
-    <renderingConstant name="pathEffect_horrible_z21" value="30_20"/>
+    <renderingConstant name="pathEffect_horrible_z12" value="3_2" />
+    <renderingConstant name="pathEffect_horrible_z13" value="6_4" />
+    <renderingConstant name="pathEffect_horrible_z14" value="6_4" />
+    <renderingConstant name="pathEffect_horrible_z15" value="12_8" />
+    <renderingConstant name="pathEffect_horrible_z16" value="12_8" />
+    <renderingConstant name="pathEffect_horrible_z17" value="18_12" />
+    <renderingConstant name="pathEffect_horrible_z18" value="18_12" />
+    <renderingConstant name="pathEffect_horrible_z19" value="24_16" />
+    <renderingConstant name="pathEffect_horrible_z20" value="24_16" />
+    <renderingConstant name="pathEffect_horrible_z21" value="30_20" />
 
-    <renderingConstant name="pathEffect_no_z12" value="2_3"/>
-    <renderingConstant name="pathEffect_no_z13" value="4_6"/>
-    <renderingConstant name="pathEffect_no_z14" value="4_6"/>
-    <renderingConstant name="pathEffect_no_z15" value="8_12"/>
-    <renderingConstant name="pathEffect_no_z16" value="8_12"/>
-    <renderingConstant name="pathEffect_no_z17" value="12_18"/>
-    <renderingConstant name="pathEffect_no_z18" value="12_18"/>
-    <renderingConstant name="pathEffect_no_z19" value="16_24"/>
-    <renderingConstant name="pathEffect_no_z20" value="16_24"/>
-    <renderingConstant name="pathEffect_no_z21" value="20_30"/>
+    <renderingConstant name="pathEffect_no_z12" value="2_3" />
+    <renderingConstant name="pathEffect_no_z13" value="4_6" />
+    <renderingConstant name="pathEffect_no_z14" value="4_6" />
+    <renderingConstant name="pathEffect_no_z15" value="8_12" />
+    <renderingConstant name="pathEffect_no_z16" value="8_12" />
+    <renderingConstant name="pathEffect_no_z17" value="12_18" />
+    <renderingConstant name="pathEffect_no_z18" value="12_18" />
+    <renderingConstant name="pathEffect_no_z19" value="16_24" />
+    <renderingConstant name="pathEffect_no_z20" value="16_24" />
+    <renderingConstant name="pathEffect_no_z21" value="20_30" />
 
     <renderingAttribute name="pathEffect_unknown">
         <case maxzoom="12" attrStringValue="$pathEffect_unknown_z12" />
@@ -422,27 +422,27 @@
         <case minzoom="21" attrStringValue="50_50" />
     </renderingAttribute>
 
-    <renderingConstant name="c_unpaved_outer" value="#925D3A"/>
-    <renderingConstant name="c_unpaved_inner" value="#B3A18F"/>
-    <renderingConstant name="c_cycle_outer" value="#2C5DF2"/>
-    <renderingConstant name="c_paved_outer" value="#303030"/>
-    <renderingConstant name="c_paved_inner" value="#FFFFFF"/>
-    <renderingConstant name="c_tertiary" value="#FFFFAA"/>
-    <renderingConstant name="c_secondary" value="#FFFF00"/>
-    <renderingConstant name="c_primary" value="#FFAA00"/>
-    <renderingConstant name="c_fastroad" value="#FF0000"/>
-    <renderingConstant name="c_motorway_center" value="#FFAA00"/>
+    <renderingConstant name="c_unpaved_outer" value="#925D3A" />
+    <renderingConstant name="c_unpaved_inner" value="#B3A18F" />
+    <renderingConstant name="c_cycle_outer" value="#2C5DF2" />
+    <renderingConstant name="c_paved_outer" value="#303030" />
+    <renderingConstant name="c_paved_inner" value="#FFFFFF" />
+    <renderingConstant name="c_tertiary" value="#FFFFAA" />
+    <renderingConstant name="c_secondary" value="#FFFF00" />
+    <renderingConstant name="c_primary" value="#FFAA00" />
+    <renderingConstant name="c_fastroad" value="#FF0000" />
+    <renderingConstant name="c_motorway_center" value="#FFAA00" />
 
-    <renderingConstant name="c_unpaved_outer_light" value="#E8C6A3"/>
-    <renderingConstant name="c_unpaved_inner_light" value="#F2E8D9"/>
-    <renderingConstant name="c_cycle_outer_light" value="#8AB4FF"/>
-    <renderingConstant name="c_paved_outer_light" value="#777777"/>
-    <renderingConstant name="c_paved_inner_light" value="#E6E6E6"/>
-    <renderingConstant name="c_tertiary_light" value="#FFFFE6"/>
-    <renderingConstant name="c_secondary_light" value="#FFFF99"/>
-    <renderingConstant name="c_primary_light" value="#FFD699"/>
-    <renderingConstant name="c_fastroad_light" value="#FF6666"/>
-    <renderingConstant name="c_motorway_center_light" value="#FFD699"/>
+    <renderingConstant name="c_unpaved_outer_light" value="#E8C6A3" />
+    <renderingConstant name="c_unpaved_inner_light" value="#F2E8D9" />
+    <renderingConstant name="c_cycle_outer_light" value="#8AB4FF" />
+    <renderingConstant name="c_paved_outer_light" value="#777777" />
+    <renderingConstant name="c_paved_inner_light" value="#E6E6E6" />
+    <renderingConstant name="c_tertiary_light" value="#FFFFE6" />
+    <renderingConstant name="c_secondary_light" value="#FFFF99" />
+    <renderingConstant name="c_primary_light" value="#FFD699" />
+    <renderingConstant name="c_fastroad_light" value="#FF6666" />
+    <renderingConstant name="c_motorway_center_light" value="#FFD699" />
 
     <renderingAttribute name="c_surface_outer">
         <switch>
@@ -467,10 +467,10 @@
             <apply additional="tunnel=yes" attrColorValue="$c_paved_outer_light" />
         </switch>
         <switch>
-            <case tag="highway" value="track"/>
-            <case tag="highway" value="path"/>
-            <case tag="highway" value="footway"/>
-            <case tag="highway" value="bridleway"/>
+            <case tag="highway" value="track" />
+            <case tag="highway" value="path" />
+            <case tag="highway" value="footway" />
+            <case tag="highway" value="bridleway" />
             <apply attrColorValue="$c_unpaved_outer" />
             <apply additional="tunnel=yes" attrColorValue="$c_unpaved_outer_light" />
         </switch>
@@ -500,64 +500,64 @@
             <apply additional="tunnel=yes" attrColorValue="$c_paved_inner_light" />
         </switch>
         <switch>
-            <case tag="highway" value="track"/>
-            <case tag="highway" value="path"/>
-            <case tag="highway" value="footway"/>
-            <case tag="highway" value="bridleway"/>
+            <case tag="highway" value="track" />
+            <case tag="highway" value="path" />
+            <case tag="highway" value="footway" />
+            <case tag="highway" value="bridleway" />
             <apply attrColorValue="$c_unpaved_inner" />
             <apply additional="tunnel=yes" attrColorValue="$c_unpaved_inner_light" />
         </switch>
         <case attrColorValue="$c_paved_inner" />
     </renderingAttribute>
 
-    <renderingConstant name="c_diff_0" value="#00A10F"/>
-    <renderingConstant name="c_diff_1" value="#2C5DF2"/>
-    <renderingConstant name="c_diff_2" value="#FF1111"/>
-    <renderingConstant name="c_diff_3" value="#000000"/>
-    <renderingConstant name="c_diff_4" value="#FF00FF"/>
+    <renderingConstant name="c_diff_0" value="#00A10F" />
+    <renderingConstant name="c_diff_1" value="#2C5DF2" />
+    <renderingConstant name="c_diff_2" value="#FF1111" />
+    <renderingConstant name="c_diff_3" value="#000000" />
+    <renderingConstant name="c_diff_4" value="#FF00FF" />
 
-    <renderingConstant name="c_access_yes" value="#FFFFFF"/>
-    <renderingConstant name="c_access_bike" value="#0000FF"/>
-    <renderingConstant name="c_access_foot" value="#FFFF00"/>
-    <renderingConstant name="c_access_foot_and_bike" value="#00FF00"/>
-    <renderingConstant name="c_access_no" value="#FF0000"/>
+    <renderingConstant name="c_access_yes" value="#FFFFFF" />
+    <renderingConstant name="c_access_bike" value="#0000FF" />
+    <renderingConstant name="c_access_foot" value="#FFFF00" />
+    <renderingConstant name="c_access_foot_and_bike" value="#00FF00" />
+    <renderingConstant name="c_access_no" value="#FF0000" />
 
-    <renderingConstant name="c_route_bike" value="#0000FF"/>
-    <renderingConstant name="c_route_hike" value="#FFFF00"/>
-    <renderingConstant name="c_route_mtb" value="#00FF00"/>
+    <renderingConstant name="c_route_bike" value="#0000FF" />
+    <renderingConstant name="c_route_hike" value="#FFFF00" />
+    <renderingConstant name="c_route_mtb" value="#00FF00" />
 
-    <renderingConstant name="c_rail_dark" value="#303030"/>
-    <renderingConstant name="c_rail_light" value="#FFFFFF"/>
-    <renderingConstant name="c_rail_dark_tunnel" value="#777777"/>
-    <renderingConstant name="c_rail_light_tunnel" value="#FFFFFF"/>
+    <renderingConstant name="c_rail_dark" value="#303030" />
+    <renderingConstant name="c_rail_light" value="#FFFFFF" />
+    <renderingConstant name="c_rail_dark_tunnel" value="#777777" />
+    <renderingConstant name="c_rail_light_tunnel" value="#FFFFFF" />
 
 
-    <renderingConstant name="c_water" value="#4C9DFF"/>
-    <renderingConstant name="c_wood" value="#A5DBAA"/>
-    <renderingConstant name="c_fresh_green" value="#CCFFCC"/>
-    <renderingConstant name="c_dry_green" value="#EEEC77"/>
-    <renderingConstant name="c_rock_dark" value="#AAAAAA"/>
-    <renderingConstant name="c_rock_light" value="#DDDDDD"/>
-    <renderingConstant name="c_sand" value="#FFFFAA"/>
-    <renderingConstant name="c_industrial" value="#FFCCFF"/>
-    <renderingConstant name="c_residential" value="#EEDDDD"/>
-    <renderingConstant name="c_building" value="#BBAAAA"/>
+    <renderingConstant name="c_water" value="#4C9DFF" />
+    <renderingConstant name="c_wood" value="#A5DBAA" />
+    <renderingConstant name="c_fresh_green" value="#CCFFCC" />
+    <renderingConstant name="c_dry_green" value="#EEEC77" />
+    <renderingConstant name="c_rock_dark" value="#AAAAAA" />
+    <renderingConstant name="c_rock_light" value="#DDDDDD" />
+    <renderingConstant name="c_sand" value="#FFFFAA" />
+    <renderingConstant name="c_industrial" value="#FFCCFF" />
+    <renderingConstant name="c_residential" value="#EEDDDD" />
+    <renderingConstant name="c_building" value="#BBAAAA" />
 
-    <renderingConstant name="c_contour" value="#9C5615"/>
+    <renderingConstant name="c_contour" value="#9C5615" />
 
-    <renderingConstant name="text_s" value="10"/>
-    <renderingConstant name="text_m" value="13"/>
-    <renderingConstant name="text_l" value="17"/>
-    <renderingConstant name="text_xl" value="20"/>
+    <renderingConstant name="text_s" value="10" />
+    <renderingConstant name="text_m" value="13" />
+    <renderingConstant name="text_l" value="17" />
+    <renderingConstant name="text_xl" value="20" />
 
-    <renderingConstant name="text_halo" value="2"/>
-    <renderingConstant name="c_halo" value="#FFFFFF"/>
+    <renderingConstant name="text_halo" value="2" />
+    <renderingConstant name="c_halo" value="#FFFFFF" />
 
-    <renderingConstant name="c_text_civilization" value="#000000"/>
-    <renderingConstant name="c_text_flora" value="#90C090"/>
-    <renderingConstant name="c_text_water" value="#5050FF"/>
-    <renderingConstant name="c_text_geology" value="#AA5020"/>
-    <renderingConstant name="c_text_road" value="#000000"/>
+    <renderingConstant name="c_text_civilization" value="#000000" />
+    <renderingConstant name="c_text_flora" value="#90C090" />
+    <renderingConstant name="c_text_water" value="#5050FF" />
+    <renderingConstant name="c_text_geology" value="#AA5020" />
+    <renderingConstant name="c_text_road" value="#000000" />
 
     <order>
         <!-- 
@@ -575,212 +575,215 @@
         -->
         <switch>
             <switch area="false" point="true" objectType="1" order="165">
-                <case tag="place" value=""/>
-                <case tag="natural" value="peak"/>
-                <case tag="natural" value="volcano"/>
-                <case tag="natural" value="hill"/>
-                <case tag="mountain_pass" value="yes"/>
-                <case tag="natural" value="saddle"/>
-                <case tag="natural" value="cave_entrance"/>
+                <case tag="place" value="" />
+                <case tag="natural" value="peak" />
+                <case tag="natural" value="volcano" />
+                <case tag="natural" value="hill" />
+                <case tag="mountain_pass" value="yes" />
+                <case tag="natural" value="saddle" />
+                <case tag="natural" value="cave_entrance" />
             </switch>
             <switch area="false" point="false" objectType="2">
                 <case tag="contour" value="elevation" order="9">                    <!-- contours even below shadows-->
                     <case contourDensity="low">
-                        <case additional="contourtype=5m" order="-1"/>
-                        <case additional="contourtype=10m" order="-1"/>
-                        <case additional="contourtype=20m" order="-1"/>
-                        <case additional="contourtype=50m" minzoom="18"/>
-                        <case additional="contourtype=100m" minzoom="16"/>
-                        <case additional="contourtype=200m" minzoom="14"/>
-                        <case additional="contourtype=1000m" minzoom="12"/>
+                        <case additional="contourtype=5m" order="-1" />
+                        <case additional="contourtype=10m" order="-1" />
+                        <case additional="contourtype=20m" order="-1" />
+                        <case additional="contourtype=50m" minzoom="18" />
+                        <case additional="contourtype=100m" minzoom="16" />
+                        <case additional="contourtype=200m" minzoom="14" />
+                        <case additional="contourtype=1000m" minzoom="12" />
                     </case>
                     <case contourDensity="medium_w">
-                        <case additional="contourtype=5m" order="-1"/>
-                        <case additional="contourtype=10m" order="-1"/>
-                        <case additional="contourtype=20m" minzoom="18"/>
-                        <case additional="contourtype=50m" order="-1"/>
-                        <case additional="contourtype=100m" minzoom="14"/>
-                        <case additional="contourtype=200m" minzoom="12"/>
-                        <case additional="contourtype=1000m" minzoom="10"/>
+                        <case additional="contourtype=5m" order="-1" />
+                        <case additional="contourtype=10m" order="-1" />
+                        <case additional="contourtype=20m" minzoom="18" />
+                        <case additional="contourtype=50m" order="-1" />
+                        <case additional="contourtype=100m" minzoom="14" />
+                        <case additional="contourtype=200m" minzoom="12" />
+                        <case additional="contourtype=1000m" minzoom="10" />
                     </case>
                     <case contourDensity="high">
-                        <case additional="contourtype=5m" minzoom="20"/>
-                        <case additional="contourtype=10m" minzoom="18"/>
-                        <case additional="contourtype=20m" minzoom="16"/>
-                        <case additional="contourtype=50m" minzoom="14"/>
-                        <case additional="contourtype=100m" minzoom="12"/>
-                        <case additional="contourtype=200m" minzoom="10"/>
-                        <case additional="contourtype=1000m" minzoom="8"/>
+                        <case additional="contourtype=5m" minzoom="20" />
+                        <case additional="contourtype=10m" minzoom="18" />
+                        <case additional="contourtype=20m" minzoom="16" />
+                        <case additional="contourtype=50m" minzoom="14" />
+                        <case additional="contourtype=100m" minzoom="12" />
+                        <case additional="contourtype=200m" minzoom="10" />
+                        <case additional="contourtype=1000m" minzoom="8" />
                     </case>
                 </case>
                 <switch order="10">                    <!-- Routes below shadows-->
-                    <case tag="route_hiking" value=""/>
-                    <case tag="route_mtb" value=""/>
-                    <case tag="route_bicycle" value=""/>
+                    <case tag="route_hiking" value="" />
+                    <case tag="route_mtb" value="" />
+                    <case tag="route_bicycle" value="" />
                 </switch>
                 <switch order="53">
-                    <case tag="waterway" value="ditch" minzoom="15"/>
-                    <case tag="waterway" value="drain" minzoom="15"/>
-                    <case tag="waterway" value="stream" minzoom="13"/>
+                    <case tag="waterway" value="ditch" minzoom="15" />
+                    <case tag="waterway" value="drain" minzoom="15" />
+                    <case tag="waterway" value="stream" minzoom="13" />
                     <case tag="waterway" value="canal" />
                     <case tag="waterway" value="river" />
-                    <apply additional="layer=-2" order="70"/>
-                    <apply layer="-1" order="95"/>
-                    <apply layer="1" order="145"/>
-                    <apply additional="layer=2" order="170"/>
-                    <apply additional="layer=3" order="195"/>
+                    <apply additional="layer=-2" order="70" />
+                    <apply layer="-1" order="95" />
+                    <apply layer="1" order="145" />
+                    <apply additional="layer=2" order="170" />
+                    <apply additional="layer=3" order="195" />
                     <apply>
-                        <case additional="tunnel=yes" order="-1"/>
+                        <case additional="tunnel=yes" order="-1" />
                     </apply>
                 </switch>
                 <switch order="59">
                     <case tag="railway" value="rail" />
                     <case tag="railway" value="light_rail" />
                     <case tag="railway" value="narrow_gauge" />
-                    <apply additional="layer=-2" order="75"/>
-                    <apply layer="-1" order="100"/>
-                    <apply layer="1" order="150"/>
-                    <apply additional="layer=2" order="175"/>
-                    <apply additional="layer=3" order="200"/>
+                    <apply additional="layer=-2" order="75" />
+                    <apply layer="-1" order="100" />
+                    <apply layer="1" order="150" />
+                    <apply additional="layer=2" order="175" />
+                    <apply additional="layer=3" order="200" />
                     <apply>
-                        <case additional="tunnel=yes" order="-1"/>
+                        <case additional="tunnel=yes" order="-1" />
                     </apply>
                 </switch>
                 <switch order="60">
-                    <case tag="highway" value="motorway"/>
-                    <case tag="highway" value="motorway_link"/>
-                    <apply additional="layer=-2" order="18"/>
-                    <apply layer="-1" order="39"/>
-                    <apply layer="1" order="81"/>
-                    <apply additional="layer=2" order="102"/>
-                    <apply additional="layer=3" order="123"/>
+                    <case tag="highway" value="motorway" />
+                    <case tag="highway" value="motorway_link" />
+                    <apply additional="layer=-2" order="18" />
+                    <apply layer="-1" order="39" />
+                    <apply layer="1" order="81" />
+                    <apply additional="layer=2" order="102" />
+                    <apply additional="layer=3" order="123" />
                     <apply>
-                        <case additional="tunnel=yes" order="-1"/>
+                        <case additional="tunnel=yes" order="-1" />
                     </apply>
                 </switch>
                 <switch order="61">
                     <case tag="highway" value="trunk" />
-                    <case tag="highway" value="trunk_link"/>
-                    <apply additional="layer=-2" order="19"/>
-                    <apply layer="-1" order="40"/>
-                    <apply layer="1" order="82"/>
-                    <apply additional="layer=2" order="103"/>
-                    <apply additional="layer=3" order="124"/>
+                    <case tag="highway" value="trunk_link" />
+                    <apply additional="layer=-2" order="19" />
+                    <apply layer="-1" order="40" />
+                    <apply layer="1" order="82" />
+                    <apply additional="layer=2" order="103" />
+                    <apply additional="layer=3" order="124" />
                     <apply>
-                        <case additional="tunnel=yes" order="-1"/>
+                        <case additional="tunnel=yes" order="-1" />
                     </apply>
                 </switch>
                 <switch order="62">
-                    <case tag="highway" value="primary"/>
-                    <case tag="highway" value="primary_link"/>
-                    <apply additional="layer=-2" order="20"/>
-                    <apply layer="-1" order="41"/>
-                    <apply layer="1" order="83"/>
-                    <apply additional="layer=2" order="104"/>
-                    <apply additional="layer=3" order="125"/>
+                    <case tag="highway" value="primary" />
+                    <case tag="highway" value="primary_link" />
+                    <apply additional="layer=-2" order="20" />
+                    <apply layer="-1" order="41" />
+                    <apply layer="1" order="83" />
+                    <apply additional="layer=2" order="104" />
+                    <apply additional="layer=3" order="125" />
                     <apply>
                         <case additional="tunnel=yes">
                             <switch>
                                 <case additional="foot=no">
-                                    <case additional="bicycle=no"/>
+                                    <case additional="bicycle=no" />
                                 </case>
-                                <case additional="access=no"/>
-                                <apply order="-1"/>
+                                <case additional="access=no" />
+                                <apply order="-1" />
                             </switch>
                         </case>
                     </apply>
                 </switch>
                 <switch order="63">
-                    <case tag="highway" value="secondary"/>
-                    <case tag="highway" value="secondary_link"/>
-                    <apply additional="layer=-2" order="21"/>
-                    <apply layer="-1" order="42"/>
-                    <apply layer="1" order="84"/>
-                    <apply additional="layer=2" order="105"/>
-                    <apply additional="layer=3" order="126"/>
+                    <case tag="highway" value="secondary" />
+                    <case tag="highway" value="secondary_link" />
+                    <apply additional="layer=-2" order="21" />
+                    <apply layer="-1" order="42" />
+                    <apply layer="1" order="84" />
+                    <apply additional="layer=2" order="105" />
+                    <apply additional="layer=3" order="126" />
                     <apply>
                         <case additional="tunnel=yes">
                             <switch>
                                 <case additional="foot=no">
-                                    <case additional="bicycle=no"/>
+                                    <case additional="bicycle=no" />
                                 </case>
-                                <case additional="access=no"/>
-                                <apply order="-1"/>
+                                <case additional="access=no" />
+                                <apply order="-1" />
                             </switch>
                         </case>
                     </apply>
                 </switch>
                 <switch order="64">
-                    <case tag="highway" value="tertiary"/>
-                    <case tag="highway" value="tertiary_link"/>
-                    <apply additional="layer=-2" order="22"/>
-                    <apply layer="-1" order="43"/>
-                    <apply layer="1" order="85"/>
-                    <apply additional="layer=2" order="106"/>
-                    <apply additional="layer=3" order="127"/>
+                    <case tag="highway" value="tertiary" />
+                    <case tag="highway" value="tertiary_link" />
+                    <apply additional="layer=-2" order="22" />
+                    <apply layer="-1" order="43" />
+                    <apply layer="1" order="85" />
+                    <apply additional="layer=2" order="106" />
+                    <apply additional="layer=3" order="127" />
                     <apply>
                         <case additional="tunnel=yes">
                             <switch>
                                 <case additional="foot=no">
-                                    <case additional="bicycle=no"/>
+                                    <case additional="bicycle=no" />
                                 </case>
-                                <case additional="access=no"/>
-                                <apply order="-1"/>
+                                <case additional="access=no" />
+                                <apply order="-1" />
                             </switch>
                         </case>
                     </apply>
                 </switch>
                 <switch order="65">
-                    <case tag="highway" value="residential" minzoom="10"/>
-                    <case tag="highway" value="unclassified" minzoom="10"/>
-                    <case tag="highway" value="living_street" minzoom="10"/>
-                    <case tag="highway" value="service" minzoom="10"/>
-                    <case tag="highway" value="road" minzoom="10"/>
-                    <apply additional="layer=-2" order="23"/>
-                    <apply layer="-1" order="44"/>
-                    <apply layer="1" order="86"/>
-                    <apply additional="layer=2" order="107"/>
-                    <apply additional="layer=3" order="128"/>
+                    <case tag="highway" value="residential" minzoom="10" />
+                    <case tag="highway" value="unclassified" minzoom="10" />
+                    <case tag="highway" value="living_street" minzoom="10" />
+                    <case tag="highway" value="service" minzoom="10" />
+                    <case tag="highway" value="road" minzoom="10" />
+                    <apply additional="layer=-2" order="23" />
+                    <apply layer="-1" order="44" />
+                    <apply layer="1" order="86" />
+                    <apply additional="layer=2" order="107" />
+                    <apply additional="layer=3" order="128" />
+                    <apply additional="service=driveway" minzoom="11">
+                        <apply additional="access=private" minzoom="15" />
+                    </apply>
                 </switch>
                 <switch order="66">
-                    <case tag="highway" value="track" minzoom="11"/>
-                    <case tag="highway" value="cycleway" minzoom="11"/>
-                    <case tag="highway" value="path" minzoom="12"/>
-                    <case tag="highway" value="footway" minzoom="12"/>
-                    <case tag="highway" value="bridleway" minzoom="12"/>
-                    <apply additional="layer=-2" order="24"/>
-                    <apply layer="-1" order="45"/>
-                    <apply layer="1" order="87"/>
-                    <apply additional="layer=2" order="108"/>
-                    <apply additional="layer=3" order="129"/>
+                    <case tag="highway" value="track" minzoom="11" />
+                    <case tag="highway" value="cycleway" minzoom="11" />
+                    <case tag="highway" value="path" minzoom="12" />
+                    <case tag="highway" value="footway" minzoom="12" />
+                    <case tag="highway" value="bridleway" minzoom="12" />
+                    <apply additional="layer=-2" order="24" />
+                    <apply layer="-1" order="45" />
+                    <apply layer="1" order="87" />
+                    <apply additional="layer=2" order="108" />
+                    <apply additional="layer=3" order="129" />
                 </switch>
             </switch>
             <switch cycle="true" point="false" objectType="3" addPoint="true">
-                <case tag="natural" value="coastline" order="1"/>
-                <case tag="landuse" value="residential" order="2"/>
-                <case tag="landuse" value="commercial" order="2"/>
-                <case tag="landuse" value="industrial" order="2"/>
-                <case tag="landuse" value="retail" order="2"/>
-                <case tag="landuse" value="cemetery" order="3"/>
-                <case tag="natural" value="bare_rock" order="4"/>
-                <case tag="natural" value="scree" order="4"/>
-                <case tag="natural" value="shingle" order="4"/>
-                <case tag="natural" value="water" order="4"/>
-                <case tag="landuse" value="reservoir" order="4"/>
+                <case tag="natural" value="coastline" order="1" />
+                <case tag="landuse" value="residential" order="2" />
+                <case tag="landuse" value="commercial" order="2" />
+                <case tag="landuse" value="industrial" order="2" />
+                <case tag="landuse" value="retail" order="2" />
+                <case tag="landuse" value="cemetery" order="3" />
+                <case tag="natural" value="bare_rock" order="4" />
+                <case tag="natural" value="scree" order="4" />
+                <case tag="natural" value="shingle" order="4" />
+                <case tag="natural" value="water" order="4" />
+                <case tag="landuse" value="reservoir" order="4" />
                 <!-- salt ponds above water, as they may have both tags -->
-                <case tag="landuse" value="salt_pond" order="5"/>
-                <case tag="natural" value="wood" order="5"/>
-                <case tag="landuse" value="forest" order="5"/>
-                <case tag="natural" value="scrub" order="5"/>
-                <case tag="natural" value="heath" order="5"/>
-                <case tag="natural" value="grassland" order="5"/>
-                <case tag="landuse" value="meadow" order="5"/>
-                <case tag="landuse" value="grass" order="5"/>
-                <case tag="natural" value="fell" order="5"/>
-                <case tag="natural" value="beach" order="5"/>
-                <case tag="natural" value="sand" order="5"/>
-                <case tag="natural" value="wetland" order="5"/>
-                <case tag="building" value="" order="40" minzoom="7"/>
+                <case tag="landuse" value="salt_pond" order="5" />
+                <case tag="natural" value="wood" order="5" />
+                <case tag="landuse" value="forest" order="5" />
+                <case tag="natural" value="scrub" order="5" />
+                <case tag="natural" value="heath" order="5" />
+                <case tag="natural" value="grassland" order="5" />
+                <case tag="landuse" value="meadow" order="5" />
+                <case tag="landuse" value="grass" order="5" />
+                <case tag="natural" value="fell" order="5" />
+                <case tag="natural" value="beach" order="5" />
+                <case tag="natural" value="sand" order="5" />
+                <case tag="natural" value="wetland" order="5" />
+                <case tag="building" value="" order="40" minzoom="7" />
             </switch>
         </switch>
     </order>
@@ -788,106 +791,106 @@
         <switch>
             <switch tag="contour" value="elevation" textOrder="200">
                 <switch>
-                    <case additional="contourtype=1000m"/>
-                    <case additional="contourtype=200m"/>
-                    <case contourDensity="medium_w" additional="contourtype=100m"/>
-                    <case contourDensity="high" additional="contourtype=100m"/>
-                    <case contourDensity="high" additional="contourtype=50m"/>
-                    <apply nameTag="elevation" textSize="$text_s" textOnPath="true"/>
+                    <case additional="contourtype=1000m" />
+                    <case additional="contourtype=200m" />
+                    <case contourDensity="medium_w" additional="contourtype=100m" />
+                    <case contourDensity="high" additional="contourtype=100m" />
+                    <case contourDensity="high" additional="contourtype=50m" />
+                    <apply nameTag="elevation" textSize="$text_s" textOnPath="true" />
                 </switch>
                 <switch>
-                    <case additional="contourtype=5m"/>
-                    <case additional="contourtype=10m"/>
-                    <case additional="contourtype=20m"/>
-                    <apply textSize="0" textOnPath="false"/>
+                    <case additional="contourtype=5m" />
+                    <case additional="contourtype=10m" />
+                    <case additional="contourtype=20m" />
+                    <apply textSize="0" textOnPath="false" />
                 </switch>
             </switch>
             <switch>                <!-- water labels-->
-                <case tag="natural" value="water"/>
+                <case tag="natural" value="water" />
                 <switch>
-                    <case tag="waterway" value="ditch"/>
-                    <case tag="waterway" value="drain"/>
-                    <case tag="waterway" value="stream"/>
+                    <case tag="waterway" value="ditch" />
+                    <case tag="waterway" value="drain" />
+                    <case tag="waterway" value="stream" />
                     <case tag="waterway" value="canal" />
                     <case tag="waterway" value="river" />
-                    <case tag="natural" value="water"/>
-                    <case tag="landuse" value="reservoir"/>
-                    <case tag="landuse" value="salt_pond"/>
-                    <apply textOnPath="true"/>
+                    <case tag="natural" value="water" />
+                    <case tag="landuse" value="reservoir" />
+                    <case tag="landuse" value="salt_pond" />
+                    <apply textOnPath="true" />
                 </switch>
-                <apply textSize="$text_s" textColor="$c_text_water" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+                <apply textSize="$text_s" textColor="$c_text_water" textHaloRadius="$text_halo" textHaloColor="$c_halo" />
             </switch>
             <switch>                <!-- flora labels-->
                 <case tag="natural" value="wood" />
-                <case tag="natural" value="scrub"/>
-                <case tag="natural" value="heath"/>
-                <case tag="natural" value="grassland"/>
-                <case tag="natural" value="fell"/>
-                <case tag="natural" value="wetland"/>
-                <case tag="landuse" value="forest"/>
-                <case tag="landuse" value="meadow"/>
-                <case tag="landuse" value="grass"/>
-                <apply textSize="$text_s" textColor="$c_text_flora" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+                <case tag="natural" value="scrub" />
+                <case tag="natural" value="heath" />
+                <case tag="natural" value="grassland" />
+                <case tag="natural" value="fell" />
+                <case tag="natural" value="wetland" />
+                <case tag="landuse" value="forest" />
+                <case tag="landuse" value="meadow" />
+                <case tag="landuse" value="grass" />
+                <apply textSize="$text_s" textColor="$c_text_flora" textHaloRadius="$text_halo" textHaloColor="$c_halo" />
             </switch>
             <switch>                <!-- geology labels-->
-                <case tag="natural" value="bare_rock"/>
-                <case tag="natural" value="scree"/>
-                <case tag="natural" value="shingle"/>
-                <case tag="natural" value="beach"/>
-                <case tag="natural" value="sand"/>
-                <case tag="natural" value="wetland"/>
+                <case tag="natural" value="bare_rock" />
+                <case tag="natural" value="scree" />
+                <case tag="natural" value="shingle" />
+                <case tag="natural" value="beach" />
+                <case tag="natural" value="sand" />
+                <case tag="natural" value="wetland" />
                 <switch>
-                    <case tag="natural" value="peak"/>
-                    <case tag="natural" value="volcano"/>
-                    <case tag="natural" value="hill"/>
-                    <case tag="natural" value="saddle"/>
-                    <case tag="mountain_pass" value="yes"/>
-                    <case tag="natural" value="cave_entrance"/>
-                    <apply nameTag="name" nameTag2="ele"/>
+                    <case tag="natural" value="peak" />
+                    <case tag="natural" value="volcano" />
+                    <case tag="natural" value="hill" />
+                    <case tag="natural" value="saddle" />
+                    <case tag="mountain_pass" value="yes" />
+                    <case tag="natural" value="cave_entrance" />
+                    <apply nameTag="name" nameTag2="ele" />
                 </switch>
-                <apply textSize="$text_s" textColor="$c_text_geology" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+                <apply textSize="$text_s" textColor="$c_text_geology" textHaloRadius="$text_halo" textHaloColor="$c_halo" />
             </switch>
             <switch>                <!-- place labels-->
-                <case tag="place" value="city" textSize="$text_xl"/>
+                <case tag="place" value="city" textSize="$text_xl" />
                 <case tag="place" value="suburb" textSize="$text_m" textItalic="true" minzoom="11" />
                 <case tag="place" value="town" textSize="$text_l" minzoom="9" />
                 <case tag="place" value="village" textSize="$text_m" minzoom="11" />
                 <case tag="place" value="hamlet" textSize="$text_s" minzoom="13" />
                 <case tag="place" value="isolated_dwelling" textSize="$text_s" minzoom="13" />
                 <case tag="place" value="farm" textSize="$text_s" minzoom="13" />
-                <case tag="place" value="allotments" textSize="$text_s" minzoom="13"/>
+                <case tag="place" value="allotments" textSize="$text_s" minzoom="13" />
                 <apply>
-                    <case additional="population_rounded=1500000000" textOrder="6"/>
-                    <case additional="population_rounded=400000000" textOrder="7"/>
-                    <case additional="population_rounded=200000000" textOrder="8"/>
-                    <case additional="population_rounded=100000000" textOrder="9"/>
-                    <case additional="population_rounded=50000000" textOrder="10"/>
-                    <case additional="population_rounded=25000000" textOrder="11"/>
-                    <case additional="population_rounded=20000000" textOrder="12"/>
-                    <case additional="population_rounded=15000000" textOrder="13"/>
-                    <case additional="population_rounded=12000000" textOrder="14"/>
-                    <case additional="population_rounded=9000000" textOrder="15"/>
-                    <case additional="population_rounded=7000000" textOrder="16"/>
-                    <case additional="population_rounded=5000000" textOrder="17"/>
-                    <case additional="population_rounded=3000000" textOrder="18"/>
-                    <case additional="population_rounded=2000000" textOrder="19"/>
-                    <case additional="population_rounded=1000000" textOrder="20"/>
-                    <case additional="population_rounded=700000" textOrder="21"/>
-                    <case additional="population_rounded=400000" textOrder="22"/>
-                    <case additional="population_rounded=200000" textOrder="32"/>
-                    <case additional="population_rounded=100000" textOrder="33"/>
-                    <case additional="population_rounded=70000" textOrder="34"/>
-                    <case additional="population_rounded=40000" textOrder="35"/>
-                    <case additional="population_rounded=20000" textOrder="36"/>
-                    <case additional="population_rounded=10000" textOrder="37"/>
-                    <case additional="population_rounded=5000" textOrder="38"/>
-                    <case additional="population_rounded=2500" textOrder="39"/>
-                    <case additional="population_rounded=1000" textOrder="40"/>
-                    <case additional="population_rounded=500" textOrder="41"/>
-                    <case additional="population_rounded=200" textOrder="42"/>
-                    <case additional="population_rounded=100" textOrder="43"/>
+                    <case additional="population_rounded=1500000000" textOrder="6" />
+                    <case additional="population_rounded=400000000" textOrder="7" />
+                    <case additional="population_rounded=200000000" textOrder="8" />
+                    <case additional="population_rounded=100000000" textOrder="9" />
+                    <case additional="population_rounded=50000000" textOrder="10" />
+                    <case additional="population_rounded=25000000" textOrder="11" />
+                    <case additional="population_rounded=20000000" textOrder="12" />
+                    <case additional="population_rounded=15000000" textOrder="13" />
+                    <case additional="population_rounded=12000000" textOrder="14" />
+                    <case additional="population_rounded=9000000" textOrder="15" />
+                    <case additional="population_rounded=7000000" textOrder="16" />
+                    <case additional="population_rounded=5000000" textOrder="17" />
+                    <case additional="population_rounded=3000000" textOrder="18" />
+                    <case additional="population_rounded=2000000" textOrder="19" />
+                    <case additional="population_rounded=1000000" textOrder="20" />
+                    <case additional="population_rounded=700000" textOrder="21" />
+                    <case additional="population_rounded=400000" textOrder="22" />
+                    <case additional="population_rounded=200000" textOrder="32" />
+                    <case additional="population_rounded=100000" textOrder="33" />
+                    <case additional="population_rounded=70000" textOrder="34" />
+                    <case additional="population_rounded=40000" textOrder="35" />
+                    <case additional="population_rounded=20000" textOrder="36" />
+                    <case additional="population_rounded=10000" textOrder="37" />
+                    <case additional="population_rounded=5000" textOrder="38" />
+                    <case additional="population_rounded=2500" textOrder="39" />
+                    <case additional="population_rounded=1000" textOrder="40" />
+                    <case additional="population_rounded=500" textOrder="41" />
+                    <case additional="population_rounded=200" textOrder="42" />
+                    <case additional="population_rounded=100" textOrder="43" />
                 </apply>
-                <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+                <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo" />
 
             </switch>
             <switch minzoom="11">
@@ -899,31 +902,31 @@
                 <case tag="highway" value="living_street" />
                 <case tag="highway" value="service" />
                 <case tag="highway" value="road" />
-                <case tag="highway" value="track"/>
-                <case tag="highway" value="cycleway"/>
-                <case tag="highway" value="path"/>
-                <case tag="highway" value="footway"/>
-                <case tag="highway" value="bridleway"/>
+                <case tag="highway" value="track" />
+                <case tag="highway" value="cycleway" />
+                <case tag="highway" value="path" />
+                <case tag="highway" value="footway" />
+                <case tag="highway" value="bridleway" />
                 <apply>
                     <switch>
-                        <case nameTag="name" nameTag2="ref"/>
-                        <case nameTag="ref"/>
-                        <apply textOnPath="true" textSize="$text_s"/>
+                        <case nameTag="name" nameTag2="ref" />
+                        <case nameTag="ref" />
+                        <apply textOnPath="true" textSize="$text_s" />
                     </switch>
                 </apply>
-                <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+                <apply textColor="$c_text_civilization" textHaloRadius="$text_halo" textHaloColor="$c_halo" />
             </switch>
             <switch>                <!-- Route Labels-->
-                <case tag="route_hiking" value="" textColor="$c_route_hike"/>
-                <case tag="route_mtb" value="" textColor="$c_route_mtb"/>
-                <case tag="route_bicycle" value="" textColor="$c_route_bike"/>
+                <case tag="route_hiking" value="" textColor="$c_route_hike" />
+                <case tag="route_mtb" value="" textColor="$c_route_mtb" />
+                <case tag="route_bicycle" value="" textColor="$c_route_bike" />
                 <apply>
                     <switch>
-                        <case nameTag="bicycle_name" nameTag2="bicycle_ref"/>
-                        <case nameTag="bicycle_ref"/>
-                        <case nameTag="hiking_name" nameTag2="hiking_ref"/>
-                        <case nameTag="hiking_ref"/>
-                        <apply textSize="$text_s" textOnPath="true" textDy="$text_m" textHaloRadius="$text_halo" textHaloColor="$c_halo"/>
+                        <case nameTag="bicycle_name" nameTag2="bicycle_ref" />
+                        <case nameTag="bicycle_ref" />
+                        <case nameTag="hiking_name" nameTag2="hiking_ref" />
+                        <case nameTag="hiking_ref" />
+                        <apply textSize="$text_s" textOnPath="true" textDy="$text_m" textHaloRadius="$text_halo" textHaloColor="$c_halo" />
                     </switch>
                 </apply>
             </switch>
@@ -931,24 +934,24 @@
     </text>
     <point>
         <switch>
-            <case tag="natural" value="peak" icon="natural_peak"/>
-            <case tag="natural" value="volcano" icon="natural_volcano_map"/>
-            <case tag="natural" value="hill" icon="hill"/>
-            <case tag="natural" value="saddle" icon="natural_saddle"/>
-            <case tag="mountain_pass" value="yes" icon="topo_mountain_pass"/>
-            <case tag="natural" value="cave_entrance" icon="cave_entrance"/>
+            <case tag="natural" value="peak" icon="natural_peak" />
+            <case tag="natural" value="volcano" icon="natural_volcano_map" />
+            <case tag="natural" value="hill" icon="hill" />
+            <case tag="natural" value="saddle" icon="natural_saddle" />
+            <case tag="mountain_pass" value="yes" icon="topo_mountain_pass" />
+            <case tag="natural" value="cave_entrance" icon="cave_entrance" />
         </switch>
     </point>
     <line>
         <switch>
             <case tag="contour" value="elevation" color="$c_contour" strokeWidth="$width_l00">
                 <switch>
-                    <case additional="contourtype=1000m"/>
-                    <case additional="contourtype=200m"/>
-                    <case contourDensity="medium_w" additional="contourtype=100m"/>
-                    <case contourDensity="high" additional="contourtype=100m"/>
-                    <case contourDensity="high" additional="contourtype=50m"/>
-                    <apply strokeWidth="$width_l0"/>
+                    <case additional="contourtype=1000m" />
+                    <case additional="contourtype=200m" />
+                    <case contourDensity="medium_w" additional="contourtype=100m" />
+                    <case contourDensity="high" additional="contourtype=100m" />
+                    <case contourDensity="high" additional="contourtype=50m" />
+                    <apply strokeWidth="$width_l0" />
                 </switch>
             </case>
             <switch>                <!-- Roads, Tracks & Paths -->
@@ -956,119 +959,119 @@
                     <switch>                        <!-- Solid Lines i.e. Roads-->
                         <switch>                            <!-- Big roads -->
                             <switch>
-                                <case tag="highway" value="motorway"/>
-                                <case tag="highway" value="motorway_link"/>
+                                <case tag="highway" value="motorway" />
+                                <case tag="highway" value="motorway_link" />
                                 <apply color="$c_fastroad" color_1="$c_motorway_center" />
-                                <apply additional="tunnel=yes" color="$c_fastroad_light" color_1="$c_motorway_center_light"/>
+                                <apply additional="tunnel=yes" color="$c_fastroad_light" color_1="$c_motorway_center_light" />
                             </switch>
                             <switch>
-                                <case tag="highway" value="trunk"/>
-                                <case tag="highway" value="trunk_link"/>
-                                <apply color="$c_fastroad"/>
-                                <apply additional="tunnel=yes" color="$c_fastroad_light"/>
+                                <case tag="highway" value="trunk" />
+                                <case tag="highway" value="trunk_link" />
+                                <apply color="$c_fastroad" />
+                                <apply additional="tunnel=yes" color="$c_fastroad_light" />
                             </switch>
                             <switch>
-                                <case tag="highway" value="primary"/>
-                                <case tag="highway" value="primary_link"/>
+                                <case tag="highway" value="primary" />
+                                <case tag="highway" value="primary_link" />
                                 <apply color="$c_primary" />
                                 <apply additional="tunnel=yes" color="$c_primary_light" />
                             </switch>
                             <switch>
-                                <case tag="highway" value="secondary"/>
-                                <case tag="highway" value="secondary_link"/>
+                                <case tag="highway" value="secondary" />
+                                <case tag="highway" value="secondary_link" />
                                 <apply color="$c_secondary" />
                                 <apply additional="tunnel=yes" color="$c_secondary_light" />
                             </switch>
                             <switch>
-                                <case tag="highway" value="tertiary"/>
-                                <case tag="highway" value="tertiary_link"/>
+                                <case tag="highway" value="tertiary" />
+                                <case tag="highway" value="tertiary_link" />
                                 <apply color="$c_tertiary" />
                                 <apply additional="tunnel=yes" color="$c_tertiary_light" />
                             </switch>
                             <switch>
-                                <case tag="highway" value="unclassified"/>
-                                <case tag="highway" value="road"/>
+                                <case tag="highway" value="unclassified" />
+                                <case tag="highway" value="road" />
                                 <apply color="$c_surface_inner" />
                             </switch>
-                            <apply strokeWidth="$width_l2"/>
-                            <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4"/>
+                            <apply strokeWidth="$width_l2" />
+                            <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l4" />
                         </switch>
                         <switch>                            <!-- Small Roads -->
-                            <case tag="highway" value="residential"/>
-                            <case tag="highway" value="living_street"/>
-                            <case tag="highway" value="service"/>
+                            <case tag="highway" value="residential" />
+                            <case tag="highway" value="living_street" />
+                            <case tag="highway" value="service" />
                             <case tag="highway" value="cycleway" />
-                            <apply color="$c_surface_inner" strokeWidth="$width_l1"/>
-                            <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l3"/>
+                            <apply color="$c_surface_inner" strokeWidth="$width_l1" />
+                            <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l3" />
                         </switch>
-                        <apply cap="ROUND"/>
+                        <apply cap="ROUND" />
                     </switch>
                     <case tag="highway" value="track">
                         <apply>
                             <switch>
-                                <case additional="tracktype=grade1" pathEffect_0="" pathEffect=""/>
-                                <case additional="tracktype=grade2" pathEffect_0="" pathEffect=""/>
-                                <case additional="tracktype=grade3" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good"/>
-                                <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad"/>
-                                <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible"/>
+                                <case additional="tracktype=grade1" pathEffect_0="" pathEffect="" />
+                                <case additional="tracktype=grade2" pathEffect_0="" pathEffect="" />
+                                <case additional="tracktype=grade3" pathEffect_0="$pathEffect_good" pathEffect="$pathEffect_good" />
+                                <case additional="tracktype=grade4" pathEffect_0="$pathEffect_bad" pathEffect="$pathEffect_bad" />
+                                <case additional="tracktype=grade5" pathEffect_0="$pathEffect_horrible" pathEffect="$pathEffect_horrible" />
                                 <!--Default case if tag is not set-->
-                                <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown"/>
+                                <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown" />
                             </switch>
                         </apply>
-                        <apply color="$c_surface_inner" strokeWidth="$width_l1"/>
-                        <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l3"/>
+                        <apply color="$c_surface_inner" strokeWidth="$width_l1" />
+                        <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l3" />
                     </case>
-                    <apply shadowColor="$c_surface_outer" shadowRadius="$width_l0"/>
+                    <apply shadowColor="$c_surface_outer" shadowRadius="$width_l0" />
                     <apply>
                         <switch>
-                            <case tag="highway" value="cycleway"/>
+                            <case tag="highway" value="cycleway" />
                             <case additional="bicycle=designated" />
-                            <apply shadowColor="$c_cycle_outer"/>
-                            <apply additional="tunnel=yes" shadowColor="$c_cycle_outer_light"/>
+                            <apply shadowColor="$c_cycle_outer" />
+                            <apply additional="tunnel=yes" shadowColor="$c_cycle_outer_light" />
                         </switch>
                     </apply>
                 </switch>
                 <switch>                    <!-- Paths etc -->
-                    <case tag="highway" value="path"/>
-                    <case tag="highway" value="footway"/>
-                    <case tag="highway" value="bridleway"/>
+                    <case tag="highway" value="path" />
+                    <case tag="highway" value="footway" />
+                    <case tag="highway" value="bridleway" />
                     <apply>
                         <switch>
-                            <case additional="trail_visibility=excellent" pathEffect=""/>
-                            <case additional="trail_visibility=good" pathEffect="$pathEffect_good"/>
-                            <case additional="trail_visibility=intermediate" pathEffect="$pathEffect_intermediate"/>
-                            <case additional="trail_visibility=bad" pathEffect="$pathEffect_bad"/>
-                            <case additional="trail_visibility=horrible" pathEffect="$pathEffect_horrible"/>
+                            <case additional="trail_visibility=excellent" pathEffect="" />
+                            <case additional="trail_visibility=good" pathEffect="$pathEffect_good" />
+                            <case additional="trail_visibility=intermediate" pathEffect="$pathEffect_intermediate" />
+                            <case additional="trail_visibility=bad" pathEffect="$pathEffect_bad" />
+                            <case additional="trail_visibility=horrible" pathEffect="$pathEffect_horrible" />
                             <case additional="trail_visibility=no" pathEffect="$pathEffect_no" />
-                            <case additional="surface=asphalt" pathEffect=""/>
-                            <case additional="surface=paved" pathEffect=""/>
-                            <case additional="surface=concrete" pathEffect=""/>
-                            <case additional="surface=paving_stones" pathEffect=""/>
+                            <case additional="surface=asphalt" pathEffect="" />
+                            <case additional="surface=paved" pathEffect="" />
+                            <case additional="surface=concrete" pathEffect="" />
+                            <case additional="surface=paving_stones" pathEffect="" />
                             <!--Default case if tag is not set-->
-                            <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown"/>
+                            <case pathEffect_0="$pathEffect_unknown" pathEffect="$pathEffect_unknown" />
                         </switch>
                     </apply>
-                    <apply color="$c_surface_outer" strokeWidth="$width_l1"/>
-                    <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l2"/>
+                    <apply color="$c_surface_outer" strokeWidth="$width_l1" />
+                    <apply additional="bridge=yes" color_0="$c_paved_outer" strokeWidth_0="$width_l2" />
                 </switch>
                 <apply>                    <!-- Access/Biking/Hiking Markups -->
                     <apply minzoom="13" pathEffect_2="$pathEffect_markup1" strokeWidth_2="$width_l1" color_2="$c_access_yes">                        <!-- Access -->
                         <switch>                            <!-- No general access -->
-                            <case additional="access=no"/>
-                            <case additional="access=private"/>
-                            <apply color_2="$c_access_no"/>
+                            <case additional="access=no" />
+                            <case additional="access=private" />
+                            <apply color_2="$c_access_no" />
                             <apply>
                                 <switch>                                    <!-- If bikes allowed -->
                                     <case additional="bicycle=yes" />
                                     <case additional="bicycle=designated" />
                                     <case additional="bicycle=permissive" />
-                                    <apply color_2="$c_access_bike"/>
+                                    <apply color_2="$c_access_bike" />
                                     <apply >
                                         <switch>                                            <!-- If foot and bike allowed -->
                                             <case additional="foot=yes" />
                                             <case additional="foot=designated" />
                                             <case additional="foot=permissive" />
-                                            <apply color_2="$c_access_foot_and_bike"/>
+                                            <apply color_2="$c_access_foot_and_bike" />
                                         </switch>
                                     </apply>
                                 </switch>
@@ -1076,7 +1079,7 @@
                                     <case additional="foot=yes" />
                                     <case additional="foot=designated" />
                                     <case additional="foot=permissive" />
-                                    <apply color_2="$c_access_foot"/>
+                                    <apply color_2="$c_access_foot" />
                                 </switch>
                             </apply>
                         </switch>
@@ -1084,51 +1087,51 @@
                             <switch>                                <!-- If bikes not allowed -->
                                 <case additional="bicycle=no" />
                                 <case additional="bicycle=private" />
-                                <apply color_2="$c_access_foot"/>
+                                <apply color_2="$c_access_foot" />
                                 <apply >
                                     <switch>                                        <!-- Neither foot nor bike allowed -->
                                         <case additional="foot=no" />
                                         <case additional="foot=private" />
-                                        <apply color_2="$c_access_no"/>
+                                        <apply color_2="$c_access_no" />
                                     </switch>
                                 </apply>
                             </switch>
                             <switch>                                <!-- If bike allowed, but foot not -->
                                 <case additional="foot=no" />
                                 <case additional="foot=private" />
-                                <apply color_2="$c_access_bike"/>
+                                <apply color_2="$c_access_bike" />
                             </switch>
                         </case>
                     </apply>
                     <apply minzoom="13" pathEffect_3="$pathEffect_markup2" strokeWidth_3="$width_l1">
                         <switch>
-                            <case additional="mtb:scale=0" color_3="$c_diff_0"/>
-                            <case additional="mtb:scale=1" color_3="$c_diff_1"/>
-                            <case additional="mtb:scale=2" color_3="$c_diff_2"/>
-                            <case additional="mtb:scale=3" color_3="$c_diff_3"/>
-                            <case additional="mtb:scale=4" color_3="$c_diff_4"/>
-                            <case additional="mtb:scale=5" color_3="$c_diff_4"/>
-                            <case additional="mtb:scale=6" color_3="$c_diff_4"/>
+                            <case additional="mtb:scale=0" color_3="$c_diff_0" />
+                            <case additional="mtb:scale=1" color_3="$c_diff_1" />
+                            <case additional="mtb:scale=2" color_3="$c_diff_2" />
+                            <case additional="mtb:scale=3" color_3="$c_diff_3" />
+                            <case additional="mtb:scale=4" color_3="$c_diff_4" />
+                            <case additional="mtb:scale=5" color_3="$c_diff_4" />
+                            <case additional="mtb:scale=6" color_3="$c_diff_4" />
                         </switch>
                     </apply>
                     <apply minzoom="13" pathEffect_4="$pathEffect_markup3" strokeWidth_4="$width_l1">
                         <switch>
-                            <case additional="mtb:scale:uphill=0" color_4="$c_diff_0"/>
-                            <case additional="mtb:scale:uphill=1" color_4="$c_diff_1"/>
-                            <case additional="mtb:scale:uphill=2" color_4="$c_diff_2"/>
-                            <case additional="mtb:scale:uphill=3" color_4="$c_diff_3"/>
-                            <case additional="mtb:scale:uphill=4" color_4="$c_diff_4"/>
-                            <case additional="mtb:scale:uphill=5" color_4="$c_diff_4"/>
+                            <case additional="mtb:scale:uphill=0" color_4="$c_diff_0" />
+                            <case additional="mtb:scale:uphill=1" color_4="$c_diff_1" />
+                            <case additional="mtb:scale:uphill=2" color_4="$c_diff_2" />
+                            <case additional="mtb:scale:uphill=3" color_4="$c_diff_3" />
+                            <case additional="mtb:scale:uphill=4" color_4="$c_diff_4" />
+                            <case additional="mtb:scale:uphill=5" color_4="$c_diff_4" />
                         </switch>
                     </apply>
                     <apply minzoom="13" pathEffect_5="$pathEffect_markup4" strokeWidth_5="$width_l1">
                         <switch>
-                            <case additional="sac_scale=hiking" color_5="$c_diff_0"/>
-                            <case additional="sac_scale=mountain_hiking" color_5="$c_diff_1"/>
-                            <case additional="sac_scale=demanding_mountain_hiking" color_5="$c_diff_2"/>
-                            <case additional="sac_scale=alpine_hiking" color_5="$c_diff_3"/>
-                            <case additional="sac_scale=demanding_alpine_hiking" color_5="$c_diff_4"/>
-                            <case additional="sac_scale=difficult_alpine_hiking" color_5="$c_diff_4"/>
+                            <case additional="sac_scale=hiking" color_5="$c_diff_0" />
+                            <case additional="sac_scale=mountain_hiking" color_5="$c_diff_1" />
+                            <case additional="sac_scale=demanding_mountain_hiking" color_5="$c_diff_2" />
+                            <case additional="sac_scale=alpine_hiking" color_5="$c_diff_3" />
+                            <case additional="sac_scale=demanding_alpine_hiking" color_5="$c_diff_4" />
+                            <case additional="sac_scale=difficult_alpine_hiking" color_5="$c_diff_4" />
                         </switch>
                     </apply>
                 </apply>
@@ -1136,108 +1139,108 @@
             <!-- Hiking/Biking/Walking Routes-->
             <switch showHikingNetwork="true" tag="route_hiking" value="">
                 <!-- yes we loose some true routes with using only routes that have a network tag set, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
-                <case additional="network=iwn" minzoom="6"/>
-                <case additional="network=nwn" minzoom="7"/>
-                <case additional="network=rwn" minzoom="9"/>
-                <case additional="network=lwn" minzoom="11"/>
+                <case additional="network=iwn" minzoom="6" />
+                <case additional="network=nwn" minzoom="7" />
+                <case additional="network=rwn" minzoom="9" />
+                <case additional="network=lwn" minzoom="11" />
                 <apply color="$c_route_hike" strokeWidth="$width_l4" />
             </switch>
             <switch showMTBNetwork="true" tag="route_mtb" value="">
                 <!-- yes we loose some true routes with using only routes that have a network tag set, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
-                <case additional="network=icn" minzoom="6"/>
-                <case additional="network=ncn" minzoom="7"/>
-                <case additional="network=rcn" minzoom="9"/>
-                <case additional="network=lcn" minzoom="11"/>
+                <case additional="network=icn" minzoom="6" />
+                <case additional="network=ncn" minzoom="7" />
+                <case additional="network=rcn" minzoom="9" />
+                <case additional="network=lcn" minzoom="11" />
                 <apply color="$c_route_mtb" strokeWidth="$width_l4" />
             </switch>
             <switch showCyclingNetwork="true" tag="route_bicycle" value="">
                 <!-- yes we loose some true routes with using only routes that have a network tag set, but at least wo don't get the random paths that have been declared as route by the preprocessing-->
-                <case additional="network=icn" minzoom="6"/>
-                <case additional="network=ncn" minzoom="7"/>
-                <case additional="network=rcn" minzoom="9"/>
-                <case additional="network=lcn" minzoom="11"/>
+                <case additional="network=icn" minzoom="6" />
+                <case additional="network=ncn" minzoom="7" />
+                <case additional="network=rcn" minzoom="9" />
+                <case additional="network=lcn" minzoom="11" />
                 <apply color="$c_route_bike" strokeWidth="$width_l4" />
             </switch>
             <switch>                <!-- Railways-->
-                <case tag="railway" value="rail" strokeWidth_0="$width_l3" strokeWidth="$width_l2" strokeWidth_2="$width_l2"/>
-                <case tag="railway" value="light_rail" strokeWidth_0="$width_l2" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
-                <case tag="railway" value="narrow_gauge" strokeWidth_0="$width_l2" strokeWidth="$width_l1" strokeWidth_2="$width_l1"/>
-                <apply color="$c_rail_light" pathEffect_2="$pathEffect_5050" color_2="$c_rail_dark" color_0="$c_rail_dark" cap="SQUARE" cap_2="SQUARE"/>
-                <apply additional="tunnel=yes" color="$c_rail_light_tunnel" color_2="$c_rail_dark_tunnel"/>
+                <case tag="railway" value="rail" strokeWidth_0="$width_l3" strokeWidth="$width_l2" strokeWidth_2="$width_l2" />
+                <case tag="railway" value="light_rail" strokeWidth_0="$width_l2" strokeWidth="$width_l1" strokeWidth_2="$width_l1" />
+                <case tag="railway" value="narrow_gauge" strokeWidth_0="$width_l2" strokeWidth="$width_l1" strokeWidth_2="$width_l1" />
+                <apply color="$c_rail_light" pathEffect_2="$pathEffect_5050" color_2="$c_rail_dark" color_0="$c_rail_dark" cap="SQUARE" cap_2="SQUARE" />
+                <apply additional="tunnel=yes" color="$c_rail_light_tunnel" color_2="$c_rail_dark_tunnel" />
             </switch>
             <switch>                <!-- Natural features-->
                 <switch color="$c_water" cap="ROUND">
-                    <case tag="waterway" value="ditch" strokeWidth="$width_l1"/>
-                    <case tag="waterway" value="drain" strokeWidth="$width_l1"/>
-                    <case tag="waterway" value="stream" strokeWidth="$width_l1"/>
-                    <case tag="waterway" value="canal" strokeWidth="$width_l2" color_0="$c_paved_outer" strokeWidth_0="$width_l3"/>
-                    <case tag="waterway" value="river" strokeWidth="$width_l3"/>
-                    <apply additional="intermittent=yes" pathEffect="$pathEffect_5050"/>
+                    <case tag="waterway" value="ditch" strokeWidth="$width_l1" />
+                    <case tag="waterway" value="drain" strokeWidth="$width_l1" />
+                    <case tag="waterway" value="stream" strokeWidth="$width_l1" />
+                    <case tag="waterway" value="canal" strokeWidth="$width_l2" color_0="$c_paved_outer" strokeWidth_0="$width_l3" />
+                    <case tag="waterway" value="river" strokeWidth="$width_l3" />
+                    <apply additional="intermittent=yes" pathEffect="$pathEffect_5050" />
                 </switch>
             </switch>
         </switch>
     </line>
     <polygon>
         <switch>
-            <case tag="landuse" value="residential" color="$c_residential"/>
+            <case tag="landuse" value="residential" color="$c_residential" />
             <switch>
-                <case tag="landuse" value="commercial"/>
-                <case tag="landuse" value="industrial"/>
-                <case tag="landuse" value="retail"/>
-                <apply color="$c_industrial"/>
+                <case tag="landuse" value="commercial" />
+                <case tag="landuse" value="industrial" />
+                <case tag="landuse" value="retail" />
+                <apply color="$c_industrial" />
             </switch>
-            <case tag="landuse" value="cemetery" shader = "topo_cemetery"/>
-            <case tag="natural" value="bare_rock" color="$c_rock_light" color_0="$c_rock_light" shader="topo_bare_rock2"/>
+            <case tag="landuse" value="cemetery" shader = "topo_cemetery" />
+            <case tag="natural" value="bare_rock" color="$c_rock_light" color_0="$c_rock_light" shader="topo_bare_rock2" />
             <switch>
-                <case tag="natural" value="scree"/>
-                <case tag="natural" value="shingle"/>
-                <apply color="$c_rock_light" color_0="$c_rock_light" shader="shingle"/>
-            </switch>
-            <switch>
-                <case tag="natural" value="coastline"/>
-                <case tag="natural" value="water"/>
-                <case tag="landuse" value="reservoir"/>
-                <apply color="$c_water"/>
+                <case tag="natural" value="scree" />
+                <case tag="natural" value="shingle" />
+                <apply color="$c_rock_light" color_0="$c_rock_light" shader="shingle" />
             </switch>
             <switch>
-                <case tag="landuse" value="salt_pond"/>
-                <apply color="$c_water" shader="water_salt"/>
+                <case tag="natural" value="coastline" />
+                <case tag="natural" value="water" />
+                <case tag="landuse" value="reservoir" />
+                <apply color="$c_water" />
+            </switch>
+            <switch>
+                <case tag="landuse" value="salt_pond" />
+                <apply color="$c_water" shader="water_salt" />
             </switch>
             <switch color="$c_wood">
                 <case tag="natural" value="wood" />
-                <case tag="landuse" value="forest"/>
+                <case tag="landuse" value="forest" />
                 <apply minzoom="14">
                     <switch>
-                        <case additional="leaf_type=needleleaved" shader="topo_wood_needleleaved"/>
-                        <case additional="leaf_type=broadleaved" shader="topo_wood_broadleaved"/>
-                        <case additional="leaf_type=mixed" shader="topo_wood_mixed"/>
-                        <case shader="topo_wood_mixed"/>
-                        <apply color_0="$c_wood"/>
+                        <case additional="leaf_type=needleleaved" shader="topo_wood_needleleaved" />
+                        <case additional="leaf_type=broadleaved" shader="topo_wood_broadleaved" />
+                        <case additional="leaf_type=mixed" shader="topo_wood_mixed" />
+                        <case shader="topo_wood_mixed" />
+                        <apply color_0="$c_wood" />
                     </switch>
                 </apply>
             </switch>
-            <case tag="natural" value="scrub" color="$c_wood" color_0="$c_dry_green" shader="topo_scrub"/>
-            <case tag="natural" value="heath" color="$c_wood" color_0="$c_dry_green" shader="topo_heath"/>
-            <case tag="natural" value="grassland" color="$c_fresh_green" color_0="$c_dry_green" shader="topo_grassland"/>
-            <case tag="landuse" value="meadow" color="$c_fresh_green" color_0="$c_fresh_green" shader="topo_grassland"/>
-            <case tag="landuse" value="grass" color="$c_fresh_green"/>
-            <case tag="natural" value="fell" color="$c_fresh_green" color_0="$c_dry_green" shader="topo_heath"/>
+            <case tag="natural" value="scrub" color="$c_wood" color_0="$c_dry_green" shader="topo_scrub" />
+            <case tag="natural" value="heath" color="$c_wood" color_0="$c_dry_green" shader="topo_heath" />
+            <case tag="natural" value="grassland" color="$c_fresh_green" color_0="$c_dry_green" shader="topo_grassland" />
+            <case tag="landuse" value="meadow" color="$c_fresh_green" color_0="$c_fresh_green" shader="topo_grassland" />
+            <case tag="landuse" value="grass" color="$c_fresh_green" />
+            <case tag="natural" value="fell" color="$c_fresh_green" color_0="$c_dry_green" shader="topo_heath" />
             <switch>
-                <case tag="natural" value="beach"/>
-                <case tag="natural" value="sand"/>
-                <apply color="$c_sand" color_0="$c_sand" shader="topo_bare_rock2"/>
+                <case tag="natural" value="beach" />
+                <case tag="natural" value="sand" />
+                <apply color="$c_sand" color_0="$c_sand" shader="topo_bare_rock2" />
             </switch>
             <case tag="natural" value="wetland" shader="wetland">
-                <case additional="wetland=bog" shader="wetland_bog"/>
-                <case additional="wetland=marsh" shader="wetland_marsh"/>
-                <case additional="wetland=reedbed" shader="wetland_reedbed"/>
-                <case additional="wetland=swamp" shader="wetland_swamp"/>
-                <case additional="wetland=tidalflat" shader="wetland_tidalflat"/>
-                <case additional="wetland=mangrove" shader="wetland_mangrove"/>
-                <case additional="wetland=saltmarsh" shader="wetland_saltmarsh"/>
-                <case additional="wetland=wet_meadow" shader="wetland_wet_meadow"/>
+                <case additional="wetland=bog" shader="wetland_bog" />
+                <case additional="wetland=marsh" shader="wetland_marsh" />
+                <case additional="wetland=reedbed" shader="wetland_reedbed" />
+                <case additional="wetland=swamp" shader="wetland_swamp" />
+                <case additional="wetland=tidalflat" shader="wetland_tidalflat" />
+                <case additional="wetland=mangrove" shader="wetland_mangrove" />
+                <case additional="wetland=saltmarsh" shader="wetland_saltmarsh" />
+                <case additional="wetland=wet_meadow" shader="wetland_wet_meadow" />
             </case>
-            <case tag="building" value="" color="$c_building"/>
+            <case tag="building" value="" color="$c_building" />
         </switch>
     </polygon>
 </renderingStyle>
