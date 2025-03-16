@@ -1,5 +1,10 @@
 <osmand_types>
     <category name="general">
+        <type tag="int_ref" additional="text" minzoom="1" />
+        <type tag="name" additional="text" minzoom="1" />
+        <type tag="ref" additional="text" minzoom="1" />
+        <type tag="local_ref" additional="text" minzoom="1" />
+
         <type tag="ele" additional="text" />
         <type tag="dominance" additional="text" />
         <type tag="dominance_limit" value="highest" additional="true" notosm="true" />
@@ -226,7 +231,13 @@
         <type tag="tracktype" value="grade3" additional="true" />
         <type tag="tracktype" value="grade4" additional="true" />
         <type tag="tracktype" value="grade5" additional="true" />
-
+        <type tag="trail_visibility" value="excellent" minzoom="11" additional="true" />
+        <type tag="trail_visibility" value="good" minzoom="11" additional="true" />
+        <type tag="trail_visibility" value="intermediate" minzoom="11" additional="true" />
+        <type tag="trail_visibility" value="bad" minzoom="11" additional="true" />
+        <entity_convert pattern="tag_transform" from_tag="trail_visibility" from_value="very_bad" to_tag1="trail_visibility" to_value1="bad" />
+        <type tag="trail_visibility" value="horrible" minzoom="11" additional="true" />
+        <type tag="trail_visibility" value="no" minzoom="11" additional="true" />
     </category>
     <category name="hike_bike_difficulty">
         <type tag="mtb:scale" value="0" minzoom="11" additional="true" />
