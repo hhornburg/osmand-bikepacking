@@ -642,6 +642,12 @@
                     <case tag="route_mtb" value="" />
                     <case tag="route_bicycle" value="" />
                 </switch>
+                <switch order="50">
+                  <case tag="natural" value="cliff"/>
+			            <case tag="natural" value="slope"/>
+			            <case tag="natural" value="earth_bank"/>
+			            <case tag="man_made" value="embankment"/>
+                </switch>
                 <switch order="53">
                     <case tag="waterway" value="ditch" minzoom="15" />
                     <case tag="waterway" value="drain" minzoom="15" />
@@ -1207,6 +1213,11 @@
                     <case tag="waterway" value="river" strokeWidth="$width_l3" />
                     <apply additional="intermittent=yes" pathEffect="$pathEffect_5050" />
                 </switch>
+                <case tag="natural" value="cliff" color="$c_rock_dark"/>
+			          <case tag="natural" value="slope" color="$c_contour"/>
+			          <case tag="natural" value="earth_bank" color="$c_contour"/>
+			          <case tag="man_made" value="embankment" color="$c_contour"/>
+			          <apply strokeWidth="$width_l00"/>
             </switch>
         </switch>
     </line>
