@@ -282,6 +282,17 @@
     <renderingConstant name="pathEffect_no_z19" value="16_24" />
     <renderingConstant name="pathEffect_no_z20" value="16_24" />
     <renderingConstant name="pathEffect_no_z21" value="20_30" />
+    
+    <renderingConstant name="pathEffect_steps_z12" value="1_1" />
+    <renderingConstant name="pathEffect_steps_z13" value="2_2" />
+    <renderingConstant name="pathEffect_steps_z14" value="2_2" />
+    <renderingConstant name="pathEffect_steps_z15" value="4_4" />
+    <renderingConstant name="pathEffect_steps_z16" value="4_4" />
+    <renderingConstant name="pathEffect_steps_z17" value="6_6" />
+    <renderingConstant name="pathEffect_steps_z18" value="6_6" />
+    <renderingConstant name="pathEffect_steps_z19" value="8_8" />
+    <renderingConstant name="pathEffect_steps_z20" value="8_8" />
+    <renderingConstant name="pathEffect_steps_z21" value="8_10" />
 
     <renderingAttribute name="pathEffect_unknown">
         <case maxzoom="12" attrStringValue="$pathEffect_unknown_z12" />
@@ -361,6 +372,19 @@
         <case minzoom="21" attrStringValue="$pathEffect_no_z21" />
     </renderingAttribute>
 
+    <renderingAttribute name="pathEffect_steps">
+        <case maxzoom="12" attrStringValue="$pathEffect_steps_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$pathEffect_steps_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$pathEffect_steps_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$pathEffect_steps_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$pathEffect_steps_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$pathEffect_steps_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$pathEffect_steps_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$pathEffect_steps_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$pathEffect_steps_z20" />
+        <case minzoom="21" attrStringValue="$pathEffect_steps_z21" />
+    </renderingAttribute>
+    
     <renderingAttribute name="pathEffect_markup1">
         <case minzoom="13" maxzoom="13" attrStringValue="1_19" />
         <case minzoom="14" maxzoom="14" attrStringValue="1_19" />
@@ -751,6 +775,7 @@
                     <case tag="highway" value="path" minzoom="12" />
                     <case tag="highway" value="footway" minzoom="12" />
                     <case tag="highway" value="bridleway" minzoom="12" />
+                    <case tag="highway" value="steps" minzoom="12" />
                     <apply additional="layer=-2" order="24" />
                     <apply layer="-1" order="45" />
                     <apply layer="1" order="87" />
@@ -907,6 +932,7 @@
                 <case tag="highway" value="path" />
                 <case tag="highway" value="footway" />
                 <case tag="highway" value="bridleway" />
+                <case tag="highway" value="steps" />
                 <apply>
                     <switch>
                         <case nameTag="name" nameTag2="ref" />
@@ -1135,6 +1161,10 @@
                         </switch>
                     </apply>
                 </apply>
+            </switch>
+            <switch> <!-- steps get no difficulty higlighting etc -->
+              <case tag="highway" value="steps" />
+              <apply color="$c_surface_outer"  pathEffect="$pathEffect_steps" strokeWidth="$width_l2"/>
             </switch>
             <!-- Hiking/Biking/Walking Routes-->
             <switch showHikingNetwork="true" tag="route_hiking" value="">
