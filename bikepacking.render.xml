@@ -652,6 +652,7 @@
     <renderingConstant name="c_industrial" value="#FFCCFF" />
     <renderingConstant name="c_residential" value="#EEDDDD" />
     <renderingConstant name="c_building" value="#BBAAAA" />
+    <renderingConstant name="c_earthy" value="#EECCAA" />
 
     <renderingConstant name="c_contour" value="#9C5615" />
 
@@ -3007,6 +3008,7 @@
                 <case tag="landuse" value="industrial" />
                 <case tag="landuse" value="retail" />
                 <case tag="landuse" value="construction" />
+                <case tag="landuse" value="farmyard" />
                 <apply color="$c_industrial" />
             </switch>
             <!-- Cemetery -->
@@ -3058,14 +3060,7 @@
             <case tag="natural" value="fell" color="$c_fresh_green" color_0="$c_dry_green" shader="topo_heath" />
 
             <!-- Farmland -->
-            <switch>
-                <case tag="landuse" value="farmland">
-                    <case minzoom="8" color="$c_dry_green" />
-                </case>
-                <case tag="landuse" value="farmyard">
-                    <case minzoom="10" color="$c_dry_green" />
-                </case>
-            </switch>
+            <case tag="landuse" value="farmland" color="$c_earthy" />
 
             <!-- Sand/Beach -->
             <switch>
